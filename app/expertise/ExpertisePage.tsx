@@ -72,7 +72,7 @@ export default function ExpertisePage() {
             <h1 className="text-display-xl-mobile md:text-display-xl font-bold text-charcoal mb-6">
               {t.expertise.title}
             </h1>
-            <p className="text-body-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            <p className="text-body-base text-on-surface-variant leading-relaxed" style={{ maxWidth: "640px", margin: "0 auto" }}>
               {t.expertise.desc}
             </p>
           </AnimatedSection>
@@ -189,20 +189,30 @@ export default function ExpertisePage() {
 
       {/* CTA */}
       <section className="py-16 md:py-24 bg-off-white">
-        <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-display-xl-mobile font-bold text-charcoal mb-6">
-              {t.expertise.readyToStart}
-            </h2>
-            <p className="text-body-base text-on-surface-variant mb-8 max-w-xl mx-auto leading-relaxed">
-              {t.expertise.contactDiscuss}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-gold-ochre transition-colors duration-300"
-            >
-              {t.expertise.contactUs}
-            </Link>
+            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }} className="md:flex-row md:items-center md:justify-between">
+              <div style={{ maxWidth: "580px" }}>
+                <span className="text-xs tracking-[0.3em] uppercase text-gold-ochre font-semibold mb-4 block">
+                  {t.expertise.tag}
+                </span>
+                <h2 className="text-display-xl-mobile font-bold text-charcoal mb-4 leading-tight">
+                  {t.expertise.readyToStart}
+                </h2>
+                <p className="text-body-base text-on-surface-variant leading-relaxed">
+                  {t.expertise.contactDiscuss}
+                </p>
+              </div>
+              <div style={{ flexShrink: 0 }}>
+                <Link
+                  href="/contact"
+                  className="inline-block bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-gold-ochre transition-colors duration-300"
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  {t.expertise.contactUs}
+                </Link>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
       </section>

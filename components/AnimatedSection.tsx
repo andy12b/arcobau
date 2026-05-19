@@ -27,12 +27,11 @@ export default function AnimatedSection({
     const el = sectionRef.current;
     if (!el) return;
 
-    // Check if element is already in viewport (above fold) - don't animate
     const rect = el.getBoundingClientRect();
-    const inViewport = rect.top < window.innerHeight && rect.bottom >= 0;
+    const alreadyVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-    if (inViewport && rect.top < 0) {
-      // Element is above fold, skip animation
+    // Skip animation for elements already visible in the viewport on load
+    if (alreadyVisible) {
       return;
     }
 
@@ -46,6 +45,7 @@ export default function AnimatedSection({
         trigger: el,
         start: "top 88%",
         toggleActions: "play none none none",
+        once: true,
       },
     };
 
@@ -73,8 +73,13 @@ export default function AnimatedSection({
 
     const tween = gsap.fromTo(el, fromVars, toVars);
 
+    // Refresh ScrollTrigger positions after all assets (images) have loaded
+    const onLoad = () => ScrollTrigger.refresh();
+    window.addEventListener("load", onLoad);
+
     return () => {
       tween.kill();
+      window.removeEventListener("load", onLoad);
     };
   }, [animation, delay]);
 

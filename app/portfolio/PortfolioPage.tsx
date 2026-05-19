@@ -130,7 +130,7 @@ export default function PortfolioPage() {
             <h1 className="text-display-xl-mobile md:text-display-xl font-bold text-charcoal mb-6">
               {t.portfolio.title}
             </h1>
-            <p className="text-body-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            <p className="text-body-base text-on-surface-variant leading-relaxed" style={{ maxWidth: "640px", margin: "0 auto" }}>
               {t.portfolio.desc}
             </p>
           </AnimatedSection>

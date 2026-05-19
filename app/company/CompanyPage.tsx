@@ -79,7 +79,7 @@ export default function CompanyPage() {
             <h1 className="text-display-xl-mobile md:text-display-xl font-bold text-charcoal mb-6">
               {t.company.title}
             </h1>
-            <p className="text-body-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            <p className="text-body-base text-on-surface-variant leading-relaxed" style={{ maxWidth: "640px", margin: "0 auto" }}>
               {t.company.desc}
             </p>
           </AnimatedSection>
@@ -104,6 +104,7 @@ export default function CompanyPage() {
                     width={600}
                     height={220}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="eager"
                   />
                 </div>
                 <div className="p-10 flex flex-col flex-grow">
@@ -225,23 +226,25 @@ export default function CompanyPage() {
       {/* Commitment */}
       <section className="py-16 md:py-24 bg-off-white">
         <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop">
-          <AnimatedSection animation="fade-up" className="max-w-2xl mx-auto text-center">
-            <span className="text-xs tracking-[0.3em] uppercase text-gold-ochre font-semibold mb-4 block">
-              {t.company.commitmentTag}
-            </span>
-            <h2 className="text-display-xl-mobile font-bold text-charcoal mb-6">
-              {t.company.commitmentTitle}
-            </h2>
-            <p className="text-body-base text-on-surface-variant leading-relaxed mb-8">
-              {t.company.commitmentDesc}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-gold-ochre transition-colors duration-300"
-            >
-              {t.company.getInTouch}
-            </Link>
-          </AnimatedSection>
+          <div style={{ maxWidth: "640px", margin: "0 auto", textAlign: "center" }}>
+            <AnimatedSection animation="fade-up">
+              <span className="text-xs tracking-[0.3em] uppercase text-gold-ochre font-semibold mb-4 block">
+                {t.company.commitmentTag}
+              </span>
+              <h2 className="text-display-xl-mobile font-bold text-charcoal mb-6">
+                {t.company.commitmentTitle}
+              </h2>
+              <p className="text-body-base text-on-surface-variant leading-relaxed mb-8">
+                {t.company.commitmentDesc}
+              </p>
+              <Link
+                href="/contact"
+                className="inline-block bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-gold-ochre transition-colors duration-300"
+              >
+                {t.company.getInTouch}
+              </Link>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
     </div>

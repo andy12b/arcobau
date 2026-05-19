@@ -193,7 +193,7 @@ export default function HomePage() {
             <h2 className="text-display-xl-mobile md:text-headline-lg font-bold text-charcoal mb-6">
               {t.home.tailoredExpertise}
             </h2>
-            <p className="text-body-base text-on-surface-variant max-w-2xl mx-auto">
+            <p className="text-body-base text-on-surface-variant" style={{ maxWidth: "640px", margin: "0 auto" }}>
               {t.home.tailoredExpertiseDesc}
             </p>
           </AnimatedSection>
