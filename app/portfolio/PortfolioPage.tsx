@@ -9,110 +9,160 @@ export default function PortfolioPage() {
   const { t, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const titleTranslations: Record<string, Record<string, string>> = {
-    "Casă Unifamilială – Exterior": { EN: "Single-Family Home – Exterior", DE: "Einfamilienhaus – Außenbereich", FR: "Maison Unifamiliale – Extérieur", RO: "Casă Unifamilială – Exterior", IT: "Casa Unifamiliare – Esterno" },
-    "Foișor Grădină – Lemn Masiv": { EN: "Garden Gazebo – Solid Wood", DE: "Gartenpavillon – Massivholz", FR: "Kiosque de Jardin – Bois Massif", RO: "Foișor Grădină – Lemn Masiv", IT: "Gazebo da Giardino – Legno Massiccio" },
-    "Lucrări Zidărie și Structură": { EN: "Masonry and Structure Works", DE: "Mauerwerks- und Strukturarbeiten", FR: "Travaux de Maçonnerie et Structure", RO: "Lucrări Zidărie și Structură", IT: "Lavori di Muratura e Struttura" },
-    "Instalații Tehnice și HVAC": { EN: "Technical Installations and HVAC", DE: "Technische Anlagen und HLK", FR: "Installations Techniques et CVC", RO: "Instalații Tehnice și HVAC", IT: "Installazioni Tecniche e HVAC" },
-    "Foișor Grădină – Structură Vopsită": { EN: "Garden Gazebo – Painted Structure", DE: "Gartenpavillon – Lackierte Struktur", FR: "Kiosque de Jardin – Structure Peinte", RO: "Foișor Grădină – Structură Vopsită", IT: "Gazebo da Giardino – Struttura Verniciata" },
-    "Structură Lemn – Acoperiș Foișor": { EN: "Wooden Structure – Gazebo Roof", DE: "Holzstruktur – Pavillondach", FR: "Structure en Bois – Toit de Kiosque", RO: "Structură Lemn – Acoperiș Foișor", IT: "Struttura in Legno – Tetto Gazebo" },
-    "Montaj Stâlpi și Podea Exterior": { EN: "Exterior Pillars and Floor Installation", DE: "Montage von Außenpfeilern und Boden", FR: "Installation de Piliers et Plancher Extérieurs", RO: "Montaj Stâlpi și Podea Exterior", IT: "Installazione Pilastri e Pavimento Esterno" },
-    "Cadru Lemn Foișor – Fază Execuție": { EN: "Wooden Gazebo Frame – Execution Phase", DE: "Holzrahmen Pavillon – Ausführungsphase", FR: "Cadre de Kiosque en Bois – Phase d'Exécution", RO: "Cadru Lemn Foișor – Fază Execuție", IT: "Struttura in Legno Gazebo – Fase di Esecuzione" },
-    "Structură Tavan Fals – Hală": { EN: "Suspended Ceiling Structure – Hall", DE: "Abgehängte Deckenstruktur – Halle", FR: "Structure de Plafond Suspendu – Hall", RO: "Structură Tavan Fals – Hală", IT: "Struttura Controsoffitto – Capannone" },
-    "Interior Beton – Fază Gri": { EN: "Concrete Interior – Grey Phase", DE: "Beton-Innenraum – Rohbau", FR: "Intérieur en Béton – Phase Grise", RO: "Interior Beton – Fază Gri", IT: "Interno in Cemento – Fase Grezza" },
-    "Ansamblu Rezidențial": { EN: "Residential Complex", DE: "Wohnanlage", FR: "Complexe Résidentiel", RO: "Ansamblu Rezidențial", IT: "Complesso Residenziale" },
-    "Apartament Finisat – Parchet": { EN: "Finished Apartment – Parquet", DE: "Fertige Wohnung – Parkett", FR: "Appartement Fini – Parquet", RO: "Apartament Finisat – Parchet", IT: "Appartamento Finito – Parquet" },
-    "Interior Luminos": { EN: "Bright Interior", DE: "Helles Interieur", FR: "Intérieur Lumineux", RO: "Interior Luminos", IT: "Interno Luminoso" },
-    "Fațadă Clădire – Schelă Montată": { EN: "Building Facade – Scaffolding Installed", DE: "Gebäudefassade – Gerüst Montiert", FR: "Façade de Bâtiment – Échafaudage Installé", RO: "Fațadă Clădire – Schelă Montată", IT: "Facciata Edificio – Ponteggio Installato" },
-    "Șantier – Lucrări Terasiere": { EN: "Construction Site – Earthworks", DE: "Baustelle – Erdarbeiten", FR: "Chantier – Terrassement", RO: "Șantier – Lucrări Terasiere", IT: "Cantiere – Lavori di Movimento Terra" },
-    "Compartimentare Rigips – Birouri": { EN: "Drywall Partitioning – Offices", DE: "Trockenbau-Trennwände – Büros", FR: "Cloisonnement en Plaques de Plâtre – Bureaux", RO: "Compartimentare Rigips – Birouri", IT: "Tramezzi in Cartongesso – Uffici" },
-    "Montaj Parchet Laminat": { EN: "Laminate Flooring Installation", DE: "Laminatboden-Verlegung", FR: "Pose de Sol Stratifié", RO: "Montaj Parchet Laminat", IT: "Installazione Pavimento in Laminato" },
-    "Baie – Faianță Albă": { EN: "Bathroom – White Tiles", DE: "Badezimmer – Weiße Fliesen", FR: "Salle de Bain – Carrelage Blanc", RO: "Baie – Faianță Albă", IT: "Bagno – Piastrelle Bianche" },
-    "Amenajare Zonă Comercială": { EN: "Commercial Area Setup", DE: "Einrichtung Gewerbegebiet", FR: "Aménagement Zone Commerciale", RO: "Amenajare Zonă Comercială", IT: "Allestimento Area Commerciale" },
-    "Vilă Rezidențială Modernă": { EN: "Modern Residential Villa", DE: "Moderne Wohnvilla", FR: "Villa Résidentielle Moderne", RO: "Vilă Rezidențială Modernă", IT: "Villa Residenziale Moderna" },
-    "Baie Modernă – Design Roșu": { EN: "Modern Bathroom – Red Design", DE: "Modernes Badezimmer – Rotes Design", FR: "Salle de Bain Moderne – Design Rouge", RO: "Baie Modernă – Design Roșu", IT: "Bagno Moderno – Design Rosso" },
-    "Izolație Fațadă Termosistem": { EN: "Facade Insulation Thermal System", DE: "Fassadenisolierung Thermosystem", FR: "Système Thermique d'Isolation de Façade", RO: "Izolație Fațadă Termosistem", IT: "Sistema Termico di Isolamento Facciata" },
-    "Montaj Obiecte Sanitare": { EN: "Sanitary Ware Installation", DE: "Montage von Sanitäranlagen", FR: "Installation d'Équipements Sanitaires", RO: "Montaj Obiecte Sanitare", IT: "Installazione Apparecchi Sanitari" },
-    "Finisaje Lux – Cornișe": { EN: "Luxury Finishes – Cornices", DE: "Luxusausführungen – Gesimse", FR: "Finitions de Luxe – Corniches", RO: "Finisaje Lux – Cornișe", IT: "Finiture di Lusso – Cornici" },
-    "Montaj Gresie Format Mare": { EN: "Large Format Tile Installation", DE: "Großformatige Fliesenverlegung", FR: "Pose de Carrelage Grand Format", RO: "Montaj Gresie Format Mare", IT: "Installazione Piastrelle Grande Formato" },
-    "Restaurare Casă – Piatră Aparentă": { EN: "House Restoration – Exposed Stone", DE: "Hausrestaurierung – Sichtstein", FR: "Restauration de Maison – Pierre Apparente", RO: "Restaurare Casă – Piatră Aparentă", IT: "Restauro Casa – Pietra a Vista" },
-    "Interior Neamenajat – Geamuri": { EN: "Unfinished Interior – Windows", DE: "Unvollendeter Innenraum – Fenster", FR: "Intérieur Non Aménagé – Fenêtres", RO: "Interior Neamenajat – Geamuri", IT: "Interno Non Rifinito – Finestre" },
-    "Compartimentare Sticlă și Rigips": { EN: "Glass and Drywall Partitioning", DE: "Glas- und Trockenbau-Trennwände", FR: "Cloisonnement en Verre et Plaques de Plâtre", RO: "Compartimentare Sticlă și Rigips", IT: "Tramezzi in Vetro e Cartongesso" },
-    "Izolație Mansardă – Grinzi Lemn": { EN: "Attic Insulation – Wooden Beams", DE: "Dachbodenisolierung – Holzbalken", FR: "Isolation de Mansarde – Poutres en Bois", RO: "Izolație Mansardă – Grinzi Lemn", IT: "Isolamento Mansarda – Travi in Legno" },
-    "Faianță Bucătărie/Baie – Alb": { EN: "Kitchen/Bathroom Tiles – White", DE: "Küchen-/Badezimmerfliesen – Weiß", FR: "Carrelage Cuisine/Salle de Bain – Blanc", RO: "Faianță Bucătărie/Baie – Alb", IT: "Piastrelle Cucina/Bagno – Bianco" },
-    "Parchet Lemn Masiv – Living": { EN: "Solid Wood Parquet – Living Room", DE: "Massivholzparkett – Wohnzimmer", FR: "Parquet en Bois Massif – Salon", RO: "Parchet Lemn Masiv – Living", IT: "Parquet in Legno Massiccio – Soggiorno" },
-    "Montaj Gresie Rectificată": { EN: "Rectified Tile Installation", DE: "Rektifizierte Fliesenverlegung", FR: "Pose de Carrelage Rectifié", RO: "Montaj Gresie Rectificată", IT: "Installazione Piastrelle Rettificate" },
-    "Pardoseală Exterioară Piatră": { EN: "Exterior Stone Flooring", DE: "Außensteinboden", FR: "Revêtement de Sol Extérieur en Pierre", RO: "Pardoseală Exterioară Piatră", IT: "Pavimentazione Esterna in Pietra" },
-    "Baie – Cabină Duș Sticlă": { EN: "Bathroom – Glass Shower Cabin", DE: "Badezimmer – Glas-Duschkabine", FR: "Salle de Bain – Cabine de Douche en Verre", RO: "Baie – Cabină Duș Sticlă", IT: "Bagno – Cabina Doccia in Vetro" },
-    "Gresie Marmorată – Balcon": { EN: "Marbled Tiles – Balcony", DE: "Marmorierte Fliesen – Balkon", FR: "Carrelage Marbré – Balcon", RO: "Gresie Marmorată – Balcon", IT: "Piastrelle Marmorizzate – Balcone" },
-    "Montaj Cădiță Duș și Gresie": { EN: "Shower Tray and Tile Installation", DE: "Duschwannen- und Fliesenverlegung", FR: "Installation de Bac à Douche et Carrelage", RO: "Montaj Cădiță Duș și Gresie", IT: "Installazione Piatto Doccia e Piastrelle" },
-    "Baie Modernă – Pardoseală Gri": { EN: "Modern Bathroom – Grey Flooring", DE: "Modernes Badezimmer – Grauer Boden", FR: "Salle de Bain Moderne – Sol Gris", RO: "Baie Modernă – Pardoseală Gri", IT: "Bagno Moderno – Pavimento Grigio" },
-    "Pardoseală Cărămidă – Rustic": { EN: "Brick Flooring – Rustic", DE: "Ziegelboden – Rustikal", FR: "Sol en Brique – Rustique", RO: "Pardoseală Cărămidă – Rustic", IT: "Pavimento in Mattoni – Rustico" },
-    "Gresie Rectificată Gri Deschis": { EN: "Light Grey Rectified Tiles", DE: "Hellgraue Rektifizierte Fliesen", FR: "Carrelage Rectifié Gris Clair", RO: "Gresie Rectificată Gri Deschis", IT: "Piastrelle Rettificate Grigio Chiaro" },
-    "Bucătărie – Mobilier și Gresie": { EN: "Kitchen – Furniture and Tiles", DE: "Küche – Möbel und Fliesen", FR: "Cuisine – Meubles et Carrelage", RO: "Bucătărie – Mobilier și Gresie", IT: "Cucina – Mobili e Piastrelle" }
+    const generateTitle = (category: string, id: number) => {
+    const titles: Record<string, Record<string, string>> = {
+      "Finisaje": { EN: `Premium Finish ${id}`, DE: `Premium-Ausbau ${id}`, FR: `Finition Premium ${id}`, RO: `Finisaj Premium ${id}`, IT: `Finitura Premium ${id}` },
+      "Interioare": { EN: `Modern Interior ${id}`, DE: `Modernes Interieur ${id}`, FR: `Intérieur Moderne ${id}`, RO: `Interior Modern ${id}`, IT: `Interno Moderno ${id}` },
+      "Exterioare": { EN: `Exterior Work ${id}`, DE: `Außenarbeiten ${id}`, FR: `Travaux Extérieurs ${id}`, RO: `Lucrare Exterioară ${id}`, IT: `Lavoro Esterno ${id}` },
+      "Constructii blocuri": { EN: `Apartment Building ${id}`, DE: `Wohnblock ${id}`, FR: `Immeuble ${id}`, RO: `Construcție Bloc ${id}`, IT: `Condominio ${id}` },
+      "Constructii case": { EN: `Residential House ${id}`, DE: `Wohnhaus ${id}`, FR: `Maison Résidentielle ${id}`, RO: `Casă Rezidențială ${id}`, IT: `Casa Residenziale ${id}` },
+    };
+    return titles[category]?.[language] || `Project ${id}`;
   };
 
-  const getTranslatedTitle = (title: string) => {
-    return titleTranslations[title]?.[language] || title;
+  const getTranslatedTitle = (project: any) => {
+    return generateTitle(project.baseCat, project.id);
   };
 
   const categories = [
     { id: "All", label: t.portfolio.categories.all },
-    { id: "Construcții Case", label: t.portfolio.categories.houses },
-    { id: "Apartamente", label: t.portfolio.categories.apartments },
     { id: "Finisaje", label: t.portfolio.categories.finishes },
-    { id: "Podele & Gresie", label: t.portfolio.categories.floors },
+    { id: "Interioare", label: t.portfolio.categories.interiors },
+    { id: "Exterioare", label: t.portfolio.categories.exteriors },
+    { id: "Constructii blocuri", label: t.portfolio.categories.blocks },
+    { id: "Constructii case", label: t.portfolio.categories.houses },
   ];
 
   const projects = [
-    // ── CONSTRUCȚII CASE ──
-    { id: 1,  title: "Casă Unifamilială – Exterior",        category: "Construcții Case",   img: "/images/case/casa-1.jpg",          size: "large" },
-    { id: 2,  title: "Foișor Grădină – Lemn Masiv",         category: "Construcții Case",   img: "/images/case/casa-3.jpg",          size: "small" },
-    { id: 3,  title: "Lucrări Zidărie și Structură",        category: "Construcții Case",   img: "/images/constructii/constructie-1.jpg", size: "small" },
-    { id: 4,  title: "Instalații Tehnice și HVAC",          category: "Construcții Case",   img: "/images/constructii/constructie-10.jpg",size: "small" },
-    { id: 17, title: "Foișor Grădină – Structură Vopsită",  category: "Construcții Case",   img: "/images/case/casa-2.jpg",          size: "small" },
-    { id: 18, title: "Structură Lemn – Acoperiș Foișor",    category: "Construcții Case",   img: "/images/case/casa-4.jpg",          size: "small" },
-    { id: 19, title: "Montaj Stâlpi și Podea Exterior",     category: "Construcții Case",   img: "/images/case/casa-5.jpg",          size: "small" },
-    { id: 20, title: "Cadru Lemn Foișor – Fază Execuție",   category: "Construcții Case",   img: "/images/case/casa-6.jpg",          size: "small" },
-    { id: 21, title: "Structură Tavan Fals – Hală",         category: "Construcții Case",   img: "/images/case/casa-7.jpg",          size: "small" },
-    { id: 22, title: "Interior Beton – Fază Gri",           category: "Construcții Case",   img: "/images/case/casa-8.jpg",          size: "small" },
-
-    // ── APARTAMENTE ──
-    { id: 5,  title: "Ansamblu Rezidențial",                category: "Apartamente",        img: "/images/apartamente/apartament-1.jpg", size: "large" },
-    { id: 6,  title: "Apartament Finisat – Parchet",        category: "Apartamente",        img: "/images/apartamente/apartament-9.jpg", size: "small" },
-    { id: 7,  title: "Interior Luminos",                    category: "Apartamente",        img: "/images/apartamente/apartament-10.jpg",size: "small" },
-    { id: 23, title: "Fațadă Clădire – Schelă Montată",     category: "Apartamente",        img: "/images/apartamente/apartament-2.jpg", size: "small" },
-    { id: 25, title: "Șantier – Lucrări Terasiere",         category: "Apartamente",        img: "/images/apartamente/apartament-4.jpg", size: "small" },
-    { id: 26, title: "Compartimentare Rigips – Birouri",    category: "Finisaje",           img: "/images/apartamente/apartament-8.jpg", size: "small" },
-    { id: 27, title: "Montaj Parchet Laminat",              category: "Podele & Gresie",    img: "/images/apartamente/apartament-11.jpg",size: "small" },
-    { id: 28, title: "Baie – Faianță Albă",                 category: "Podele & Gresie",    img: "/images/apartamente/apartament-12.jpg",size: "small" },
-    { id: 8,  title: "Amenajare Zonă Comercială",           category: "Finisaje",           img: "/images/finisaje/finisaj-27.jpg",  size: "small" },
-    { id: 24, title: "Vilă Rezidențială Modernă",           category: "Construcții Case",   img: "/images/apartamente/apartament-3.jpg", size: "small" },
-
-    // ── FINISAJE ──
-    { id: 9,  title: "Baie Modernă – Design Roșu",          category: "Finisaje",           img: "/images/finisaje/finisaj-18.jpg",  size: "large" },
-    { id: 10, title: "Izolație Fațadă Termosistem",         category: "Finisaje",           img: "/images/finisaje/finisaj-1.jpg",   size: "small" },
-    { id: 11, title: "Montaj Obiecte Sanitare",             category: "Finisaje",           img: "/images/finisaje/finisaj-22.jpg",  size: "small" },
-    { id: 12, title: "Finisaje Lux – Cornișe",              category: "Finisaje",           img: "/images/podele/podea-42.jpg",      size: "small" },
-    { id: 29, title: "Montaj Gresie Format Mare",           category: "Finisaje",           img: "/images/finisaje/finisaj-5.jpg",   size: "small" },
-    { id: 30, title: "Restaurare Casă – Piatră Aparentă",   category: "Finisaje",           img: "/images/finisaje/finisaj-6.jpg",   size: "small" },
-    { id: 31, title: "Interior Neamenajat – Geamuri",       category: "Finisaje",           img: "/images/finisaje/finisaj-7.jpg",   size: "small" },
-    { id: 32, title: "Compartimentare Sticlă și Rigips",    category: "Finisaje",           img: "/images/finisaje/finisaj-11.jpg",  size: "small" },
-    { id: 33, title: "Izolație Mansardă – Grinzi Lemn",     category: "Finisaje",           img: "/images/finisaje/finisaj-12.jpg",  size: "small" },
-    { id: 34, title: "Faianță Bucătărie/Baie – Alb",        category: "Finisaje",           img: "/images/finisaje/finisaj-25.jpg",  size: "small" },
-
-    // ── PODELE & GRESIE ──
-    { id: 13, title: "Parchet Lemn Masiv – Living",         category: "Podele & Gresie",    img: "/images/podele/podea-8.jpg",       size: "large" },
-    { id: 14, title: "Montaj Gresie Rectificată",           category: "Podele & Gresie",    img: "/images/podele/podea-3.jpg",       size: "small" },
-    { id: 15, title: "Pardoseală Exterioară Piatră",        category: "Podele & Gresie",    img: "/images/finisaje/finisaj-33.jpg",  size: "small" },
-    { id: 16, title: "Baie – Cabină Duș Sticlă",            category: "Podele & Gresie",    img: "/images/podele/podea-13.jpg",      size: "small" },
-    { id: 35, title: "Gresie Marmorată – Balcon",           category: "Podele & Gresie",    img: "/images/podele/podea-2.jpg",       size: "small" },
-    { id: 36, title: "Montaj Cădiță Duș și Gresie",         category: "Podele & Gresie",    img: "/images/podele/podea-4.jpg",       size: "small" },
-    { id: 37, title: "Baie Modernă – Pardoseală Gri",       category: "Podele & Gresie",    img: "/images/podele/podea-11.jpg",      size: "small" },
-    { id: 38, title: "Pardoseală Cărămidă – Rustic",        category: "Podele & Gresie",    img: "/images/podele/podea-17.jpg",      size: "small" },
-    { id: 39, title: "Gresie Rectificată Gri Deschis",      category: "Podele & Gresie",    img: "/images/podele/podea-22.jpg",      size: "small" },
-    { id: 40, title: "Bucătărie – Mobilier și Gresie",      category: "Podele & Gresie",    img: "/images/podele/podea-9.jpg",       size: "small" },
+    { id: 1, title: "Project 1", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-1.jpg", size: "large" },
+    { id: 2, title: "Project 2", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-10.jpg", size: "small" },
+    { id: 3, title: "Project 3", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-11.jpg", size: "small" },
+    { id: 4, title: "Project 4", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-12.jpg", size: "small" },
+    { id: 5, title: "Project 5", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-2.jpg", size: "small" },
+    { id: 6, title: "Project 6", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-3.jpg", size: "small" },
+    { id: 7, title: "Project 7", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-4.jpg", size: "small" },
+    { id: 8, title: "Project 8", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-5.jpg", size: "small" },
+    { id: 9, title: "Project 9", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-6.jpg", size: "small" },
+    { id: 10, title: "Project 10", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-7.jpg", size: "small" },
+    { id: 11, title: "Project 11", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-8.jpg", size: "small" },
+    { id: 12, title: "Project 12", baseCat: "Interioare", category: "Interioare", img: "/images/apartamente/apartament-9.jpg", size: "small" },
+    { id: 13, title: "Project 13", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-1.jpg", size: "large" },
+    { id: 14, title: "Project 14", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-2.jpg", size: "small" },
+    { id: 15, title: "Project 15", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-3.jpg", size: "small" },
+    { id: 16, title: "Project 16", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-4.jpg", size: "small" },
+    { id: 17, title: "Project 17", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-5.jpg", size: "small" },
+    { id: 18, title: "Project 18", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-6.jpg", size: "small" },
+    { id: 19, title: "Project 19", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-7.jpg", size: "small" },
+    { id: 20, title: "Project 20", baseCat: "Constructii case", category: "Constructii case", img: "/images/case/casa-8.jpg", size: "small" },
+    { id: 21, title: "Project 21", baseCat: "Exterioare", category: "Exterioare", img: "/images/constructii/constructie-1.jpg", size: "large" },
+    { id: 22, title: "Project 22", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-10.jpg", size: "small" },
+    { id: 23, title: "Project 23", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-11.jpg", size: "small" },
+    { id: 24, title: "Project 24", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-12.jpg", size: "small" },
+    { id: 25, title: "Project 25", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-13.jpg", size: "small" },
+    { id: 26, title: "Project 26", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-14.jpg", size: "small" },
+    { id: 27, title: "Project 27", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-15.jpg", size: "small" },
+    { id: 28, title: "Project 28", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-16.jpg", size: "small" },
+    { id: 29, title: "Project 29", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-17.jpg", size: "small" },
+    { id: 30, title: "Project 30", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-18.jpg", size: "small" },
+    { id: 31, title: "Project 31", baseCat: "Exterioare", category: "Exterioare", img: "/images/constructii/constructie-2.jpg", size: "small" },
+    { id: 32, title: "Project 32", baseCat: "Exterioare", category: "Exterioare", img: "/images/constructii/constructie-3.jpg", size: "small" },
+    { id: 33, title: "Project 33", baseCat: "Exterioare", category: "Exterioare", img: "/images/constructii/constructie-4.jpg", size: "small" },
+    { id: 34, title: "Project 34", baseCat: "Exterioare", category: "Exterioare", img: "/images/constructii/constructie-5.jpg", size: "small" },
+    { id: 35, title: "Project 35", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-6.jpg", size: "large" },
+    { id: 36, title: "Project 36", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-7.jpg", size: "small" },
+    { id: 37, title: "Project 37", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-8.jpg", size: "small" },
+    { id: 38, title: "Project 38", baseCat: "Constructii blocuri", category: "Constructii blocuri", img: "/images/constructii/constructie-9.jpg", size: "small" },
+    { id: 39, title: "Project 39", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-1.jpg", size: "large" },
+    { id: 40, title: "Project 40", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-10.jpg", size: "small" },
+    { id: 41, title: "Project 41", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-11.jpg", size: "small" },
+    { id: 42, title: "Project 42", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-12.jpg", size: "small" },
+    { id: 43, title: "Project 43", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-13.jpg", size: "small" },
+    { id: 44, title: "Project 44", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-14.jpg", size: "small" },
+    { id: 45, title: "Project 45", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-15.jpg", size: "small" },
+    { id: 46, title: "Project 46", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-16.jpg", size: "small" },
+    { id: 47, title: "Project 47", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-17.jpg", size: "small" },
+    { id: 48, title: "Project 48", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-18.jpg", size: "small" },
+    { id: 49, title: "Project 49", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-19.jpg", size: "small" },
+    { id: 50, title: "Project 50", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-2.jpg", size: "small" },
+    { id: 51, title: "Project 51", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-20.jpg", size: "small" },
+    { id: 52, title: "Project 52", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-21.jpg", size: "small" },
+    { id: 53, title: "Project 53", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-22.jpg", size: "small" },
+    { id: 54, title: "Project 54", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-23.jpg", size: "small" },
+    { id: 55, title: "Project 55", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-24.jpg", size: "small" },
+    { id: 56, title: "Project 56", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-25.jpg", size: "small" },
+    { id: 57, title: "Project 57", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-26.jpg", size: "small" },
+    { id: 58, title: "Project 58", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-27.jpg", size: "small" },
+    { id: 59, title: "Project 59", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-28.jpg", size: "small" },
+    { id: 60, title: "Project 60", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-29.jpg", size: "small" },
+    { id: 61, title: "Project 61", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-3.jpg", size: "small" },
+    { id: 62, title: "Project 62", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-30.jpg", size: "small" },
+    { id: 63, title: "Project 63", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-31.jpg", size: "small" },
+    { id: 64, title: "Project 64", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-32.jpg", size: "small" },
+    { id: 65, title: "Project 65", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-33.jpg", size: "small" },
+    { id: 66, title: "Project 66", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-4.jpg", size: "small" },
+    { id: 67, title: "Project 67", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-5.jpg", size: "small" },
+    { id: 68, title: "Project 68", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-6.jpg", size: "small" },
+    { id: 69, title: "Project 69", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-7.jpg", size: "small" },
+    { id: 70, title: "Project 70", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-8.jpg", size: "small" },
+    { id: 71, title: "Project 71", baseCat: "Finisaje", category: "Finisaje", img: "/images/finisaje/finisaj-9.jpg", size: "small" },
+    { id: 72, title: "Project 72", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-1.jpg", size: "large" },
+    { id: 73, title: "Project 73", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-10.jpg", size: "small" },
+    { id: 74, title: "Project 74", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-11.jpg", size: "small" },
+    { id: 75, title: "Project 75", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-12.jpg", size: "small" },
+    { id: 76, title: "Project 76", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-13.jpg", size: "small" },
+    { id: 77, title: "Project 77", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-14.jpg", size: "small" },
+    { id: 78, title: "Project 78", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-15.jpg", size: "small" },
+    { id: 79, title: "Project 79", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-16.jpg", size: "small" },
+    { id: 80, title: "Project 80", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-17.jpg", size: "small" },
+    { id: 81, title: "Project 81", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-18.jpg", size: "small" },
+    { id: 82, title: "Project 82", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-19.jpg", size: "small" },
+    { id: 83, title: "Project 83", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-2.jpg", size: "small" },
+    { id: 84, title: "Project 84", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-20.jpg", size: "small" },
+    { id: 85, title: "Project 85", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-21.jpg", size: "small" },
+    { id: 86, title: "Project 86", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-22.jpg", size: "small" },
+    { id: 87, title: "Project 87", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-23.jpg", size: "small" },
+    { id: 88, title: "Project 88", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-24.jpg", size: "small" },
+    { id: 89, title: "Project 89", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-25.jpg", size: "small" },
+    { id: 90, title: "Project 90", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-26.jpg", size: "small" },
+    { id: 91, title: "Project 91", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-27.jpg", size: "small" },
+    { id: 92, title: "Project 92", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-28.jpg", size: "small" },
+    { id: 93, title: "Project 93", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-29.jpg", size: "small" },
+    { id: 94, title: "Project 94", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-3.jpg", size: "small" },
+    { id: 95, title: "Project 95", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-30.jpg", size: "small" },
+    { id: 96, title: "Project 96", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-31.jpg", size: "small" },
+    { id: 97, title: "Project 97", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-32.jpg", size: "small" },
+    { id: 98, title: "Project 98", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-33.jpg", size: "small" },
+    { id: 99, title: "Project 99", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-34.jpg", size: "small" },
+    { id: 100, title: "Project 100", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-35.jpg", size: "small" },
+    { id: 101, title: "Project 101", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-36.jpg", size: "small" },
+    { id: 102, title: "Project 102", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-37.jpg", size: "small" },
+    { id: 103, title: "Project 103", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-38.jpg", size: "small" },
+    { id: 104, title: "Project 104", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-39.jpg", size: "small" },
+    { id: 105, title: "Project 105", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-4.jpg", size: "small" },
+    { id: 106, title: "Project 106", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-40.jpg", size: "small" },
+    { id: 107, title: "Project 107", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-41.jpg", size: "small" },
+    { id: 108, title: "Project 108", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-42.jpg", size: "small" },
+    { id: 109, title: "Project 109", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-43.jpg", size: "small" },
+    { id: 110, title: "Project 110", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-44.jpg", size: "small" },
+    { id: 111, title: "Project 111", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-45.jpg", size: "small" },
+    { id: 112, title: "Project 112", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-46.jpg", size: "small" },
+    { id: 113, title: "Project 113", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-47.jpg", size: "small" },
+    { id: 114, title: "Project 114", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-48.jpg", size: "small" },
+    { id: 115, title: "Project 115", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-49.jpg", size: "small" },
+    { id: 116, title: "Project 116", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-5.jpg", size: "small" },
+    { id: 117, title: "Project 117", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-50.jpg", size: "small" },
+    { id: 118, title: "Project 118", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-51.jpg", size: "small" },
+    { id: 119, title: "Project 119", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-52.jpg", size: "small" },
+    { id: 120, title: "Project 120", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-53.jpg", size: "small" },
+    { id: 121, title: "Project 121", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-54.jpg", size: "small" },
+    { id: 122, title: "Project 122", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-55.jpg", size: "small" },
+    { id: 123, title: "Project 123", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-6.jpg", size: "small" },
+    { id: 124, title: "Project 124", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-7.jpg", size: "small" },
+    { id: 125, title: "Project 125", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-8.jpg", size: "small" },
+    { id: 126, title: "Project 126", baseCat: "Finisaje", category: "Finisaje", img: "/images/podele/podea-9.jpg", size: "small" },
   ];
+
+
 
   const filtered = activeCategory === "All"
     ? projects
@@ -176,7 +226,7 @@ export default function PortfolioPage() {
                   <div className={`relative overflow-hidden ${project.size === "large" ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
                     <Image
                       src={project.img}
-                      alt={getTranslatedTitle(project.title)}
+                      alt={getTranslatedTitle(project)}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
@@ -185,12 +235,12 @@ export default function PortfolioPage() {
                       <span className="text-gold-ochre text-xs font-semibold tracking-widest uppercase mb-1">
                         {filterObj ? filterObj.label : project.category}
                       </span>
-                      <h3 className="text-pure-white font-bold text-lg">{getTranslatedTitle(project.title)}</h3>
+                      <h3 className="text-pure-white font-bold text-lg">{getTranslatedTitle(project)}</h3>
                     </div>
                   </div>
                   <div className="pt-4 pb-2 border-b border-outline-variant/20 flex items-start justify-between">
                     <div>
-                      <h3 className="font-semibold text-charcoal text-base mb-1">{getTranslatedTitle(project.title)}</h3>
+                      <h3 className="font-semibold text-charcoal text-base mb-1">{getTranslatedTitle(project)}</h3>
                     </div>
                     <span className="text-xs font-semibold tracking-widest uppercase text-gold-ochre whitespace-nowrap ml-4">
                       {filterObj ? filterObj.label : project.category}

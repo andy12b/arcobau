@@ -198,11 +198,10 @@ export default function CompanyPage() {
       {/* Stats */}
       <section className="py-16 md:py-20 bg-surface">
         <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {[
-              { value: "15+", label: t.company.stats.years },
+              { value: "20+", label: t.company.stats.years },
               { value: "200+", label: t.company.stats.projects },
-              { value: "15", label: t.company.stats.cantons },
               { value: "5★", label: t.company.stats.quality },
             ].map((stat, i) => (
               <AnimatedSection

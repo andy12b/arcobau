@@ -269,11 +269,10 @@ export default function HomePage() {
       {/* Stats Section */}
       <section className="py-24 md:py-32 bg-charcoal">
         <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {[
-              { value: "15+", label: t.home.stats.years },
+              { value: "20+", label: t.home.stats.years },
               { value: "200+", label: t.home.stats.projects },
-              { value: "15", label: t.home.stats.cantons },
               { value: "100%", label: t.home.stats.satisfaction },
             ].map((stat, i) => (
               <AnimatedSection
@@ -316,9 +315,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
-              { img: "/images/apartamente/apartament-1.jpg", categoryKey: "apartments" as const, titleKey: "project1" as const },
+              { img: "/images/apartamente/apartament-1.jpg", categoryKey: "interiors" as const, titleKey: "project1" as const },
               { img: "/images/finisaje/finisaj-5.jpg", categoryKey: "finishes" as const, titleKey: "project2" as const },
-              { img: "/images/podele/podea-8.jpg", categoryKey: "floors" as const, titleKey: "project3" as const },
+              { img: "/images/case/casa-1.jpg", categoryKey: "houses" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const titles = {
                 EN: ["Residential Complex", "Complete Interior Finish", "Hardwood Flooring"],

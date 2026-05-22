@@ -30,9 +30,8 @@ export const translations = {
       contactTeam: "Contact our team to discuss your project. We bring precision craftsmanship to every build across Switzerland — large or small.",
       getInTouch: "Get In Touch",
       stats: {
-        years: "Years in Switzerland",
+        years: "Years of Experience",
         projects: "Projects Completed",
-        cantons: "Swiss Cantons Served",
         satisfaction: "Client Satisfaction",
       },
       services: {
@@ -90,10 +89,11 @@ export const translations = {
       desc: "A selection of completed projects — residential construction, apartment finishing, and flooring executed with professionalism and quality materials.",
       categories: {
         all: "All",
-        houses: "Houses",
-        apartments: "Apartments",
         finishes: "Finishes",
-        floors: "Flooring & Tiles"
+        interiors: "Interiors",
+        exteriors: "Exteriors",
+        blocks: "Apartment Buildings",
+        houses: "Houses"
       }
     },
     company: {
@@ -121,7 +121,7 @@ export const translations = {
         materialsDesc: "We use materials from verified Swiss and European suppliers. We present the options and prices transparently — no hidden costs."
       },
       journeyTag: "Our Journey",
-      journeyTitle: "15 Years of Swiss Precision",
+      journeyTitle: "20+ Years of Experience",
       timeline: [
         { year: "2010", event: "Founded in Switzerland — first residential finishing projects in the Zürich area" },
         { year: "2013", event: "Expanded into full residential construction — first house built to completion" },
@@ -130,9 +130,8 @@ export const translations = {
         { year: "2025", event: "200+ projects delivered — trusted by private clients across Switzerland" }
       ],
       stats: {
-        years: "Years in Switzerland",
+        years: "Years of Experience",
         projects: "Projects Completed",
-        cantons: "Swiss Cantons Served",
         quality: "Quality Guaranteed"
       },
       commitmentTag: "Our Commitment",
@@ -209,7 +208,7 @@ export const translations = {
       readyToBuild: "Prêt à Construire Quelque Chose d'Extraordinaire?",
       contactTeam: "Contactez notre équipe pour discuter de votre projet. Nous apportons un savoir-faire précis à chaque construction à travers la Suisse — grande ou petite.",
       getInTouch: "Prendre Contact",
-      stats: { years: "Années en Suisse", projects: "Projets Réalisés", cantons: "Cantons Suisses Desservis", satisfaction: "Satisfaction Client" },
+      stats: { years: "Années d'Expérience", projects: "Projets Réalisés", satisfaction: "Satisfaction Client" },
       services: {
         privateClients: "Clients Privés",
         privateClientsDesc: "Construction résidentielle sur mesure et finition pour les propriétaires privés en Suisse. De la fondation à la remise — un savoir-faire précis, dans les délais et les budgets.",
@@ -263,7 +262,7 @@ export const translations = {
       tag: "Portfolio",
       title: "Notre Travail",
       desc: "Une sélection de projets achevés — construction résidentielle, finition d'appartements et revêtements de sol exécutés avec professionnalisme.",
-      categories: { all: "Tous", houses: "Maisons", apartments: "Appartements", finishes: "Finitions", floors: "Sols & Carrelages" }
+      categories: { all: "Tous", finishes: "Finitions", interiors: "Intérieurs", exteriors: "Extérieurs", blocks: "Immeubles", houses: "Maisons" }
     },
     company: {
       tag: "Entreprise",
@@ -290,7 +289,7 @@ export const translations = {
         materialsDesc: "Nous utilisons des matériaux de fournisseurs suisses et européens vérifiés. Nous présentons les options et les prix en toute transparence."
       },
       journeyTag: "Notre Parcours",
-      journeyTitle: "15 Ans de Précision Suisse",
+      journeyTitle: "20+ Ans d'Expérience",
       timeline: [
         { year: "2010", event: "Fondation en Suisse — premiers projets de finition résidentielle dans la région zurichoise" },
         { year: "2013", event: "Expansion dans la construction résidentielle complète — première maison achevée" },
@@ -298,7 +297,7 @@ export const translations = {
         { year: "2019", event: "Portfolio de plus de 100 projets achevés avec succès dans plusieurs cantons suisses" },
         { year: "2025", event: "Plus de 200 projets livrés — la confiance des clients privés en Suisse" }
       ],
-      stats: { years: "Années en Suisse", projects: "Projets Réalisés", cantons: "Cantons Suisses Desservis", quality: "Qualité Garantie" },
+      stats: { years: "Années d'Expérience", projects: "Projets Réalisés", quality: "Qualité Garantie" },
       commitmentTag: "Notre Engagement",
       commitmentTitle: "Bâti sur la Confiance",
       commitmentDesc: "Chaque projet que nous entreprenons témoigne de notre engagement envers la qualité. De la première consultation à la remise finale, ArcoBau soutient chaque décision avec une totale transparence et intégrité professionnelle — à la manière suisse.",
@@ -368,7 +367,7 @@ export const translations = {
       readyToBuild: "Bereit, etwas Außergewöhnliches zu bauen?",
       contactTeam: "Kontaktieren Sie unser Team, um Ihr Projekt zu besprechen. Wir bringen Präzisionshandwerk in jeden Bau in der ganzen Schweiz – ob gross oder klein.",
       getInTouch: "Kontakt Aufnehmen",
-      stats: { years: "Jahre in der Schweiz", projects: "Abgeschlossene Projekte", cantons: "Schweizer Kantone bedient", satisfaction: "Kundenzufriedenheit" },
+      stats: { years: "Jahre Erfahrung", projects: "Abgeschlossene Projekte", satisfaction: "Kundenzufriedenheit" },
       services: {
         privateClients: "Privatkunden",
         privateClientsDesc: "Massgeschneiderter Wohnbau und Innenausbau für private Hausbesitzer in der ganzen Schweiz. Vom Fundament bis zur Übergabe – präzise, termingerecht und im Budget.",
@@ -422,7 +421,7 @@ export const translations = {
       tag: "Portfolio",
       title: "Unsere Arbeit",
       desc: "Eine Auswahl an abgeschlossenen Projekten – Wohnbau, Wohnungsausbau und Bodenbelagsarbeiten, professionell und mit hochwertigen Materialien ausgeführt.",
-      categories: { all: "Alle", houses: "Häuser", apartments: "Wohnungen", finishes: "Ausbau", floors: "Böden & Fliesen" }
+      categories: { all: "Alle", finishes: "Ausbau", interiors: "Innenräume", exteriors: "Außenbereiche", blocks: "Wohnblöcke", houses: "Häuser" }
     },
     company: {
       tag: "Unternehmen",
@@ -449,7 +448,7 @@ export const translations = {
         materialsDesc: "Wir verwenden Materialien von überprüften Schweizer und europäischen Lieferanten. Wir präsentieren Optionen und Preise transparent – ohne versteckte Kosten."
       },
       journeyTag: "Unser Weg",
-      journeyTitle: "15 Jahre Schweizer Präzision",
+      journeyTitle: "20+ Jahre Erfahrung",
       timeline: [
         { year: "2010", event: "Gründung in der Schweiz – erste Wohnbauprojekte im Raum Zürich" },
         { year: "2013", event: "Ausweitung auf den gesamten Wohnungsbau – erstes komplett errichtetes Haus" },
@@ -457,7 +456,7 @@ export const translations = {
         { year: "2019", event: "Portfolio von über 100 erfolgreich abgeschlossenen Projekten" },
         { year: "2025", event: "Über 200 ausgelieferte Projekte – Vertrauen von Privatkunden in der ganzen Schweiz" }
       ],
-      stats: { years: "Jahre in der Schweiz", projects: "Abgeschlossene Projekte", cantons: "Schweizer Kantone bedient", quality: "Garantierte Qualität" },
+      stats: { years: "Jahre Erfahrung", projects: "Abgeschlossene Projekte", quality: "Garantierte Qualität" },
       commitmentTag: "Unser Engagement",
       commitmentTitle: "Auf Vertrauen gebaut",
       commitmentDesc: "Jedes Projekt, das wir durchführen, ist ein Zeugnis unseres Engagements für Qualität. Von der ersten Beratung bis zur endgültigen Übergabe steht ArcoBau mit voller Transparenz und beruflicher Integrität hinter jeder Entscheidung – auf die Schweizer Art.",
@@ -527,7 +526,7 @@ export const translations = {
       readyToBuild: "Pregătit să Construiești Ceva Extraordinar?",
       contactTeam: "Contactează echipa noastră pentru a discuta proiectul. Aducem măiestria și precizia la fiecare construcție din Elveția — indiferent de mărime.",
       getInTouch: "Ia Legătura Cu Noi",
-      stats: { years: "Ani în Elveția", projects: "Proiecte Finalizate", cantons: "Cantoane Servite", satisfaction: "Satisfacție Clienți" },
+      stats: { years: "Ani de Experiență", projects: "Proiecte Finalizate", satisfaction: "Satisfacție Clienți" },
       services: {
         privateClients: "Clienți Privați",
         privateClientsDesc: "Construcții rezidențiale și finisaje personalizate pentru proprietari din toată Elveția. De la fundație la predare — calitate, la timp și în buget.",
@@ -581,7 +580,7 @@ export const translations = {
       tag: "Portofoliu",
       title: "Lucrările Noastre",
       desc: "O selecție de proiecte finalizate — construcții case, amenajări apartamente, finisaje și podele executate cu profesionalism.",
-      categories: { all: "Toate", houses: "Construcții Case", apartments: "Apartamente", finishes: "Finisaje", floors: "Podele & Gresie" }
+      categories: { all: "Toate", finishes: "Finisaje", interiors: "Interioare", exteriors: "Exterioare", blocks: "Construcții blocuri", houses: "Construcții case" }
     },
     company: {
       tag: "Companie",
@@ -608,7 +607,7 @@ export const translations = {
         materialsDesc: "Folosim materiale de la furnizori europeni și elvețieni verificați, transparente total ca preț."
       },
       journeyTag: "Evoluția",
-      journeyTitle: "15 Ani de Precizie Elvețiană",
+      journeyTitle: "20+ Ani de Experiență",
       timeline: [
         { year: "2010", event: "Fondată în Elveția — primele proiecte în zona Zürich" },
         { year: "2013", event: "Extindere în construcții rezidențiale complete" },
@@ -616,7 +615,7 @@ export const translations = {
         { year: "2019", event: "Peste 100 de proiecte finalizate în diverse cantoane" },
         { year: "2025", event: "200+ proiecte livrate — clienți mulțumiți în toată Elveția" }
       ],
-      stats: { years: "Ani în Elveția", projects: "Proiecte", cantons: "Cantoane Servite", quality: "Calitate Garantată" },
+      stats: { years: "Ani de Experiență", projects: "Proiecte", quality: "Calitate Garantată" },
       commitmentTag: "Angajamentul Nostru",
       commitmentTitle: "Construit pe Încredere",
       commitmentDesc: "Fiecare proiect confirmă angajamentul nostru. De la consultanță la finalizare, ArcoBau oferă transparență și integritate profesională — în stil elvețian.",
@@ -686,7 +685,7 @@ export const translations = {
       readyToBuild: "Pronto per costruire qualcosa di straordinario?",
       contactTeam: "Contatta il nostro team per discutere il tuo progetto. Portiamo precisione svizzera ad ogni costruzione, grande o piccola.",
       getInTouch: "Mettiti in Contatto",
-      stats: { years: "Anni in Svizzera", projects: "Progetti Completati", cantons: "Cantoni Serviti", satisfaction: "Soddisfazione Clienti" },
+      stats: { years: "Anni di Esperienza", projects: "Progetti Completati", satisfaction: "Soddisfazione Clienti" },
       services: {
         privateClients: "Clienti Privati",
         privateClientsDesc: "Costruzione e finitura residenziale su misura. Dalle fondamenta alla consegna: lavorazione di precisione, nei tempi e nel budget.",
@@ -740,7 +739,7 @@ export const translations = {
       tag: "Portfolio",
       title: "I Nostri Lavori",
       desc: "Una selezione di progetti completati, eseguiti con professionalità e materiali di qualità.",
-      categories: { all: "Tutti", houses: "Case", apartments: "Appartamenti", finishes: "Finiture", floors: "Pavimenti & Piastrelle" }
+      categories: { all: "Tutti", finishes: "Finiture", interiors: "Interni", exteriors: "Esterni", blocks: "Condomini", houses: "Case" }
     },
     company: {
       tag: "Azienda",
@@ -767,7 +766,7 @@ export const translations = {
         materialsDesc: "Utilizziamo materiali da fornitori svizzeri verificati. Mostriamo opzioni e prezzi in modo trasparente."
       },
       journeyTag: "Il Nostro Percorso",
-      journeyTitle: "15 Anni di Precisione Svizzera",
+      journeyTitle: "20+ Anni di Esperienza",
       timeline: [
         { year: "2010", event: "Fondata in Svizzera — primi progetti di finitura nell'area di Zurigo" },
         { year: "2013", event: "Espansione nella costruzione residenziale completa" },
@@ -775,7 +774,7 @@ export const translations = {
         { year: "2019", event: "Portfolio di oltre 100 progetti completati" },
         { year: "2025", event: "Oltre 200 progetti consegnati in tutta la Svizzera" }
       ],
-      stats: { years: "Anni in Svizzera", projects: "Progetti Completati", cantons: "Cantoni Serviti", quality: "Qualità Garantita" },
+      stats: { years: "Anni di Esperienza", projects: "Progetti Completati", quality: "Qualità Garantita" },
       commitmentTag: "Il Nostro Impegno",
       commitmentTitle: "Costruito sulla Fiducia",
       commitmentDesc: "Ogni progetto è una testimonianza del nostro impegno per la qualità.",
