@@ -89,9 +89,8 @@ export const translations = {
       desc: "A selection of completed projects — residential construction, apartment finishing, and flooring executed with professionalism and quality materials.",
       categories: {
         all: "All",
-        finishes: "Finishes",
-        interiors: "Interiors",
-        exteriors: "Exteriors",
+        finishesInt: "Interior Finishes",
+        finishesExt: "Exterior Finishes",
         blocks: "Apartment Buildings",
         houses: "Houses"
       }
@@ -262,7 +261,7 @@ export const translations = {
       tag: "Portfolio",
       title: "Notre Travail",
       desc: "Une sélection de projets achevés — construction résidentielle, finition d'appartements et revêtements de sol exécutés avec professionnalisme.",
-      categories: { all: "Tous", finishes: "Finitions", interiors: "Intérieurs", exteriors: "Extérieurs", blocks: "Immeubles", houses: "Maisons" }
+      categories: { all: "Tous", finishesInt: "Finitions Intérieures", finishesExt: "Finitions Extérieures", blocks: "Immeubles", houses: "Maisons" }
     },
     company: {
       tag: "Entreprise",
@@ -421,7 +420,7 @@ export const translations = {
       tag: "Portfolio",
       title: "Unsere Arbeit",
       desc: "Eine Auswahl an abgeschlossenen Projekten – Wohnbau, Wohnungsausbau und Bodenbelagsarbeiten, professionell und mit hochwertigen Materialien ausgeführt.",
-      categories: { all: "Alle", finishes: "Ausbau", interiors: "Innenräume", exteriors: "Außenbereiche", blocks: "Wohnblöcke", houses: "Häuser" }
+      categories: { all: "Alle", finishesInt: "Innenausbau", finishesExt: "Außenausbau", blocks: "Wohnblöcke", houses: "Häuser" }
     },
     company: {
       tag: "Unternehmen",
@@ -580,7 +579,7 @@ export const translations = {
       tag: "Portofoliu",
       title: "Lucrările Noastre",
       desc: "O selecție de proiecte finalizate — construcții case, amenajări apartamente, finisaje și podele executate cu profesionalism.",
-      categories: { all: "Toate", finishes: "Finisaje", interiors: "Interioare", exteriors: "Exterioare", blocks: "Construcții blocuri", houses: "Construcții case" }
+      categories: { all: "Toate", finishesInt: "Finisaje Interioare", finishesExt: "Finisaje Exterioare", blocks: "Construcții blocuri", houses: "Construcții case" }
     },
     company: {
       tag: "Companie",
@@ -739,7 +738,7 @@ export const translations = {
       tag: "Portfolio",
       title: "I Nostri Lavori",
       desc: "Una selezione di progetti completati, eseguiti con professionalità e materiali di qualità.",
-      categories: { all: "Tutti", finishes: "Finiture", interiors: "Interni", exteriors: "Esterni", blocks: "Condomini", houses: "Case" }
+      categories: { all: "Tutti", finishesInt: "Finiture Interni", finishesExt: "Finiture Esterni", blocks: "Condomini", houses: "Case" }
     },
     company: {
       tag: "Azienda",

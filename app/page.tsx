@@ -315,9 +315,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
-              { img: "/images/apartamente/apartament-1.jpg", categoryKey: "interiors" as const, titleKey: "project1" as const },
-              { img: "/images/finisaje/finisaj-5.jpg", categoryKey: "finishes" as const, titleKey: "project2" as const },
-              { img: "/images/case/casa-1.jpg", categoryKey: "houses" as const, titleKey: "project3" as const },
+              { img: "/images/apartamente/apartament-2.jpg", categoryKey: "finishesInt" as const, titleKey: "project1" as const },
+              { img: "/images/case/casa-1.jpg", categoryKey: "finishesExt" as const, titleKey: "project2" as const },
+              { img: "/images/case/casa-8.jpg", categoryKey: "houses" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const titles = {
                 EN: ["Residential Complex", "Complete Interior Finish", "Hardwood Flooring"],
