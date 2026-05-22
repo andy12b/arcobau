@@ -20,9 +20,9 @@ audited_mapping = {
     "casa-1.jpg": "Constructii case",
     "casa-2.jpg": "Finisaje Exterioare",
     "casa-3.jpg": "Finisaje Exterioare",
-    "casa-4.jpg": "Constructii case",
-    "casa-5.jpg": "Constructii case",
-    "casa-6.jpg": "Constructii case",
+    "casa-4.jpg": "Finisaje Exterioare",
+    "casa-5.jpg": "Finisaje Exterioare",
+    "casa-6.jpg": "Finisaje Exterioare",
     "casa-7.jpg": "Constructii blocuri",
     "casa-8.jpg": "Constructii case",
     
