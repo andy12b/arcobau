@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Inspector</title>
+    <style>
+        body { font-family: sans-serif; background: #111; color: #fff; padding: 20px; }
+        h1 { color: #gold; }
+        .group { border: 2px solid #444; margin-bottom: 30px; padding: 20px; border-radius: 8px; }
+        .grid { display: grid; grid-template-cols: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #222; border: 1px solid #333; padding: 10px; border-radius: 4px; text-align: center; }
+        img { max-width: 100%; height: 180px; object-fit: cover; border-radius: 4px; display: block; margin: 0 auto 10px; }
+        .filename { font-weight: bold; color: #00ffcc; font-size: 14px; margin-bottom: 5px; }
+        .folder { color: #ff9900; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>ArcoBau Image Inspector</h1>
+<div class="group"><h2>Folder: apartamente</h2><div class="grid">
+        <div class="card">
+            <img src="/images/apartamente/apartament-1.jpg" alt="apartament-1.jpg">
+            <div class="filename">apartament-1.jpg</div>
+            <div class="folder">apartamente/apartament-1.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-2.jpg" alt="apartament-2.jpg">
+            <div class="filename">apartament-2.jpg</div>
+            <div class="folder">apartamente/apartament-2.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-3.jpg" alt="apartament-3.jpg">
+            <div class="filename">apartament-3.jpg</div>
+            <div class="folder">apartamente/apartament-3.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-4.jpg" alt="apartament-4.jpg">
+            <div class="filename">apartament-4.jpg</div>
+            <div class="folder">apartamente/apartament-4.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-5.jpg" alt="apartament-5.jpg">
+            <div class="filename">apartament-5.jpg</div>
+            <div class="folder">apartamente/apartament-5.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-6.jpg" alt="apartament-6.jpg">
+            <div class="filename">apartament-6.jpg</div>
+            <div class="folder">apartamente/apartament-6.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-7.jpg" alt="apartament-7.jpg">
+            <div class="filename">apartament-7.jpg</div>
+            <div class="folder">apartamente/apartament-7.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-8.jpg" alt="apartament-8.jpg">
+            <div class="filename">apartament-8.jpg</div>
+            <div class="folder">apartamente/apartament-8.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-9.jpg" alt="apartament-9.jpg">
+            <div class="filename">apartament-9.jpg</div>
+            <div class="folder">apartamente/apartament-9.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-10.jpg" alt="apartament-10.jpg">
+            <div class="filename">apartament-10.jpg</div>
+            <div class="folder">apartamente/apartament-10.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-11.jpg" alt="apartament-11.jpg">
+            <div class="filename">apartament-11.jpg</div>
+            <div class="folder">apartamente/apartament-11.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/apartamente/apartament-12.jpg" alt="apartament-12.jpg">
+            <div class="filename">apartament-12.jpg</div>
+            <div class="folder">apartamente/apartament-12.jpg</div>
+        </div>
+    </div></div><div class="group"><h2>Folder: case</h2><div class="grid">
+        <div class="card">
+            <img src="/images/case/casa-1.jpg" alt="casa-1.jpg">
+            <div class="filename">casa-1.jpg</div>
+            <div class="folder">case/casa-1.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-2.jpg" alt="casa-2.jpg">
+            <div class="filename">casa-2.jpg</div>
+            <div class="folder">case/casa-2.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-3.jpg" alt="casa-3.jpg">
+            <div class="filename">casa-3.jpg</div>
+            <div class="folder">case/casa-3.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-4.jpg" alt="casa-4.jpg">
+            <div class="filename">casa-4.jpg</div>
+            <div class="folder">case/casa-4.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-5.jpg" alt="casa-5.jpg">
+            <div class="filename">casa-5.jpg</div>
+            <div class="folder">case/casa-5.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-6.jpg" alt="casa-6.jpg">
+            <div class="filename">casa-6.jpg</div>
+            <div class="folder">case/casa-6.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-7.jpg" alt="casa-7.jpg">
+            <div class="filename">casa-7.jpg</div>
+            <div class="folder">case/casa-7.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/case/casa-8.jpg" alt="casa-8.jpg">
+            <div class="filename">casa-8.jpg</div>
+            <div class="folder">case/casa-8.jpg</div>
+        </div>
+    </div></div><div class="group"><h2>Folder: constructii</h2><div class="grid">
+        <div class="card">
+            <img src="/images/constructii/constructie-1.jpg" alt="constructie-1.jpg">
+            <div class="filename">constructie-1.jpg</div>
+            <div class="folder">constructii/constructie-1.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-2.jpg" alt="constructie-2.jpg">
+            <div class="filename">constructie-2.jpg</div>
+            <div class="folder">constructii/constructie-2.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-3.jpg" alt="constructie-3.jpg">
+            <div class="filename">constructie-3.jpg</div>
+            <div class="folder">constructii/constructie-3.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-4.jpg" alt="constructie-4.jpg">
+            <div class="filename">constructie-4.jpg</div>
+            <div class="folder">constructii/constructie-4.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-5.jpg" alt="constructie-5.jpg">
+            <div class="filename">constructie-5.jpg</div>
+            <div class="folder">constructii/constructie-5.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-6.jpg" alt="constructie-6.jpg">
+            <div class="filename">constructie-6.jpg</div>
+            <div class="folder">constructii/constructie-6.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-7.jpg" alt="constructie-7.jpg">
+            <div class="filename">constructie-7.jpg</div>
+            <div class="folder">constructii/constructie-7.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-8.jpg" alt="constructie-8.jpg">
+            <div class="filename">constructie-8.jpg</div>
+            <div class="folder">constructii/constructie-8.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-9.jpg" alt="constructie-9.jpg">
+            <div class="filename">constructie-9.jpg</div>
+            <div class="folder">constructii/constructie-9.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-10.jpg" alt="constructie-10.jpg">
+            <div class="filename">constructie-10.jpg</div>
+            <div class="folder">constructii/constructie-10.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-11.jpg" alt="constructie-11.jpg">
+            <div class="filename">constructie-11.jpg</div>
+            <div class="folder">constructii/constructie-11.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-12.jpg" alt="constructie-12.jpg">
+            <div class="filename">constructie-12.jpg</div>
+            <div class="folder">constructii/constructie-12.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-13.jpg" alt="constructie-13.jpg">
+            <div class="filename">constructie-13.jpg</div>
+            <div class="folder">constructii/constructie-13.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-14.jpg" alt="constructie-14.jpg">
+            <div class="filename">constructie-14.jpg</div>
+            <div class="folder">constructii/constructie-14.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-15.jpg" alt="constructie-15.jpg">
+            <div class="filename">constructie-15.jpg</div>
+            <div class="folder">constructii/constructie-15.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-16.jpg" alt="constructie-16.jpg">
+            <div class="filename">constructie-16.jpg</div>
+            <div class="folder">constructii/constructie-16.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-17.jpg" alt="constructie-17.jpg">
+            <div class="filename">constructie-17.jpg</div>
+            <div class="folder">constructii/constructie-17.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/constructii/constructie-18.jpg" alt="constructie-18.jpg">
+            <div class="filename">constructie-18.jpg</div>
+            <div class="folder">constructii/constructie-18.jpg</div>
+        </div>
+    </div></div><div class="group"><h2>Folder: finisaje</h2><div class="grid">
+        <div class="card">
+            <img src="/images/finisaje/finisaj-1.jpg" alt="finisaj-1.jpg">
+            <div class="filename">finisaj-1.jpg</div>
+            <div class="folder">finisaje/finisaj-1.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-2.jpg" alt="finisaj-2.jpg">
+            <div class="filename">finisaj-2.jpg</div>
+            <div class="folder">finisaje/finisaj-2.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-3.jpg" alt="finisaj-3.jpg">
+            <div class="filename">finisaj-3.jpg</div>
+            <div class="folder">finisaje/finisaj-3.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-4.jpg" alt="finisaj-4.jpg">
+            <div class="filename">finisaj-4.jpg</div>
+            <div class="folder">finisaje/finisaj-4.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-5.jpg" alt="finisaj-5.jpg">
+            <div class="filename">finisaj-5.jpg</div>
+            <div class="folder">finisaje/finisaj-5.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-6.jpg" alt="finisaj-6.jpg">
+            <div class="filename">finisaj-6.jpg</div>
+            <div class="folder">finisaje/finisaj-6.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-7.jpg" alt="finisaj-7.jpg">
+            <div class="filename">finisaj-7.jpg</div>
+            <div class="folder">finisaje/finisaj-7.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-8.jpg" alt="finisaj-8.jpg">
+            <div class="filename">finisaj-8.jpg</div>
+            <div class="folder">finisaje/finisaj-8.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-9.jpg" alt="finisaj-9.jpg">
+            <div class="filename">finisaj-9.jpg</div>
+            <div class="folder">finisaje/finisaj-9.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-10.jpg" alt="finisaj-10.jpg">
+            <div class="filename">finisaj-10.jpg</div>
+            <div class="folder">finisaje/finisaj-10.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-11.jpg" alt="finisaj-11.jpg">
+            <div class="filename">finisaj-11.jpg</div>
+            <div class="folder">finisaje/finisaj-11.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-12.jpg" alt="finisaj-12.jpg">
+            <div class="filename">finisaj-12.jpg</div>
+            <div class="folder">finisaje/finisaj-12.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-13.jpg" alt="finisaj-13.jpg">
+            <div class="filename">finisaj-13.jpg</div>
+            <div class="folder">finisaje/finisaj-13.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-14.jpg" alt="finisaj-14.jpg">
+            <div class="filename">finisaj-14.jpg</div>
+            <div class="folder">finisaje/finisaj-14.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-15.jpg" alt="finisaj-15.jpg">
+            <div class="filename">finisaj-15.jpg</div>
+            <div class="folder">finisaje/finisaj-15.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-16.jpg" alt="finisaj-16.jpg">
+            <div class="filename">finisaj-16.jpg</div>
+            <div class="folder">finisaje/finisaj-16.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-17.jpg" alt="finisaj-17.jpg">
+            <div class="filename">finisaj-17.jpg</div>
+            <div class="folder">finisaje/finisaj-17.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-18.jpg" alt="finisaj-18.jpg">
+            <div class="filename">finisaj-18.jpg</div>
+            <div class="folder">finisaje/finisaj-18.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-19.jpg" alt="finisaj-19.jpg">
+            <div class="filename">finisaj-19.jpg</div>
+            <div class="folder">finisaje/finisaj-19.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-20.jpg" alt="finisaj-20.jpg">
+            <div class="filename">finisaj-20.jpg</div>
+            <div class="folder">finisaje/finisaj-20.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-21.jpg" alt="finisaj-21.jpg">
+            <div class="filename">finisaj-21.jpg</div>
+            <div class="folder">finisaje/finisaj-21.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-22.jpg" alt="finisaj-22.jpg">
+            <div class="filename">finisaj-22.jpg</div>
+            <div class="folder">finisaje/finisaj-22.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-23.jpg" alt="finisaj-23.jpg">
+            <div class="filename">finisaj-23.jpg</div>
+            <div class="folder">finisaje/finisaj-23.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-24.jpg" alt="finisaj-24.jpg">
+            <div class="filename">finisaj-24.jpg</div>
+            <div class="folder">finisaje/finisaj-24.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-25.jpg" alt="finisaj-25.jpg">
+            <div class="filename">finisaj-25.jpg</div>
+            <div class="folder">finisaje/finisaj-25.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-26.jpg" alt="finisaj-26.jpg">
+            <div class="filename">finisaj-26.jpg</div>
+            <div class="folder">finisaje/finisaj-26.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-27.jpg" alt="finisaj-27.jpg">
+            <div class="filename">finisaj-27.jpg</div>
+            <div class="folder">finisaje/finisaj-27.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-28.jpg" alt="finisaj-28.jpg">
+            <div class="filename">finisaj-28.jpg</div>
+            <div class="folder">finisaje/finisaj-28.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-29.jpg" alt="finisaj-29.jpg">
+            <div class="filename">finisaj-29.jpg</div>
+            <div class="folder">finisaje/finisaj-29.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-30.jpg" alt="finisaj-30.jpg">
+            <div class="filename">finisaj-30.jpg</div>
+            <div class="folder">finisaje/finisaj-30.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-31.jpg" alt="finisaj-31.jpg">
+            <div class="filename">finisaj-31.jpg</div>
+            <div class="folder">finisaje/finisaj-31.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-32.jpg" alt="finisaj-32.jpg">
+            <div class="filename">finisaj-32.jpg</div>
+            <div class="folder">finisaje/finisaj-32.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/finisaje/finisaj-33.jpg" alt="finisaj-33.jpg">
+            <div class="filename">finisaj-33.jpg</div>
+            <div class="folder">finisaje/finisaj-33.jpg</div>
+        </div>
+    </div></div><div class="group"><h2>Folder: podele</h2><div class="grid">
+        <div class="card">
+            <img src="/images/podele/podea-1.jpg" alt="podea-1.jpg">
+            <div class="filename">podea-1.jpg</div>
+            <div class="folder">podele/podea-1.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-2.jpg" alt="podea-2.jpg">
+            <div class="filename">podea-2.jpg</div>
+            <div class="folder">podele/podea-2.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-3.jpg" alt="podea-3.jpg">
+            <div class="filename">podea-3.jpg</div>
+            <div class="folder">podele/podea-3.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-4.jpg" alt="podea-4.jpg">
+            <div class="filename">podea-4.jpg</div>
+            <div class="folder">podele/podea-4.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-5.jpg" alt="podea-5.jpg">
+            <div class="filename">podea-5.jpg</div>
+            <div class="folder">podele/podea-5.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-6.jpg" alt="podea-6.jpg">
+            <div class="filename">podea-6.jpg</div>
+            <div class="folder">podele/podea-6.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-7.jpg" alt="podea-7.jpg">
+            <div class="filename">podea-7.jpg</div>
+            <div class="folder">podele/podea-7.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-8.jpg" alt="podea-8.jpg">
+            <div class="filename">podea-8.jpg</div>
+            <div class="folder">podele/podea-8.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-9.jpg" alt="podea-9.jpg">
+            <div class="filename">podea-9.jpg</div>
+            <div class="folder">podele/podea-9.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-10.jpg" alt="podea-10.jpg">
+            <div class="filename">podea-10.jpg</div>
+            <div class="folder">podele/podea-10.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-11.jpg" alt="podea-11.jpg">
+            <div class="filename">podea-11.jpg</div>
+            <div class="folder">podele/podea-11.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-12.jpg" alt="podea-12.jpg">
+            <div class="filename">podea-12.jpg</div>
+            <div class="folder">podele/podea-12.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-13.jpg" alt="podea-13.jpg">
+            <div class="filename">podea-13.jpg</div>
+            <div class="folder">podele/podea-13.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-14.jpg" alt="podea-14.jpg">
+            <div class="filename">podea-14.jpg</div>
+            <div class="folder">podele/podea-14.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-15.jpg" alt="podea-15.jpg">
+            <div class="filename">podea-15.jpg</div>
+            <div class="folder">podele/podea-15.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-16.jpg" alt="podea-16.jpg">
+            <div class="filename">podea-16.jpg</div>
+            <div class="folder">podele/podea-16.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-17.jpg" alt="podea-17.jpg">
+            <div class="filename">podea-17.jpg</div>
+            <div class="folder">podele/podea-17.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-18.jpg" alt="podea-18.jpg">
+            <div class="filename">podea-18.jpg</div>
+            <div class="folder">podele/podea-18.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-19.jpg" alt="podea-19.jpg">
+            <div class="filename">podea-19.jpg</div>
+            <div class="folder">podele/podea-19.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-20.jpg" alt="podea-20.jpg">
+            <div class="filename">podea-20.jpg</div>
+            <div class="folder">podele/podea-20.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-21.jpg" alt="podea-21.jpg">
+            <div class="filename">podea-21.jpg</div>
+            <div class="folder">podele/podea-21.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-22.jpg" alt="podea-22.jpg">
+            <div class="filename">podea-22.jpg</div>
+            <div class="folder">podele/podea-22.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-23.jpg" alt="podea-23.jpg">
+            <div class="filename">podea-23.jpg</div>
+            <div class="folder">podele/podea-23.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-24.jpg" alt="podea-24.jpg">
+            <div class="filename">podea-24.jpg</div>
+            <div class="folder">podele/podea-24.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-25.jpg" alt="podea-25.jpg">
+            <div class="filename">podea-25.jpg</div>
+            <div class="folder">podele/podea-25.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-26.jpg" alt="podea-26.jpg">
+            <div class="filename">podea-26.jpg</div>
+            <div class="folder">podele/podea-26.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-27.jpg" alt="podea-27.jpg">
+            <div class="filename">podea-27.jpg</div>
+            <div class="folder">podele/podea-27.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-28.jpg" alt="podea-28.jpg">
+            <div class="filename">podea-28.jpg</div>
+            <div class="folder">podele/podea-28.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-29.jpg" alt="podea-29.jpg">
+            <div class="filename">podea-29.jpg</div>
+            <div class="folder">podele/podea-29.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-30.jpg" alt="podea-30.jpg">
+            <div class="filename">podea-30.jpg</div>
+            <div class="folder">podele/podea-30.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-31.jpg" alt="podea-31.jpg">
+            <div class="filename">podea-31.jpg</div>
+            <div class="folder">podele/podea-31.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-32.jpg" alt="podea-32.jpg">
+            <div class="filename">podea-32.jpg</div>
+            <div class="folder">podele/podea-32.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-33.jpg" alt="podea-33.jpg">
+            <div class="filename">podea-33.jpg</div>
+            <div class="folder">podele/podea-33.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-34.jpg" alt="podea-34.jpg">
+            <div class="filename">podea-34.jpg</div>
+            <div class="folder">podele/podea-34.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-35.jpg" alt="podea-35.jpg">
+            <div class="filename">podea-35.jpg</div>
+            <div class="folder">podele/podea-35.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-36.jpg" alt="podea-36.jpg">
+            <div class="filename">podea-36.jpg</div>
+            <div class="folder">podele/podea-36.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-37.jpg" alt="podea-37.jpg">
+            <div class="filename">podea-37.jpg</div>
+            <div class="folder">podele/podea-37.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-38.jpg" alt="podea-38.jpg">
+            <div class="filename">podea-38.jpg</div>
+            <div class="folder">podele/podea-38.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-39.jpg" alt="podea-39.jpg">
+            <div class="filename">podea-39.jpg</div>
+            <div class="folder">podele/podea-39.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-40.jpg" alt="podea-40.jpg">
+            <div class="filename">podea-40.jpg</div>
+            <div class="folder">podele/podea-40.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-41.jpg" alt="podea-41.jpg">
+            <div class="filename">podea-41.jpg</div>
+            <div class="folder">podele/podea-41.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-42.jpg" alt="podea-42.jpg">
+            <div class="filename">podea-42.jpg</div>
+            <div class="folder">podele/podea-42.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-43.jpg" alt="podea-43.jpg">
+            <div class="filename">podea-43.jpg</div>
+            <div class="folder">podele/podea-43.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-44.jpg" alt="podea-44.jpg">
+            <div class="filename">podea-44.jpg</div>
+            <div class="folder">podele/podea-44.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-45.jpg" alt="podea-45.jpg">
+            <div class="filename">podea-45.jpg</div>
+            <div class="folder">podele/podea-45.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-46.jpg" alt="podea-46.jpg">
+            <div class="filename">podea-46.jpg</div>
+            <div class="folder">podele/podea-46.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-47.jpg" alt="podea-47.jpg">
+            <div class="filename">podea-47.jpg</div>
+            <div class="folder">podele/podea-47.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-48.jpg" alt="podea-48.jpg">
+            <div class="filename">podea-48.jpg</div>
+            <div class="folder">podele/podea-48.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-49.jpg" alt="podea-49.jpg">
+            <div class="filename">podea-49.jpg</div>
+            <div class="folder">podele/podea-49.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-50.jpg" alt="podea-50.jpg">
+            <div class="filename">podea-50.jpg</div>
+            <div class="folder">podele/podea-50.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-51.jpg" alt="podea-51.jpg">
+            <div class="filename">podea-51.jpg</div>
+            <div class="folder">podele/podea-51.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-52.jpg" alt="podea-52.jpg">
+            <div class="filename">podea-52.jpg</div>
+            <div class="folder">podele/podea-52.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-53.jpg" alt="podea-53.jpg">
+            <div class="filename">podea-53.jpg</div>
+            <div class="folder">podele/podea-53.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-54.jpg" alt="podea-54.jpg">
+            <div class="filename">podea-54.jpg</div>
+            <div class="folder">podele/podea-54.jpg</div>
+        </div>
+    
+        <div class="card">
+            <img src="/images/podele/podea-55.jpg" alt="podea-55.jpg">
+            <div class="filename">podea-55.jpg</div>
+            <div class="folder">podele/podea-55.jpg</div>
+        </div>
+    
+    </div></div>
+</body>
+</html>
