@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[39756,["/arcobau/_next/static/chunks/0n9lwiosdb5we.js","/arcobau/_next/static/chunks/0gp97h50qa8on.js","/arcobau/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
-3:I[37457,["/arcobau/_next/static/chunks/0n9lwiosdb5we.js","/arcobau/_next/static/chunks/0gp97h50qa8on.js","/arcobau/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+2:I[39756,["/arcobau/_next/static/chunks/0n9lwiosdb5we.js","/arcobau/_next/static/chunks/0w.a-axjygjcz.js","/arcobau/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
+3:I[37457,["/arcobau/_next/static/chunks/0n9lwiosdb5we.js","/arcobau/_next/static/chunks/0w.a-axjygjcz.js","/arcobau/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"O52hGavix7MSVRyU-_CSL"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"DSAXKJTQv7l1re99y4l1V"}
