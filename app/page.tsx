@@ -35,7 +35,7 @@ export default function HomePage() {
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
       href: "/expertise",
-      img: "/images/apartamente/apartament-4.jpg",
+      img: "/images/case/casa-1.jpg",
     },
     {
       icon: (
@@ -49,7 +49,7 @@ export default function HomePage() {
       description: t.home.services.aptFinishingDesc,
       cta: t.home.services.learnMore,
       href: "/expertise",
-      img: "/images/apartamente/apartament-12.jpg",
+      img: "/images/podele/podea-8.jpg",
     },
     {
       icon: (
@@ -62,7 +62,7 @@ export default function HomePage() {
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
       href: "/expertise",
-      img: "/images/podele/podea-8.jpg",
+      img: "/images/constructii/constructie-9.jpg",
     },
   ];
 
@@ -237,8 +237,8 @@ export default function HomePage() {
             <AnimatedSection animation="slide-left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={heroImages[1]}
-                  alt="Finisaje premium ArcoBau"
+                  src="/images/podele/podea-43.jpg"
+                  alt="Calitate premium ArcoBau"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                 />

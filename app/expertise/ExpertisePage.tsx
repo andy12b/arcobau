@@ -39,7 +39,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.intBody,
       cta: t.expertise.services.intCta,
       features: t.expertise.services.intFeatures,
-      img: "/images/apartamente/apartament-12.jpg",
+      img: "/images/podele/podea-8.jpg",
       href: "/contact",
     },
     {
@@ -55,7 +55,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.floorBody,
       cta: t.expertise.services.floorCta,
       features: t.expertise.services.floorFeatures,
-      img: "/images/podele/podea-8.jpg",
+      img: "/images/constructii/constructie-9.jpg",
       href: "/contact",
     },
   ];
