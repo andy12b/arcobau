@@ -13,8 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 // Imagini hero din portofoliu real
 const heroImages = [
   "/images/apartamente/apartament-1.jpg",
-  "/images/finisaje/finisaj-30.jpg",
-  "/images/case/casa-1.jpg",
+  "/images/constructii/constructie-2.jpg",
+  "/images/finisaje/finisaj-4.jpg",
 ];
 
 export default function HomePage() {
@@ -35,7 +35,7 @@ export default function HomePage() {
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
       href: "/expertise",
-      img: "/images/case/casa-1.jpg",
+      img: "/images/constructii/constructie-5.jpg",
     },
     {
       icon: (
@@ -49,7 +49,7 @@ export default function HomePage() {
       description: t.home.services.aptFinishingDesc,
       cta: t.home.services.learnMore,
       href: "/expertise",
-      img: "/images/apartamente/apartament-9.jpg",
+      img: "/images/finisaje/finisaj-10.jpg",
     },
     {
       icon: (
@@ -62,7 +62,7 @@ export default function HomePage() {
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
       href: "/expertise",
-      img: "/images/podele/podea-8.jpg",
+      img: "/images/constructii/constructie-12.jpg",
     },
   ];
 
@@ -315,9 +315,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
-              { img: "/images/apartamente/apartament-2.jpg", categoryKey: "finishesInt" as const, titleKey: "project1" as const },
-              { img: "/images/case/casa-1.jpg", categoryKey: "finishesExt" as const, titleKey: "project2" as const },
-              { img: "/images/case/casa-8.jpg", categoryKey: "houses" as const, titleKey: "project3" as const },
+              { img: "/images/finisaje/finisaj-2.jpg", categoryKey: "finishesInt" as const, titleKey: "project1" as const },
+              { img: "/images/finisaje/finisaj-31.jpg", categoryKey: "finishesExt" as const, titleKey: "project2" as const },
+              { img: "/images/constructii/constructie-7.jpg", categoryKey: "blocks" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const titles = {
                 EN: ["Residential Complex", "Complete Interior Finish", "Hardwood Flooring"],

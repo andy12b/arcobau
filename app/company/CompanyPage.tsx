@@ -10,17 +10,17 @@ export default function CompanyPage() {
 
   const cards = [
     {
-      img: "/images/case/casa-1.jpg",
+      img: "/images/constructii/constructie-5.jpg",
       title: t.company.cards.heritageTitle,
       body: t.company.cards.heritageDesc,
     },
     {
-      img: "/images/apartamente/apartament-9.jpg",
+      img: "/images/finisaje/finisaj-10.jpg",
       title: t.company.cards.missionTitle,
       body: t.company.cards.missionDesc,
     },
     {
-      img: "/images/finisaje/finisaj-18.jpg",
+      img: "/images/constructii/constructie-12.jpg",
       title: t.company.cards.valuesTitle,
       body: t.company.cards.valuesDesc,
     },

@@ -22,7 +22,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.resBody,
       cta: t.expertise.services.resCta,
       features: t.expertise.services.resFeatures,
-      img: "/images/case/casa-1.jpg",
+      img: "/images/constructii/constructie-5.jpg",
       href: "/contact",
     },
     {
@@ -39,7 +39,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.intBody,
       cta: t.expertise.services.intCta,
       features: t.expertise.services.intFeatures,
-      img: "/images/apartamente/apartament-9.jpg",
+      img: "/images/finisaje/finisaj-10.jpg",
       href: "/contact",
     },
     {
@@ -55,7 +55,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.floorBody,
       cta: t.expertise.services.floorCta,
       features: t.expertise.services.floorFeatures,
-      img: "/images/podele/podea-8.jpg",
+      img: "/images/constructii/constructie-12.jpg",
       href: "/contact",
     },
   ];
