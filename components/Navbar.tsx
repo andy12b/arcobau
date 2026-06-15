@@ -160,8 +160,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        <div className={`md:hidden overflow-hidden transition-all duration-500 bg-white border-t border-outline-variant/20 ${mobileOpen ? "max-h-screen py-6" : "max-h-0"}`}>
+        <div className={`md:hidden transition-all duration-500 bg-white border-t border-outline-variant/20 ${mobileOpen ? "max-h-[calc(100vh-80px)] overflow-y-auto py-6" : "max-h-0 overflow-hidden"}`}>
           <div className="px-margin-mobile flex flex-col gap-4">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;

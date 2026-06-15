@@ -339,11 +339,11 @@ export default function HomePage() {
                       src={item.img}
                       alt={category}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="object-cover md:group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-colors duration-500" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                      <span className="text-pure-white text-xs font-semibold tracking-widest uppercase">
+                    <div className="absolute inset-0 bg-charcoal/20 md:bg-charcoal/0 md:group-hover:bg-charcoal/40 transition-colors duration-500" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-500">
+                      <span className="text-pure-white text-xs font-semibold tracking-widest uppercase shadow-sm">
                         {category}
                       </span>
                     </div>

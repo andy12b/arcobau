@@ -145,10 +145,10 @@ export default function PortfolioPage() {
                       src={project.img}
                       alt={getTranslatedTitle(project)}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="object-cover md:group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/50 transition-colors duration-500" />
-                    <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
+                    <div className="absolute inset-0 bg-charcoal/0 md:group-hover:bg-charcoal/50 transition-colors duration-500" />
+                    <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 translate-y-4 md:group-hover:translate-y-0">
                       <span className="text-gold-ochre text-xs font-semibold tracking-widest uppercase mb-1">
                         {filterObj ? filterObj.label : project.category}
                       </span>

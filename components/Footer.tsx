@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-primary border-t border-outline-variant/10">
-      <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop pt-16 md:pt-24 pb-12">
+      <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop pt-16 md:pt-24 pb-24 md:pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           
           {/* Brand & Contact Info */}
