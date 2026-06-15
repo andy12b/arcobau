@@ -12,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Imagini hero din portofoliu real
 const heroImages = [
-  "/images/apartamente/apartament-1.jpg",
-  "/images/case/casa-1.jpg",
-  "/images/apartamente/apartament-2.jpg",
+  "/images/fatade-blocuri/fatade-blocuri-1.jpeg",
+  "/images/fatade-case/fatade-case-1.jpeg",
+  "/images/ceramica/ceramica-2.jpeg",
 ];
 
 export default function HomePage() {
@@ -35,7 +35,7 @@ export default function HomePage() {
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
       href: "/expertise",
-      img: "/images/case/casa-1.jpg",
+      img: "/images/fatade-case/fatade-case-1.jpeg",
     },
     {
       icon: (
@@ -49,7 +49,7 @@ export default function HomePage() {
       description: t.home.services.aptFinishingDesc,
       cta: t.home.services.learnMore,
       href: "/expertise",
-      img: "/images/podele/podea-8.jpg",
+      img: "/images/fatade-blocuri/fatade-blocuri-2.jpeg",
     },
     {
       icon: (
@@ -62,7 +62,7 @@ export default function HomePage() {
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
       href: "/expertise",
-      img: "/images/constructii/constructie-9.jpg",
+      img: "/images/fatade-case/fatade-case-1.jpeg",
     },
   ];
 
@@ -237,7 +237,7 @@ export default function HomePage() {
             <AnimatedSection animation="slide-left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/podele/podea-43.jpg"
+                  src="/images/ceramica/ceramica-3.jpeg"
                   alt="Calitate premium ArcoBau"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -315,9 +315,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
-              { img: "/images/finisaje/finisaj-18.jpg", categoryKey: "finishesInt" as const, titleKey: "project1" as const },
-              { img: "/images/case/casa-2.jpg", categoryKey: "finishesExt" as const, titleKey: "project2" as const },
-              { img: "/images/apartamente/apartament-5.jpg", categoryKey: "blocks" as const, titleKey: "project3" as const },
+              { img: "/images/ceramica/ceramica-4.jpeg", categoryKey: "ceramica" as const, titleKey: "project1" as const },
+              { img: "/images/fatade-case/fatade-case-1.jpeg", categoryKey: "fatadeCase" as const, titleKey: "project2" as const },
+              { img: "/images/fatade-blocuri/fatade-blocuri-3.jpeg", categoryKey: "fatadeBlocuri" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const titles = {
                 EN: ["Residential Complex", "Complete Interior Finish", "Hardwood Flooring"],
