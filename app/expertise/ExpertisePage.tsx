@@ -22,7 +22,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.resBody,
       cta: t.expertise.services.resCta,
       features: t.expertise.services.resFeatures,
-      img: "/images/fatade-case/fatade-case-1.jpeg",
+      img: "/images/ceramica/ceramica-6.jpeg",
       href: "/contact",
     },
     {
@@ -55,7 +55,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.floorBody,
       cta: t.expertise.services.floorCta,
       features: t.expertise.services.floorFeatures,
-      img: "/images/fatade-case/fatade-case-1.jpeg",
+      img: "/images/fatade-case/fatade-case-4.jpeg",
       href: "/contact",
     },
   ];

@@ -12,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Imagini hero din portofoliu real
 const heroImages = [
-  "/images/fatade-blocuri/fatade-blocuri-1.jpeg",
   "/images/fatade-case/fatade-case-1.jpeg",
-  "/images/ceramica/ceramica-2.jpeg",
+  "/images/ceramica/ceramica-4.jpeg",
+  "/images/fatade-blocuri/fatade-blocuri-3.jpeg",
 ];
 
 export default function HomePage() {
@@ -35,7 +35,7 @@ export default function HomePage() {
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
       href: "/expertise",
-      img: "/images/fatade-case/fatade-case-1.jpeg",
+      img: "/images/ceramica/ceramica-5.jpeg",
     },
     {
       icon: (
@@ -62,7 +62,7 @@ export default function HomePage() {
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
       href: "/expertise",
-      img: "/images/fatade-case/fatade-case-1.jpeg",
+      img: "/images/fatade-case/fatade-case-3.jpeg",
     },
   ];
 
@@ -320,11 +320,11 @@ export default function HomePage() {
               { img: "/images/fatade-blocuri/fatade-blocuri-3.jpeg", categoryKey: "fatadeBlocuri" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const titles = {
-                EN: ["Residential Complex", "Complete Interior Finish", "Hardwood Flooring"],
-                DE: ["Wohnanlage", "Kompletter Innenausbau", "Parkettboden"],
-                FR: ["Complexe Résidentiel", "Finition Intérieure Complète", "Parquet Bois"],
-                RO: ["Ansamblu Rezidențial", "Finisaj Interior Complet", "Parchet Lemn"],
-                IT: ["Complesso Residenziale", "Finitura Completa", "Parquet in Legno"],
+                EN: ["Premium Ceramic Tiling", "House Facade & Insulation", "Residential Block Facade"],
+                DE: ["Premium-Keramikfliesen", "Hausfassade & Isolierung", "Fassade für Wohnblöcke"],
+                FR: ["Carrelage Céramique Premium", "Façade & Isolation Maison", "Façade Immeuble Résidentiel"],
+                RO: ["Placări Ceramice Premium", "Izolație și Fațadă Casă", "Fațadă Bloc Rezidențial"],
+                IT: ["Piastrellatura in Ceramica", "Facciata e Isolamento Casa", "Facciata Condominio"],
               };
               const category = t.portfolio.categories[item.categoryKey];
               return (
