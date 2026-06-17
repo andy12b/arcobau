@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_CH",
   },
+  other: {
+    google: "notranslate",
+  },
 };
 
 export default function RootLayout({
@@ -33,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={hankenGrotesk.variable} translate="no">
+    <html lang="de" className={`${hankenGrotesk.variable} notranslate`} translate="no">
       <body className="bg-surface text-on-surface antialiased font-sans">
         <LanguageProvider>
           <Navbar />
