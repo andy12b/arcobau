@@ -29,9 +29,9 @@ export default function PortfolioPage() {
 
   const categories = [
     { id: "All", label: t.portfolio.categories.all },
-    { id: "ceramica", label: t.portfolio.categories.ceramica },
     { id: "fatade-blocuri", label: t.portfolio.categories.fatadeBlocuri },
     { id: "fatade-case", label: t.portfolio.categories.fatadeCase },
+    { id: "ceramica", label: t.portfolio.categories.ceramica },
     { id: "structuri", label: t.portfolio.categories.structuri },
   ];
 
