@@ -91,7 +91,8 @@ export const translations = {
         all: "All",
         ceramica: "Ceramics",
         fatadeBlocuri: "Apartment Facades",
-        fatadeCase: "House Facades"
+        fatadeCase: "House Facades",
+        structuri: "Structures"
       }
     },
     company: {
@@ -264,7 +265,8 @@ export const translations = {
         all: "Tout",
         ceramica: "Céramique",
         fatadeBlocuri: "Façades Immeubles",
-        fatadeCase: "Façades Maisons"
+        fatadeCase: "Façades Maisons",
+        structuri: "Structures"
       }
     },
     company: {
@@ -428,7 +430,8 @@ export const translations = {
         all: "Alle",
         ceramica: "Keramik",
         fatadeBlocuri: "Blockfassaden",
-        fatadeCase: "Hausfassaden"
+        fatadeCase: "Hausfassaden",
+        structuri: "Strukturen"
       }
     },
     company: {
@@ -590,9 +593,10 @@ export const translations = {
       desc: "O selecție de proiecte finalizate — construcții case, amenajări apartamente, finisaje și podele executate cu profesionalism.",
       categories: {
         all: "Toate",
-        ceramica: "Ceramică exterior și interior",
+        ceramica: "Ceramică",
         fatadeBlocuri: "Fațade blocuri",
-        fatadeCase: "Fațade case"
+        fatadeCase: "Fațade case",
+        structuri: "Structuri"
       }
     },
     company: {
@@ -756,7 +760,8 @@ export const translations = {
         all: "Tutti",
         ceramica: "Ceramica",
         fatadeBlocuri: "Facciate Condomini",
-        fatadeCase: "Facciate Case"
+        fatadeCase: "Facciate Case",
+        structuri: "Strutture"
       }
     },
     company: {

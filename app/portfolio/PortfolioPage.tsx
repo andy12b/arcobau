@@ -18,6 +18,7 @@ export default function PortfolioPage() {
       "ceramica": { EN: `Ceramics ${id}`, DE: `Keramik ${id}`, FR: `Céramique ${id}`, RO: `Ceramică ${id}`, IT: `Ceramica ${id}` },
       "fatade-blocuri": { EN: `Block Facade ${id}`, DE: `Blockfassade ${id}`, FR: `Façade Immeuble ${id}`, RO: `Fațadă Bloc ${id}`, IT: `Facciata Condominio ${id}` },
       "fatade-case": { EN: `House Facade ${id}`, DE: `Hausfassade ${id}`, FR: `Façade Maison ${id}`, RO: `Fațadă Casă ${id}`, IT: `Facciata Casa ${id}` },
+      "structuri": { EN: `Structure ${id}`, DE: `Struktur ${id}`, FR: `Structure ${id}`, RO: `Structură ${id}`, IT: `Struttura ${id}` },
     };
     return titles[category]?.[language] || `Project ${id}`;
   };
@@ -31,6 +32,7 @@ export default function PortfolioPage() {
     { id: "ceramica", label: t.portfolio.categories.ceramica },
     { id: "fatade-blocuri", label: t.portfolio.categories.fatadeBlocuri },
     { id: "fatade-case", label: t.portfolio.categories.fatadeCase },
+    { id: "structuri", label: t.portfolio.categories.structuri },
   ];
 
   const projects = [
