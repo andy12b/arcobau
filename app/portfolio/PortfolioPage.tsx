@@ -29,8 +29,8 @@ export default function PortfolioPage() {
 
   const categories = [
     { id: "All", label: t.portfolio.categories.all },
-    { id: "fatade-blocuri", label: t.portfolio.categories.fatadeBlocuri },
     { id: "fatade-case", label: t.portfolio.categories.fatadeCase },
+    { id: "fatade-blocuri", label: t.portfolio.categories.fatadeBlocuri },
     { id: "ceramica", label: t.portfolio.categories.ceramica },
     { id: "structuri", label: t.portfolio.categories.structuri },
   ];
@@ -166,7 +166,7 @@ export default function PortfolioPage() {
       <section className="py-8 md:py-24 bg-surface">
         <div className="max-w-content mx-auto px-1 md:px-margin-desktop">
           {/* Changed grid-cols-1 to grid-cols-3 for mobile, very small gap */}
-          <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6">
+          <div key={activeCategory} className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6">
             {filtered.map((project, i) => {
               const filterObj = categories.find(f => f.id === project.category);
               return (
