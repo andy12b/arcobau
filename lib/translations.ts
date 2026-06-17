@@ -177,10 +177,10 @@ export const translations = {
       legal: "Legal",
       followUs: "Follow Us",
       servicesList: {
-        houses: "House Construction",
-        interiors: "Interior Finishing",
-        floors: "Flooring & Tiles",
-        apartments: "Apartments"
+        interior: "Interior Finishes",
+        exterior: "Exterior Finishes",
+        structure: "Structural Works",
+        ceramics: "Ceramics"
       }
     }
   },
@@ -346,7 +346,7 @@ export const translations = {
       services: "Services",
       legal: "Mentions Légales",
       followUs: "Suivez-Nous",
-      servicesList: { houses: "Construction de Maisons", interiors: "Finition Intérieure", floors: "Sols & Carrelages", apartments: "Appartements" }
+      servicesList: { interior: "Finitions Intérieures", exterior: "Finitions Extérieures", structure: "Travaux Structurels", ceramics: "Céramique" }
     }
   },
   DE: {
@@ -511,7 +511,7 @@ export const translations = {
       services: "Dienstleistungen",
       legal: "Rechtliches",
       followUs: "Folgen Sie uns",
-      servicesList: { houses: "Hausbau", interiors: "Innenausbau", floors: "Böden & Fliesen", apartments: "Wohnungen" }
+      servicesList: { interior: "Innenausbau", exterior: "Außenausbau", structure: "Rohbau & Struktur", ceramics: "Keramik" }
     }
   },
   RO: {
@@ -676,7 +676,7 @@ export const translations = {
       services: "Servicii",
       legal: "Informații Legale",
       followUs: "Urmărește-ne",
-      servicesList: { houses: "Construcții Case", interiors: "Finisaje Interioare", floors: "Podele & Gresie", apartments: "Apartamente" }
+      servicesList: { interior: "Finisaje interioare", exterior: "Finisaje exterioare", structure: "Structuri", ceramics: "Ceramică" }
     }
   },
   IT: {
@@ -841,7 +841,7 @@ export const translations = {
       services: "Servizi",
       legal: "Note Legali",
       followUs: "Seguici",
-      servicesList: { houses: "Costruzione Case", interiors: "Finiture d'Interni", floors: "Pavimenti & Piastrelle", apartments: "Appartamenti" }
+      servicesList: { interior: "Finiture d'Interni", exterior: "Finiture d'Esterni", structure: "Lavori Strutturali", ceramics: "Ceramica" }
     }
   }
 };

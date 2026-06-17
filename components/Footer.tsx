@@ -101,7 +101,7 @@ export default function Footer() {
               {t.footer.services}
             </h4>
             <div className="flex flex-col gap-4">
-              {[t.footer.servicesList.houses, t.footer.servicesList.interiors, t.footer.servicesList.floors, t.footer.servicesList.apartments].map((item) => (
+              {[t.footer.servicesList.interior, t.footer.servicesList.exterior, t.footer.servicesList.structure, t.footer.servicesList.ceramics].map((item) => (
                 <Link
                   key={item}
                   href="/expertise"
