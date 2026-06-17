@@ -34,7 +34,7 @@ export default function PortfolioPage() {
   ];
 
   const projects = [
-    { id: 1, title: "Project 1", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-1.jpeg", size: "large" },
+    { id: 1, title: "Project 1", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-1.jpeg", size: "small" },
     { id: 2, title: "Project 2", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-2.jpeg", size: "small" },
     { id: 3, title: "Project 3", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-3.jpeg", size: "small" },
     { id: 4, title: "Project 4", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-4.jpeg", size: "small" },
@@ -62,7 +62,7 @@ export default function PortfolioPage() {
     { id: 26, title: "Project 26", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-26.jpeg", size: "small" },
     { id: 27, title: "Project 27", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-27.jpeg", size: "small" },
     { id: 28, title: "Project 28", baseCat: "ceramica", category: "ceramica", img: "/images/ceramica/ceramica-28.jpeg", size: "small" },
-    { id: 29, title: "Project 29", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-1.jpeg", size: "large" },
+    { id: 29, title: "Project 29", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-1.jpeg", size: "small" },
     { id: 30, title: "Project 30", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-2.jpeg", size: "small" },
     { id: 31, title: "Project 31", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-3.jpeg", size: "small" },
     { id: 32, title: "Project 32", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-4.jpeg", size: "small" },
@@ -76,7 +76,7 @@ export default function PortfolioPage() {
     { id: 40, title: "Project 40", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-12.jpeg", size: "small" },
     { id: 41, title: "Project 41", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-13.jpeg", size: "small" },
     { id: 42, title: "Project 42", baseCat: "fatade-blocuri", category: "fatade-blocuri", img: "/images/fatade-blocuri/fatade-blocuri-14.jpeg", size: "small" },
-    { id: 43, title: "Project 43", baseCat: "fatade-case", category: "fatade-case", img: "/images/fatade-case/fatade-case-1.jpeg", size: "large" },
+    { id: 43, title: "Project 43", baseCat: "fatade-case", category: "fatade-case", img: "/images/fatade-case/fatade-case-1.jpeg", size: "small" },
     { id: 44, title: "Project 44", baseCat: "fatade-case", category: "fatade-case", img: "/images/fatade-case/fatade-case-2.jpeg", size: "small" },
     { id: 45, title: "Project 45", baseCat: "fatade-case", category: "fatade-case", img: "/images/fatade-case/fatade-case-3.jpeg", size: "small" },
     { id: 46, title: "Project 46", baseCat: "fatade-case", category: "fatade-case", img: "/images/fatade-case/fatade-case-4.jpeg", size: "small" },
