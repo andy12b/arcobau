@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={hankenGrotesk.variable}>
+    <html lang="de" className={hankenGrotesk.variable} translate="no">
       <body className="bg-surface text-on-surface antialiased font-sans">
         <LanguageProvider>
           <Navbar />

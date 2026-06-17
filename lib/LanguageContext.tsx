@@ -14,7 +14,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<LanguageCode>("EN");
+  const [language, setLanguageState] = useState<LanguageCode>("DE");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -23,11 +23,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     if (savedLang && Object.keys(translations).includes(savedLang)) {
       setLanguageState(savedLang);
     } else {
-      // Default to EN or check browser language
-      const browserLang = navigator.language.slice(0, 2).toUpperCase();
-      if (Object.keys(translations).includes(browserLang)) {
-        setLanguageState(browserLang as LanguageCode);
-      }
+      setLanguageState("DE");
     }
   }, []);
 
@@ -36,12 +32,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("arcobau_lang", lang);
   };
 
-  const t = translations[language] || translations.EN;
+  const t = translations[language] || translations.DE;
 
   // Prevent hydration mismatch by not rendering until mounted
   if (!mounted) {
     return (
-      <LanguageContext.Provider value={{ language: "EN", setLanguage, t: translations.EN }}>
+      <LanguageContext.Provider value={{ language: "DE", setLanguage, t: translations.DE }}>
         {children}
       </LanguageContext.Provider>
     );
