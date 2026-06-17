@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -9,7 +9,11 @@ export default function PortfolioPage() {
   const { t, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState("All");
 
-    const generateTitle = (category: string, id: number) => {
+  // Lightbox state
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const generateTitle = (category: string, id: number) => {
     const titles: Record<string, Record<string, string>> = {
       "ceramica": { EN: `Ceramics ${id}`, DE: `Keramik ${id}`, FR: `Céramique ${id}`, RO: `Ceramică ${id}`, IT: `Ceramica ${id}` },
       "fatade-blocuri": { EN: `Block Facade ${id}`, DE: `Blockfassade ${id}`, FR: `Façade Immeuble ${id}`, RO: `Fațadă Bloc ${id}`, IT: `Facciata Condominio ${id}` },
@@ -79,11 +83,42 @@ export default function PortfolioPage() {
     { id: 47, title: "Project 47", baseCat: "fatade-case", category: "fatade-case", img: "/images/fatade-case/fatade-case-5.jpeg", size: "small" },
   ];
 
-
-
   const filtered = activeCategory === "All"
     ? projects
     : projects.filter((p) => p.category === activeCategory);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    document.body.style.overflow = "";
+  };
+
+  const nextImage = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setLightboxIndex((prev) => (prev + 1) % filtered.length);
+  };
+
+  const prevImage = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setLightboxIndex((prev) => (prev - 1 + filtered.length) % filtered.length);
+  };
+
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!lightboxOpen) return;
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "Escape") closeLightbox();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxOpen]);
 
   return (
     <div className="pt-20 pb-20 md:pb-0">
@@ -105,14 +140,14 @@ export default function PortfolioPage() {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-8 bg-surface border-b border-outline-variant/20 sticky top-20 z-30 bg-white/95 backdrop-blur-md">
+      <section className="py-4 md:py-8 bg-surface border-b border-outline-variant/20 sticky top-20 z-30 bg-white/95 backdrop-blur-md">
         <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 md:gap-2">
             {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`text-xs font-semibold tracking-widest uppercase px-6 py-3 transition-all duration-300 ${
+                className={`text-[10px] md:text-xs font-semibold tracking-widest uppercase px-3 py-2 md:px-6 md:py-3 transition-all duration-300 ${
                   activeCategory === cat.id
                     ? "bg-charcoal text-pure-white"
                     : "bg-transparent text-on-surface-variant border border-outline-variant/40 hover:border-charcoal hover:text-charcoal"
@@ -126,21 +161,26 @@ export default function PortfolioPage() {
       </section>
 
       {/* Grid */}
-      <section className="py-16 md:py-24 bg-surface">
-        <div className="max-w-content mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-8 md:py-24 bg-surface">
+        <div className="max-w-content mx-auto px-1 md:px-margin-desktop">
+          {/* Changed grid-cols-1 to grid-cols-3 for mobile, very small gap */}
+          <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6">
             {filtered.map((project, i) => {
               const filterObj = categories.find(f => f.id === project.category);
               return (
                 <AnimatedSection
                   key={project.id}
                   animation="fade-up"
-                  delay={i * 0.06}
+                  delay={i * 0.03}
                   className={`group cursor-pointer ${
-                    project.size === "large" ? "md:col-span-2 lg:col-span-2" : ""
+                    project.size === "large" ? "col-span-3 md:col-span-2 lg:col-span-2" : "col-span-1"
                   }`}
                 >
-                  <div className={`relative overflow-hidden ${project.size === "large" ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
+                  {/* Changed aspect ratios for mobile vs desktop */}
+                  <div 
+                    onClick={() => openLightbox(i)}
+                    className={`relative overflow-hidden ${project.size === "large" ? "aspect-[16/9]" : "aspect-square md:aspect-[4/3]"}`}
+                  >
                     <Image
                       src={project.img}
                       alt={getTranslatedTitle(project)}
@@ -148,14 +188,18 @@ export default function PortfolioPage() {
                       className="object-cover md:group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-charcoal/0 md:group-hover:bg-charcoal/50 transition-colors duration-500" />
-                    <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 translate-y-4 md:group-hover:translate-y-0">
+                    
+                    {/* Hover text only visible on desktop */}
+                    <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 translate-y-4 md:group-hover:translate-y-0 hidden md:flex">
                       <span className="text-gold-ochre text-xs font-semibold tracking-widest uppercase mb-1">
                         {filterObj ? filterObj.label : project.category}
                       </span>
                       <h3 className="text-pure-white font-bold text-lg">{getTranslatedTitle(project)}</h3>
                     </div>
                   </div>
-                  <div className="pt-4 pb-2 border-b border-outline-variant/20 flex items-start justify-between">
+                  
+                  {/* Title under image only visible on desktop */}
+                  <div className="pt-4 pb-2 border-b border-outline-variant/20 hidden md:flex items-start justify-between">
                     <div>
                       <h3 className="font-semibold text-charcoal text-base mb-1">{getTranslatedTitle(project)}</h3>
                     </div>
@@ -169,6 +213,72 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      {/* Lightbox Overlay */}
+      {lightboxOpen && (
+        <div 
+          className="fixed inset-0 z-[100] bg-charcoal/95 backdrop-blur-sm flex items-center justify-center" 
+          onClick={closeLightbox}
+        >
+          {/* Close button */}
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gold-ochre p-4 z-50 transition-colors"
+            onClick={closeLightbox}
+            aria-label="Close"
+          >
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          
+          {/* Prev button */}
+          <button 
+            className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-gold-ochre p-2 md:p-4 z-50 transition-colors"
+            onClick={prevImage}
+            aria-label="Previous"
+          >
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          
+          {/* Main Image Container */}
+          <div 
+            className="relative w-full h-[70vh] md:h-[85vh] max-w-6xl mx-auto px-16 md:px-24 flex items-center justify-center" 
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={filtered[lightboxIndex].img}
+              alt={getTranslatedTitle(filtered[lightboxIndex])}
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+
+          {/* Next button */}
+          <button 
+            className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-gold-ochre p-2 md:p-4 z-50 transition-colors"
+            onClick={nextImage}
+            aria-label="Next"
+          >
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          
+          {/* Caption */}
+          <div className="absolute bottom-6 md:bottom-8 left-0 right-0 text-center px-4" onClick={(e) => e.stopPropagation()}>
+            <h3 className="font-bold text-lg md:text-xl text-white mb-1">
+              {getTranslatedTitle(filtered[lightboxIndex])}
+            </h3>
+            <p className="text-white/60 text-sm tracking-widest uppercase">
+              {lightboxIndex + 1} / {filtered.length}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
