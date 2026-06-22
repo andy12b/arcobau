@@ -39,7 +39,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.intBody,
       cta: t.expertise.services.intCta,
       features: t.expertise.services.intFeatures,
-      img: "/images/fatade-blocuri/fatade-blocuri-2.jpeg",
+      img: "/images/termosistem/termosistem-2.jpeg",
       href: "/contact",
     },
     {
@@ -55,7 +55,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.floorBody,
       cta: t.expertise.services.floorCta,
       features: t.expertise.services.floorFeatures,
-      img: "/images/fatade-case/fatade-case-4.jpeg",
+      img: "/images/structuri/structuri-1.jpeg",
       href: "/contact",
     },
   ];

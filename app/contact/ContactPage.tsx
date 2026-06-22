@@ -41,7 +41,7 @@ export default function ContactPage() {
         </svg>
       ),
       label: t.contact.phone,
-      value: "+41 44 100 00 00",
+      value: "076 726 80 88 (Nicolae Danciu - Director)",
     },
     {
       icon: (

@@ -12,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Imagini hero din portofoliu real
 const heroImages = [
-  "/images/fatade-case/fatade-case-1.jpeg",
+  "/images/termosistem/termosistem-1.jpeg",
   "/images/ceramica/ceramica-4.jpeg",
-  "/images/fatade-blocuri/fatade-blocuri-3.jpeg",
+  "/images/finisaje/finisaje-1.jpeg",
 ];
 
 export default function HomePage() {
@@ -49,7 +49,7 @@ export default function HomePage() {
       description: t.home.services.aptFinishingDesc,
       cta: t.home.services.learnMore,
       href: "/expertise",
-      img: "/images/fatade-blocuri/fatade-blocuri-2.jpeg",
+      img: "/images/termosistem/termosistem-2.jpeg",
     },
     {
       icon: (
@@ -62,7 +62,7 @@ export default function HomePage() {
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
       href: "/expertise",
-      img: "/images/fatade-case/fatade-case-3.jpeg",
+      img: "/images/structuri/structuri-1.jpeg",
     },
   ];
 
@@ -316,8 +316,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
               { img: "/images/ceramica/ceramica-4.jpeg", categoryKey: "ceramica" as const, titleKey: "project1" as const },
-              { img: "/images/fatade-case/fatade-case-1.jpeg", categoryKey: "fatadeCase" as const, titleKey: "project2" as const },
-              { img: "/images/fatade-blocuri/fatade-blocuri-3.jpeg", categoryKey: "fatadeBlocuri" as const, titleKey: "project3" as const },
+              { img: "/images/termosistem/termosistem-1.jpeg", categoryKey: "termosistem" as const, titleKey: "project2" as const },
+              { img: "/images/finisaje/finisaje-1.jpeg", categoryKey: "finisaje" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const titles = {
                 EN: ["Premium Ceramic Tiling", "House Facade & Insulation", "Residential Block Facade"],

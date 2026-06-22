@@ -61,7 +61,7 @@ export const translations = {
         resLead: "Precision interior finishes for any type of space.",
         resBody: "We offer complete and meticulous interior finishing services, ideal for private clients and complex renovations.",
         resCta: "Request Quote",
-        resFeatures: ["Mechanized plastering", "Drywall / Plasterboard", "Leveling compound", "Washable painting", "Tiles and ceramics"],
+        resFeatures: ["Mechanized plastering", "Drywall / Plasterboard", "Leveling compound", "Washable painting", "Ceramics"],
         intTag: "Exterior",
         intTitle: "Exterior Finishes",
         intLead: "Premium facades and exterior insulation.",
@@ -73,7 +73,7 @@ export const translations = {
         floorLead: "The solid foundation of your construction project.",
         floorBody: "Our structural works teams deliver the core framework of your building, ensuring durability and safety.",
         floorCta: "View Services",
-        floorFeatures: ["Masonry", "Carpentry", "Concrete structures", "Foundation works"],
+        floorFeatures: ["Masonry", "Carpentry", "Concrete structures"],
       },
       steps: [
         { title: "Consultation", desc: "We begin with an in-depth meeting to understand your vision, requirements, budget, and timeline." },
@@ -88,10 +88,9 @@ export const translations = {
       title: "Our Work",
       desc: "A selection of completed projects — residential construction, apartment finishing, and flooring executed with professionalism and quality materials.",
       categories: {
-        all: "All",
+        termosistem: "Thermal System",
+        finisaje: "Finishes",
         ceramica: "Ceramics",
-        fatadeBlocuri: "Apartment Facades",
-        fatadeCase: "House Facades",
         structuri: "Structures"
       }
     },
@@ -235,7 +234,7 @@ export const translations = {
         resLead: "Finitions intérieures de précision pour tout type d'espace.",
         resBody: "Nous offrons des services de finition intérieure complets et méticuleux, parfaits pour les clients privés et les rénovations complexes.",
         resCta: "Demander un devis",
-        resFeatures: ["Plâtre mécanisé", "Plaques de plâtre (Rigips)", "Enduit de lissage", "Peinture lavable", "Carrelage et faïence"],
+        resFeatures: ["Plâtre mécanisé", "Plaques de plâtre (Rigips)", "Enduit de lissage", "Peinture lavable", "Céramique"],
         intTag: "Extérieur",
         intTitle: "Finitions Extérieures",
         intLead: "Façades premium et isolation extérieure.",
@@ -247,7 +246,7 @@ export const translations = {
         floorLead: "La fondation solide de votre projet de construction.",
         floorBody: "Nos équipes de gros œuvre réalisent l'ossature de votre bâtiment, garantissant durabilité et sécurité.",
         floorCta: "Voir les Services",
-        floorFeatures: ["Maçonnerie", "Charpente", "Structures en béton", "Travaux de fondation"],
+        floorFeatures: ["Maçonnerie", "Charpente", "Structures en béton"],
       },
       steps: [
         { title: "Consultation", desc: "Nous commençons par une réunion approfondie pour comprendre votre vision, vos exigences, votre budget et votre calendrier." },
@@ -262,10 +261,9 @@ export const translations = {
       title: "Notre Travail",
       desc: "Une sélection de projets achevés — construction résidentielle, finition d'appartements et revêtements de sol exécutés avec professionnalisme.",
       categories: {
-        all: "Tout",
+        termosistem: "Système Thermique",
+        finisaje: "Finitions",
         ceramica: "Céramique",
-        fatadeBlocuri: "Façades Immeubles",
-        fatadeCase: "Façades Maisons",
         structuri: "Structures"
       }
     },
@@ -400,7 +398,7 @@ export const translations = {
         resLead: "Präziser Innenausbau für jede Art von Raum.",
         resBody: "Wir bieten komplette und sorgfältige Innenausbauarbeiten an, ideal für Privatkunden und komplexe Renovierungen.",
         resCta: "Angebot anfordern",
-        resFeatures: ["Maschinenputz", "Gipskarton / Rigips", "Ausgleichsmasse", "Abwaschbare Farbe", "Fliesen und Keramik"],
+        resFeatures: ["Maschinenputz", "Gipskarton / Rigips", "Ausgleichsmasse", "Abwaschbare Farbe", "Keramik"],
         intTag: "Außen",
         intTitle: "Außenausbau",
         intLead: "Premium-Fassaden und Außenisolierung.",
@@ -412,7 +410,7 @@ export const translations = {
         floorLead: "Das solide Fundament Ihres Bauprojekts.",
         floorBody: "Unsere Rohbauteams liefern das Kerngerüst Ihres Gebäudes und gewährleisten Langlebigkeit und Sicherheit.",
         floorCta: "Dienstleistungen ansehen",
-        floorFeatures: ["Mauerwerk", "Zimmerei", "Betonstrukturen", "Fundamentarbeiten"],
+        floorFeatures: ["Mauerwerk", "Zimmerei", "Betonstrukturen"],
       },
       steps: [
         { title: "Beratung", desc: "Wir beginnen mit einem ausführlichen Gespräch, um Ihre Vision, Anforderungen, das Budget und den Zeitplan zu verstehen." },
@@ -427,10 +425,9 @@ export const translations = {
       title: "Unsere Arbeit",
       desc: "Eine Auswahl an abgeschlossenen Projekten – Wohnbau, Wohnungsausbau und Bodenbelagsarbeiten, professionell und mit hochwertigen Materialien ausgeführt.",
       categories: {
-        all: "Alle",
+        termosistem: "Wärmedämmung",
+        finisaje: "Ausbau",
         ceramica: "Keramik",
-        fatadeBlocuri: "Blockfassaden",
-        fatadeCase: "Hausfassaden",
         structuri: "Strukturen"
       }
     },
@@ -565,7 +562,7 @@ export const translations = {
         resLead: "Finisaje interioare cu precizie pentru orice tip de spațiu.",
         resBody: "Oferim servicii complete de finisare interioară, ideale pentru clienții privați și pentru șantiere care necesită renovări complete.",
         resCta: "Cere o Ofertă",
-        resFeatures: ["Tencuială mecanizată", "Ipsos / Rigips", "Glet de nivelare", "Lavabil", "Gresie și faianță"],
+        resFeatures: ["Tencuială mecanizată", "Rigips", "Glet de nivelare", "Lavabil", "Ceramică"],
         intTag: "Exterior",
         intTitle: "Finisaje Exterioare",
         intLead: "Fațade premium și izolație exterioară de înaltă calitate.",
@@ -577,7 +574,7 @@ export const translations = {
         floorLead: "Fundația solidă a construcției tale.",
         floorBody: "Echipele noastre de structură asigură lucrări de rezistență esențiale pentru durabilitatea oricărei clădiri.",
         floorCta: "Vezi Serviciile",
-        floorFeatures: ["Zidărie", "Dulgherie", "Structuri de beton", "Fundații"],
+        floorFeatures: ["Zidărie", "Dulgherie", "Structuri de beton"],
       },
       steps: [
         { title: "Consultanță", desc: "Începem cu o discuție amănunțită pentru a înțelege viziunea, cerințele, bugetul și termenele." },
@@ -592,10 +589,9 @@ export const translations = {
       title: "Lucrările Noastre",
       desc: "O selecție de proiecte finalizate — construcții case, amenajări apartamente, finisaje și podele executate cu profesionalism.",
       categories: {
-        all: "Toate",
+        termosistem: "Termosistem",
+        finisaje: "Finisaje",
         ceramica: "Ceramică",
-        fatadeBlocuri: "Fațade blocuri",
-        fatadeCase: "Fațade case",
         structuri: "Structuri"
       }
     },
@@ -730,7 +726,7 @@ export const translations = {
         resLead: "Finiture interne di precisione per ogni tipo di spazio.",
         resBody: "Offriamo servizi di finitura interna completi e meticolosi, ideali per clienti privati e ristrutturazioni complesse.",
         resCta: "Richiedi un Preventivo",
-        resFeatures: ["Intonaco meccanizzato", "Cartongesso / Rigips", "Livellamento", "Verniciatura lavabile", "Piastrelle e ceramica"],
+        resFeatures: ["Intonaco meccanizzato", "Cartongesso / Rigips", "Livellamento", "Verniciatura lavabile", "Ceramica"],
         intTag: "Esterni",
         intTitle: "Finiture d'Esterni",
         intLead: "Facciate premium e isolamento esterno.",
@@ -742,7 +738,7 @@ export const translations = {
         floorLead: "La solida base del tuo progetto di costruzione.",
         floorBody: "I nostri team strutturali realizzano l'ossatura del tuo edificio, garantendo durata e sicurezza.",
         floorCta: "Visualizza Servizi",
-        floorFeatures: ["Muratura", "Carpenteria", "Strutture in cemento", "Lavori di fondazione"],
+        floorFeatures: ["Muratura", "Carpenteria", "Strutture in cemento"],
       },
       steps: [
         { title: "Consulenza", desc: "Iniziamo con un incontro per capire visione, budget e tempistiche." },
@@ -757,10 +753,9 @@ export const translations = {
       title: "I Nostri Lavori",
       desc: "Una selezione di progetti completati, eseguiti con professionalità e materiali di qualità.",
       categories: {
-        all: "Tutti",
+        termosistem: "Sistema Termico",
+        finisaje: "Finiture",
         ceramica: "Ceramica",
-        fatadeBlocuri: "Facciate Condomini",
-        fatadeCase: "Facciate Case",
         structuri: "Strutture"
       }
     },

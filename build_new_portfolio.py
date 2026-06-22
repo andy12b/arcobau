@@ -1,11 +1,13 @@
 import os
 import glob
 import re
+import uuid
 
 folders = {
-    "ceramica": "Ceramică exterior interios",
-    "fatade-blocuri": "fatade blocuri",
-    "fatade-case": "fatade case"
+    "termosistem": "Termosistem",
+    "finisaje": "Finisaje",
+    "ceramica": "Ceramică",
+    "structuri": "Structuri"
 }
 
 def sanitize_and_rename():
@@ -16,28 +18,27 @@ def sanitize_and_rename():
         base_path = os.path.join("public", "images", folder)
         files = glob.glob(os.path.join(base_path, "*.*"))
         
-        # Sort files to have a consistent order
-        files.sort()
-        
-        for idx, file_path in enumerate(files):
-            # Rename file to cleaner format
-            ext = os.path.splitext(file_path)[1].lower()
+        # Temp rename to avoid conflicts
+        temp_files = []
+        for f in files:
+            ext = os.path.splitext(f)[1].lower()
             if ext not in [".jpg", ".jpeg", ".png", ".webp"]:
                 continue
-                
+            temp_name = os.path.join(base_path, str(uuid.uuid4()) + ext)
+            os.rename(f, temp_name)
+            temp_files.append(temp_name)
+            
+        temp_files.sort()
+        
+        for idx, file_path in enumerate(temp_files):
+            ext = os.path.splitext(file_path)[1].lower()
             new_filename = f"{folder}-{idx+1}{ext}"
             new_file_path = os.path.join(base_path, new_filename)
             
-            # Only rename if it doesn't already match the pattern
-            if file_path != new_file_path:
-                os.rename(file_path, new_file_path)
+            os.rename(file_path, new_file_path)
             
-            # The category to use in the TSX (must match the ID exactly)
             cat_id = folder
-            
-            # Determine size for grid: make the first one large
             size = "large" if idx == 0 else "small"
-            
             img_url = f"/images/{folder}/{new_filename}"
             
             projects.append(f'    {{ id: {pid}, title: "Project {pid}", baseCat: "{cat_id}", category: "{cat_id}", img: "{img_url}", size: "{size}" }},')
@@ -48,9 +49,10 @@ def sanitize_and_rename():
 def update_portfolio_page(projects):
     replacement = """  const generateTitle = (category: string, id: number) => {
     const titles: Record<string, Record<string, string>> = {
+      "termosistem": { EN: `Thermal System ${id}`, DE: `Wärmedämmung ${id}`, FR: `Système Thermique ${id}`, RO: `Termosistem ${id}`, IT: `Sistema Termico ${id}` },
+      "finisaje": { EN: `Finishes ${id}`, DE: `Ausbau ${id}`, FR: `Finitions ${id}`, RO: `Finisaje ${id}`, IT: `Finiture ${id}` },
       "ceramica": { EN: `Ceramics ${id}`, DE: `Keramik ${id}`, FR: `Céramique ${id}`, RO: `Ceramică ${id}`, IT: `Ceramica ${id}` },
-      "fatade-blocuri": { EN: `Block Facade ${id}`, DE: `Blockfassade ${id}`, FR: `Façade Immeuble ${id}`, RO: `Fațadă Bloc ${id}`, IT: `Facciata Condominio ${id}` },
-      "fatade-case": { EN: `House Facade ${id}`, DE: `Hausfassade ${id}`, FR: `Façade Maison ${id}`, RO: `Fațadă Casă ${id}`, IT: `Facciata Casa ${id}` },
+      "structuri": { EN: `Structure ${id}`, DE: `Struktur ${id}`, FR: `Structure ${id}`, RO: `Structuri ${id}`, IT: `Strutture ${id}` },
     };
     return titles[category]?.[language] || `Project ${id}`;
   };
@@ -60,10 +62,10 @@ def update_portfolio_page(projects):
   };
 
   const categories = [
-    { id: "All", label: t.portfolio.categories.all },
+    { id: "termosistem", label: t.portfolio.categories.termosistem },
+    { id: "finisaje", label: t.portfolio.categories.finisaje },
     { id: "ceramica", label: t.portfolio.categories.ceramica },
-    { id: "fatade-blocuri", label: t.portfolio.categories.fatadeBlocuri },
-    { id: "fatade-case", label: t.portfolio.categories.fatadeCase },
+    { id: "structuri", label: t.portfolio.categories.structuri },
   ];
 
   const projects = [
@@ -72,12 +74,10 @@ def update_portfolio_page(projects):
     with open("app/portfolio/PortfolioPage.tsx", "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Replace from `const generateTitle` to `  ];` of projects array
     content = re.sub(r'  const generateTitle =.*?  const projects = \[.*?\n  \];', replacement, content, flags=re.DOTALL)
 
     with open("app/portfolio/PortfolioPage.tsx", "w", encoding="utf-8") as f:
         f.write(content)
-
 
 def update_translations():
     with open("lib/translations.ts", "r", encoding="utf-8") as f:
@@ -85,34 +85,34 @@ def update_translations():
 
     new_cats = {
         "EN": """      categories: {
-        all: "All",
+        termosistem: "Thermal System",
+        finisaje: "Finishes",
         ceramica: "Ceramics",
-        fatadeBlocuri: "Apartment Facades",
-        fatadeCase: "House Facades"
+        structuri: "Structures"
       }""",
         "FR": """      categories: {
-        all: "Tout",
+        termosistem: "Système Thermique",
+        finisaje: "Finitions",
         ceramica: "Céramique",
-        fatadeBlocuri: "Façades Immeubles",
-        fatadeCase: "Façades Maisons"
+        structuri: "Structures"
       }""",
         "DE": """      categories: {
-        all: "Alle",
+        termosistem: "Wärmedämmung",
+        finisaje: "Ausbau",
         ceramica: "Keramik",
-        fatadeBlocuri: "Blockfassaden",
-        fatadeCase: "Hausfassaden"
+        structuri: "Strukturen"
       }""",
         "RO": """      categories: {
-        all: "Toate",
-        ceramica: "Ceramică exterior și interior",
-        fatadeBlocuri: "Fațade blocuri",
-        fatadeCase: "Fațade case"
+        termosistem: "Termosistem",
+        finisaje: "Finisaje",
+        ceramica: "Ceramică",
+        structuri: "Structuri"
       }""",
         "IT": """      categories: {
-        all: "Tutti",
+        termosistem: "Sistema Termico",
+        finisaje: "Finiture",
         ceramica: "Ceramica",
-        fatadeBlocuri: "Facciate Condomini",
-        fatadeCase: "Facciate Case"
+        structuri: "Strutture"
       }"""
     }
 
