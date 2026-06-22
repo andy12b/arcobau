@@ -35,7 +35,7 @@ export default function HomePage() {
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
       href: "/expertise",
-      img: "/images/finisaje/finisaje-77.jpeg",
+      img: "/images/finisaje/finisaje-9.jpeg",
     },
     {
       icon: (
