@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Imagini hero din portofoliu real
 const heroImages = [
-  "/images/termosistem/termosistem-67.jpeg",
+  "/images/termosistem/termosistem-60.jpeg",
   "/images/ceramica/ceramica-28.jpeg",
   "/images/finisaje/finisaje-1.jpeg",
 ];
