@@ -23,6 +23,7 @@ export default function PortfolioPage() {
     return titles[category]?.[language] || `Project ${id}`;
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getTranslatedTitle = (project: any) => {
     return generateTitle(project.baseCat, project.id);
   };
@@ -306,13 +307,25 @@ export default function PortfolioPage() {
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
   };
 
   const closeLightbox = () => {
     setLightboxOpen(false);
-    document.body.style.overflow = "";
   };
+
+  useEffect(() => {
+    if (lightboxOpen) {
+      // eslint-disable-next-line react-hooks/immutability
+      document.body.style.overflow = "hidden";
+    } else {
+      // eslint-disable-next-line react-hooks/immutability
+      document.body.style.overflow = "";
+    }
+    return () => {
+      // eslint-disable-next-line react-hooks/immutability
+      document.body.style.overflow = "";
+    };
+  }, [lightboxOpen]);
 
   const nextImage = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation();

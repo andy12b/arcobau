@@ -18,6 +18,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     const savedLang = localStorage.getItem("arcobau_lang") as LanguageCode;
     if (savedLang && Object.keys(translations).includes(savedLang)) {

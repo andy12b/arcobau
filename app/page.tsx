@@ -319,13 +319,6 @@ export default function HomePage() {
               { img: "/images/termosistem/termosistem-55.jpeg", categoryKey: "termosistem" as const, titleKey: "project2" as const },
               { img: "/images/finisaje/finisaje-1.jpeg", categoryKey: "finisaje" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
-              const titles = {
-                EN: ["Premium Ceramic Tiling", "House Facade & Insulation", "Residential Block Facade"],
-                DE: ["Premium-Keramikfliesen", "Hausfassade & Isolierung", "Fassade für Wohnblöcke"],
-                FR: ["Carrelage Céramique Premium", "Façade & Isolation Maison", "Façade Immeuble Résidentiel"],
-                RO: ["Placări Ceramice Premium", "Izolație și Fațadă Casă", "Fațadă Bloc Rezidențial"],
-                IT: ["Piastrellatura in Ceramica", "Facciata e Isolamento Casa", "Facciata Condominio"],
-              };
               const category = t.portfolio.categories[item.categoryKey];
               return (
                 <AnimatedSection
