@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "expertise": "Expertise",
+    "portfolio": "Portfolio",
+    "company": "Entreprise",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTag": "Précision Suisse · Qualité Intemporelle",
+    "heroTitle": "Construire\nl'Avenir",
+    "heroSubtitle": "Construire l'avenir grâce à un savoir-faire précis, des matériaux de qualité et un véritable dévouement à l'excellence en construction — dans toute la Suisse.",
+    "viewPortfolio": "Voir le Portfolio",
+    "contactUs": "Contactez-nous",
+    "howWeWork": "Notre Méthode",
+    "tailoredExpertise": "Expertise Sur Mesure",
+    "tailoredExpertiseDesc": "Précision, fiabilité et qualité artisanale — adaptées aux besoins spécifiques des clients privés à travers la Suisse.",
+    "ourPhilosophy": "Notre Philosophie",
+    "swissQuality": "Qualité Suisse,\nZéro Compromis",
+    "philosophyDesc1": "Nous traitons chaque projet avec le même sérieux, quelle que soit son envergure. Des équipes spécialisées, des matériaux haut de gamme et une approche pratique — de la consultation initiale à la remise finale.",
+    "philosophyDesc2": "Du carrelage aux revêtements de sol en passant par le plâtrage et la construction complète — nous sommes votre partenaire de confiance pour chaque étape de la construction en Suisse.",
+    "aboutUs": "À Propos →",
+    "portfolioLabel": "Portfolio",
+    "recentProjects": "Projets Récents",
+    "viewAllProjects": "Voir Tous Les Projets →",
+    "startYourProject": "Démarrer Votre Projet",
+    "readyToBuild": "Prêt à Construire Quelque Chose d'Extraordinaire?",
+    "contactTeam": "Contactez notre équipe pour discuter de votre projet. Nous apportons un savoir-faire précis à chaque construction à travers la Suisse — grande ou petite.",
+    "getInTouch": "Prendre Contact",
+    "stats": {
+      "years": "Années d'Expérience",
+      "projects": "Projets Réalisés",
+      "satisfaction": "Satisfaction Client"
+    },
+    "services": {
+      "privateClients": "Finitions Intérieures",
+      "privateClientsDesc": "Finitions intérieures de précision pour les clients privés et projets de rénovation complète. Une qualité impeccable.",
+      "discoverServices": "Découvrir les Services",
+      "aptFinishing": "Finitions Extérieures",
+      "aptFinishingDesc": "Finitions extérieures et façades thermiques avec polistyrène ou laine minérale. Services pour les secteurs privé et industriel.",
+      "learnMore": "En Savoir Plus",
+      "flooring": "Travaux Structurels",
+      "flooringDesc": "Construction structurelle solide, maçonnerie et charpente. Nous bâtissons une fondation durable pour votre projet.",
+      "viewServices": "Voir les Services"
+    }
+  },
+  "expertise": {
+    "tag": "Expertise",
+    "title": "Notre Méthode",
+    "desc": "Précision, fiabilité et excellence architecturale — adaptées aux exigences spécifiques des résidences privées et des développements résidentiels en Suisse.",
+    "processTitle": "De la Vision à la Réalité",
+    "processTag": "Notre Processus",
+    "readyToStart": "Prêt à Démarrer Votre Projet?",
+    "contactDiscuss": "Contactez notre équipe pour discuter de votre vision. Nous apportons la précision suisse à chaque projet, dans tous les cantons.",
+    "contactUs": "Contactez-nous",
+    "services": {
+      "resTag": "Intérieur",
+      "resTitle": "Finitions Intérieures",
+      "resLead": "Finitions intérieures de précision pour tout type d'espace.",
+      "resBody": "Nous offrons des services de finition intérieure complets et méticuleux, parfaits pour les clients privés et les rénovations complexes.",
+      "resCta": "Demander un devis",
+      "resFeatures": [
+        "Plâtre mécanisé",
+        "Plaques de plâtre (Rigips)",
+        "Enduit de lissage",
+        "Peinture lavable",
+        "Céramique"
+      ],
+      "intTag": "Extérieur",
+      "intTitle": "Finitions Extérieures",
+      "intLead": "Façades premium et isolation extérieure.",
+      "intBody": "Nous réalisons des finitions extérieures et des systèmes d'isolation thermique pour les résidences privées et les installations industrielles.",
+      "intCta": "En Savoir Plus",
+      "intFeatures": [
+        "Façades thermiques",
+        "Isolation en polistyrène",
+        "Isolation en laine minérale",
+        "Enduits décoratifs extérieurs"
+      ],
+      "floorTag": "Structure",
+      "floorTitle": "Travaux Structurels",
+      "floorLead": "La fondation solide de votre projet de construction.",
+      "floorBody": "Nos équipes de gros œuvre réalisent l'ossature de votre bâtiment, garantissant durabilité et sécurité.",
+      "floorCta": "Voir les Services",
+      "floorFeatures": [
+        "Maçonnerie",
+        "Charpente",
+        "Structures en béton"
+      ]
+    },
+    "steps": [
+      {
+        "title": "Consultation",
+        "desc": "Nous commençons par une réunion approfondie pour comprendre votre vision, vos exigences, votre budget et votre calendrier."
+      },
+      {
+        "title": "Conception",
+        "desc": "Notre équipe élabore des plans complets, assurant une transparence totale sur la portée, les matériaux et les coûts."
+      },
+      {
+        "title": "Permis",
+        "desc": "Nous gérons toutes les soumissions et permis réglementaires, naviguant dans le droit de la construction suisse."
+      },
+      {
+        "title": "Construction",
+        "desc": "Exécution de précision par nos équipes spécialisées, avec un contrôle qualité rigoureux à chaque étape."
+      },
+      {
+        "title": "Remise",
+        "desc": "Inspection finale, documentation complète et remise — avec une garantie de satisfaction écrite."
+      }
+    ]
+  },
+  "portfolio": {
+    "tag": "Portfolio",
+    "title": "Notre Travail",
+    "desc": "Une sélection de projets achevés — construction résidentielle, finition d'appartements et revêtements de sol exécutés avec professionnalisme.",
+    "categories": {
+      "termosistem": "Système Thermique",
+      "finisaje": "Finitions",
+      "ceramica": "Céramique",
+      "structuri": "Structures"
+    }
+  },
+  "company": {
+    "tag": "Entreprise",
+    "title": "À Propos d'ArcoBau",
+    "desc": "Une entreprise de construction suisse dédiée à la construction résidentielle de qualité, à la finition intérieure et aux revêtements de sol.",
+    "cards": {
+      "heritageTitle": "Notre Héritage",
+      "heritageDesc": "Enraciné dans l'artisanat suisse, ArcoBau apporte une ingénierie de précision et une attention méticuleuse aux détails à chaque projet à travers la Suisse.",
+      "missionTitle": "Notre Mission",
+      "missionDesc": "Construim Viitorul — Nous Construisons l'Avenir. Notre mission est de fournir des services de construction et de finition de haute qualité aux clients privés.",
+      "valuesTitle": "Nos Valeurs",
+      "valuesDesc": "La qualité, la fiabilité et la transparence sont au cœur de notre philosophie. Nous fournissons des devis clairs et expliquons chaque étape des travaux."
+    },
+    "whyUsTag": "Pourquoi ArcoBau",
+    "whyUsTitle": "Ce Qui Nous Distingue",
+    "values": {
+      "teamsTitle": "Propres Équipes",
+      "teamsDesc": "Nous ne sous-traitons pas. Nous avons nos propres équipes pour chaque métier: maçonnerie, carrelage, sols, plâtrerie et installations.",
+      "guaranteeTitle": "Garantie Écrite",
+      "guaranteeDesc": "Nous fournissons une garantie écrite sur tous les travaux effectués. Si un problème survient, nous le résolvons sans frais supplémentaires.",
+      "punctualityTitle": "Ponctualité Suisse",
+      "punctualityDesc": "Nous fixons des délais réalistes et les respectons. Nous communiquons de manière proactive sur chaque étape du projet.",
+      "materialsTitle": "Matériaux Premium",
+      "materialsDesc": "Nous utilisons des matériaux de fournisseurs suisses et européens vérifiés. Nous présentons les options et les prix en toute transparence."
+    },
+    "journeyTag": "Notre Parcours",
+    "journeyTitle": "20+ Ans d'Expérience",
+    "timeline": [
+      {
+        "year": "2010",
+        "event": "Les débuts – premiers projets de finitions et acquisition d'une expérience internationale"
+      },
+      {
+        "year": "2013",
+        "event": "Expansion des équipes et réalisation des premiers projets de construction globale"
+      },
+      {
+        "year": "2016",
+        "event": "Développement de partenariats avec des fournisseurs européens de matériaux premium"
+      },
+      {
+        "year": "2019",
+        "event": "Plus de 100 projets menés à bien avec succès pour divers types de clients"
+      },
+      {
+        "year": "2026",
+        "event": "Vaste expérience sur le marché, avec des centaines de projets livrés et des équipes de professionnels internationaux"
+      }
+    ],
+    "stats": {
+      "years": "Années d'Expérience",
+      "projects": "Projets Réalisés",
+      "quality": "Qualité Garantie"
+    },
+    "commitmentTag": "Notre Engagement",
+    "commitmentTitle": "Bâti sur la Confiance",
+    "commitmentDesc": "Chaque projet que nous entreprenons témoigne de notre engagement envers la qualité. De la première consultation à la remise finale, ArcoBau soutient chaque décision avec une totale transparence et intégrité professionnelle — à la manière suisse.",
+    "getInTouch": "Prendre Contact"
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Démarrer Votre Projet",
+    "desc": "Nous aimerions en savoir plus sur votre vision. Remplissez le formulaire ci-dessous et un de nos spécialistes vous contactera.",
+    "getInTouch": "Prendre Contact",
+    "address": "Adresse",
+    "email": "Email",
+    "phone": "Téléphone",
+    "hours": "Heures d'Ouverture",
+    "form": {
+      "successTitle": "Message Reçu",
+      "successDesc": "Merci de nous avoir contactés. Nous vous répondrons dans un délai d'un jour ouvrable.",
+      "title": "Demande de Projet",
+      "nameLabel": "Nom Complet *",
+      "namePlaceholder": "Hans Müller",
+      "emailLabel": "Adresse Email *",
+      "emailPlaceholder": "hans@example.ch",
+      "phoneLabel": "Numéro de Téléphone",
+      "phonePlaceholder": "+41 44 000 00 00",
+      "typeLabel": "Type de Projet",
+      "typeSelect": "Sélectionnez un type",
+      "typeRes": "Résidentiel",
+      "typeCom": "Commercial",
+      "typePub": "Public / Gouvernement",
+      "typeRen": "Rénovation",
+      "typeOther": "Autre",
+      "messageLabel": "Description du Projet *",
+      "messagePlaceholder": "Décrivez votre vision de projet, l'emplacement, les délais...",
+      "submitBtn": "Envoyer la Demande",
+      "privacyMsg": "En soumettant, vous acceptez notre politique de confidentialité. Nous répondrons dans un délai d'un jour ouvrable."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 ArcoBau AG Zürich. Construim Viitorul · Précision Suisse.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "legal": "Mentions Légales",
+    "followUs": "Suivez-Nous",
+    "servicesList": {
+      "interior": "Finitions Intérieures",
+      "exterior": "Finitions Extérieures",
+      "structure": "Travaux Structurels",
+      "ceramics": "Céramique"
+    }
+  }
+}

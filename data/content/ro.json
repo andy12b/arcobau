@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "expertise": "Servicii",
+    "portfolio": "Portofoliu",
+    "company": "Despre Noi",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTag": "Precizie Elvețiană · Calitate Atemporală",
+    "heroTitle": "Construim\nViitorul",
+    "heroSubtitle": "Construim viitorul prin măiestrie de precizie, materiale de calitate și o dedicare reală față de excelența în construcții — în toată Elveția.",
+    "viewPortfolio": "Vezi Portofoliul",
+    "contactUs": "Contactează-ne",
+    "howWeWork": "Cum Lucrăm",
+    "tailoredExpertise": "Expertiză Personalizată",
+    "tailoredExpertiseDesc": "Precizie, fiabilitate și măiestrie de calitate — adaptate nevoilor specifice ale clienților privați din Elveția.",
+    "ourPhilosophy": "Filozofia Noastră",
+    "swissQuality": "Calitate Elvețiană,\nFără Compromisuri",
+    "philosophyDesc1": "Tratăm fiecare proiect cu aceeași seriozitate, indiferent de scară. Echipe specializate, materiale premium și o abordare directă — de la consultanța inițială la predarea finală.",
+    "philosophyDesc2": "De la montaj gresie, faianță și podele la tencuieli și construcții complete — suntem partenerul tău de încredere pentru fiecare etapă de construcție din Elveția.",
+    "aboutUs": "Despre Noi →",
+    "portfolioLabel": "Portofoliu",
+    "recentProjects": "Proiecte Recente",
+    "viewAllProjects": "Vezi Toate Proiectele →",
+    "startYourProject": "Începe Proiectul Tău",
+    "readyToBuild": "Pregătit să Construiești Ceva Extraordinar?",
+    "contactTeam": "Contactează echipa noastră pentru a discuta proiectul. Aducem măiestria și precizia la fiecare construcție din Elveția — indiferent de mărime.",
+    "getInTouch": "Ia Legătura Cu Noi",
+    "stats": {
+      "years": "Ani de Experiență",
+      "projects": "Proiecte Finalizate",
+      "satisfaction": "Satisfacție Clienți"
+    },
+    "services": {
+      "privateClients": "Finisaje Interioare",
+      "privateClientsDesc": "Finisaje interioare cu precizie pentru clienți privați și proiecte de renovări complete. Oferim calitate ireproșabilă.",
+      "discoverServices": "Descoperă Serviciile",
+      "aptFinishing": "Finisaje Exterioare",
+      "aptFinishingDesc": "Finisaje exterioare și montare fațade termice cu polistiren sau vată. Servicii pentru sectorul privat și industrial.",
+      "learnMore": "Află Mai Multe",
+      "flooring": "Structură",
+      "flooringDesc": "Lucrări de structură, zidărie și dulgherie pentru a oferi o bază solidă și durabilă proiectului tău.",
+      "viewServices": "Vezi Serviciile"
+    }
+  },
+  "expertise": {
+    "tag": "Expertiza",
+    "title": "Cum Lucrăm",
+    "desc": "Precizie, fiabilitate și excelență arhitecturală — adaptate cerințelor specifice ale reședințelor private și ansamblurilor rezidențiale din toată Elveția.",
+    "processTitle": "De la Viziune la Realitate",
+    "processTag": "Procesul Nostru",
+    "readyToStart": "Ești Gata să Începi?",
+    "contactDiscuss": "Contactează echipa noastră pentru a discuta viziunea ta. Aducem precizia elvețiană în fiecare proiect.",
+    "contactUs": "Contactează-ne",
+    "services": {
+      "resTag": "Interior",
+      "resTitle": "Finisaje Interioare",
+      "resLead": "Finisaje interioare cu precizie pentru orice tip de spațiu.",
+      "resBody": "Oferim servicii complete de finisare interioară, ideale pentru clienții privați și pentru șantiere care necesită renovări complete.",
+      "resCta": "Cere o Ofertă",
+      "resFeatures": [
+        "Tencuială mecanizată",
+        "Rigips",
+        "Glet de nivelare",
+        "Lavabil",
+        "Ceramică"
+      ],
+      "intTag": "Exterior",
+      "intTitle": "Finisaje Exterioare",
+      "intLead": "Fațade premium și izolație exterioară de înaltă calitate.",
+      "intBody": "Realizăm finisaje exterioare și fațade termice, pe care le executăm atât pentru clienții privați, cât și în sectorul industrial.",
+      "intCta": "Află Mai Multe",
+      "intFeatures": [
+        "Montare fațade termice",
+        "Izolație cu polistiren",
+        "Izolație cu vată minerală",
+        "Tencuieli decorative"
+      ],
+      "floorTag": "Structură",
+      "floorTitle": "Lucrări de Structură",
+      "floorLead": "Fundația solidă a construcției tale.",
+      "floorBody": "Echipele noastre de structură asigură lucrări de rezistență esențiale pentru durabilitatea oricărei clădiri.",
+      "floorCta": "Vezi Serviciile",
+      "floorFeatures": [
+        "Zidărie",
+        "Dulgherie",
+        "Structuri de beton"
+      ]
+    },
+    "steps": [
+      {
+        "title": "Consultanță",
+        "desc": "Începem cu o discuție amănunțită pentru a înțelege viziunea, cerințele, bugetul și termenele."
+      },
+      {
+        "title": "Planificare",
+        "desc": "Echipa noastră dezvoltă planuri complete, oferind transparență totală asupra materialelor și costurilor."
+      },
+      {
+        "title": "Aprobări",
+        "desc": "Ne ocupăm de toate permisele necesare, având experiență vastă cu legislația elvețiană în construcții."
+      },
+      {
+        "title": "Execuție",
+        "desc": "Execuție de precizie realizată de echipele noastre, cu control riguros al calității."
+      },
+      {
+        "title": "Predare",
+        "desc": "Inspecție finală, documentație completă și predare — cu garanție în scris."
+      }
+    ]
+  },
+  "portfolio": {
+    "tag": "Portofoliu",
+    "title": "Lucrările Noastre",
+    "desc": "O selecție de proiecte finalizate — construcții case, amenajări apartamente, finisaje și podele executate cu profesionalism.",
+    "categories": {
+      "termosistem": "Termosistem",
+      "finisaje": "Finisaje",
+      "ceramica": "Ceramică",
+      "structuri": "Structuri"
+    }
+  },
+  "company": {
+    "tag": "Companie",
+    "title": "Despre ArcoBau",
+    "desc": "O companie elvețiană dedicată construcțiilor rezidențiale de calitate, finisajelor interioare și montajului de pardoseli.",
+    "cards": {
+      "heritageTitle": "Tradiția Noastră",
+      "heritageDesc": "Având la bază calitatea elvețiană, ArcoBau aduce atenție meticuloasă la fiecare proiect din Elveția.",
+      "missionTitle": "Misiunea Noastră",
+      "missionDesc": "Construim Viitorul. Misiunea noastră este să oferim servicii de înaltă calitate clienților din întreaga Elveție.",
+      "valuesTitle": "Valorile Noastre",
+      "valuesDesc": "Calitatea, fiabilitatea și transparența formează nucleul nostru. Oferim prețuri clare și explicăm fiecare pas."
+    },
+    "whyUsTag": "De Ce ArcoBau",
+    "whyUsTitle": "Ce Ne Diferențiază",
+    "values": {
+      "teamsTitle": "Echipe Proprii",
+      "teamsDesc": "Nu subcontractăm. Avem echipele noastre pentru zidărie, faianță, parchet, rigips și instalații.",
+      "guaranteeTitle": "Garanție Scrisă",
+      "guaranteeDesc": "Oferim o garanție scrisă pentru lucrări. Dacă apare o problemă, revenim și rezolvăm fără costuri suplimentare.",
+      "punctualityTitle": "Punctualitate Elvețiană",
+      "punctualityDesc": "Stabilim termene realiste și le respectăm. Comunicăm proactiv despre stadiul lucrărilor.",
+      "materialsTitle": "Materiale Premium",
+      "materialsDesc": "Folosim materiale de la furnizori europeni și elvețieni verificați, transparente total ca preț."
+    },
+    "journeyTag": "Evoluția",
+    "journeyTitle": "20+ Ani de Experiență",
+    "timeline": [
+      {
+        "year": "2010",
+        "event": "Începuturile – primele proiecte de finisaje și acumularea experienței internaționale"
+      },
+      {
+        "year": "2013",
+        "event": "Extinderea echipelor și abordarea primelor proiecte de construcții complete"
+      },
+      {
+        "year": "2016",
+        "event": "Dezvoltarea parteneriatelor cu furnizori de materiale premium la nivel european"
+      },
+      {
+        "year": "2019",
+        "event": "Peste 100 de proiecte finalizate cu succes pentru o gamă diversă de clienți"
+      },
+      {
+        "year": "2026",
+        "event": "Experiență vastă pe piață, cu sute de proiecte livrate și echipe de profesioniști internaționali"
+      }
+    ],
+    "stats": {
+      "years": "Ani de Experiență",
+      "projects": "Proiecte",
+      "quality": "Calitate Garantată"
+    },
+    "commitmentTag": "Angajamentul Nostru",
+    "commitmentTitle": "Construit pe Încredere",
+    "commitmentDesc": "Fiecare proiect confirmă angajamentul nostru. De la consultanță la finalizare, ArcoBau oferă transparență și integritate profesională — în stil elvețian.",
+    "getInTouch": "Contactează-ne"
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Începe Proiectul",
+    "desc": "Ne-ar plăcea să aflăm despre planurile tale. Completează formularul de mai jos și un specialist te va contacta rapid.",
+    "getInTouch": "Ia Legătura Cu Noi",
+    "address": "Adresă",
+    "email": "Email",
+    "phone": "Telefon",
+    "hours": "Program",
+    "form": {
+      "successTitle": "Mesaj Primit",
+      "successDesc": "Îți mulțumim pentru mesaj. Te vom contacta în decurs de o zi lucrătoare.",
+      "title": "Cerere de Ofertă",
+      "nameLabel": "Nume Complet *",
+      "namePlaceholder": "Ion Popescu",
+      "emailLabel": "Adresă de Email *",
+      "emailPlaceholder": "ion@example.ro",
+      "phoneLabel": "Număr de Telefon",
+      "phonePlaceholder": "+41 44 000 00 00",
+      "typeLabel": "Tipul Proiectului",
+      "typeSelect": "Selectează un tip",
+      "typeRes": "Rezidențial",
+      "typeCom": "Comercial",
+      "typePub": "Public",
+      "typeRen": "Renovare",
+      "typeOther": "Altul",
+      "messageLabel": "Descrierea Proiectului *",
+      "messagePlaceholder": "Descrie viziunea proiectului tău, locația, termenul dorit...",
+      "submitBtn": "Trimite Cererea",
+      "privacyMsg": "Prin trimitere, ești de acord cu Politica de Confidențialitate."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 ArcoBau AG Zürich. Construim Viitorul · Precizie Elvețiană.",
+    "navigation": "Navigare",
+    "services": "Servicii",
+    "legal": "Informații Legale",
+    "followUs": "Urmărește-ne",
+    "servicesList": {
+      "interior": "Finisaje interioare",
+      "exterior": "Finisaje exterioare",
+      "structure": "Structuri",
+      "ceramics": "Ceramică"
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "expertise": "Expertise",
+    "portfolio": "Portfolio",
+    "company": "Company",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTag": "Swiss Precision · Timeless Quality",
+    "heroTitle": "Building\nthe Future",
+    "heroSubtitle": "Building the future through precision craftsmanship, quality materials, and a genuine dedication to construction excellence — across Switzerland.",
+    "viewPortfolio": "View Portfolio",
+    "contactUs": "Contact Us",
+    "howWeWork": "How We Work",
+    "tailoredExpertise": "Tailored Expertise",
+    "tailoredExpertiseDesc": "Precision, reliability, and quality craftsmanship — tailored to the specific needs of private clients across Switzerland.",
+    "ourPhilosophy": "Our Philosophy",
+    "swissQuality": "Swiss Quality,\nZero Compromise",
+    "philosophyDesc1": "We treat every project with the same seriousness, regardless of scale. Specialist teams, premium materials, and a hands-on approach — from initial consultation to final handover.",
+    "philosophyDesc2": "From tiling and flooring to plastering and full construction — we are your trusted partner for every stage of building in Switzerland.",
+    "aboutUs": "About Us →",
+    "portfolioLabel": "Portfolio",
+    "recentProjects": "Recent Projects",
+    "viewAllProjects": "View All Projects →",
+    "startYourProject": "Start Your Project",
+    "readyToBuild": "Ready to Build Something Extraordinary?",
+    "contactTeam": "Contact our team to discuss your project. We bring precision craftsmanship to every build across Switzerland — large or small.",
+    "getInTouch": "Get In Touch",
+    "stats": {
+      "years": "Years of Experience",
+      "projects": "Projects Completed",
+      "satisfaction": "Client Satisfaction"
+    },
+    "services": {
+      "privateClients": "Interior Finishes",
+      "privateClientsDesc": "Precision interior finishes for private clients and complete renovation projects. We deliver impeccable quality.",
+      "discoverServices": "Discover Services",
+      "aptFinishing": "Exterior Finishes",
+      "aptFinishingDesc": "Exterior finishes and thermal facades with polystyrene or mineral wool. Services provided for both private and industrial sectors.",
+      "learnMore": "Learn More",
+      "flooring": "Structural Works",
+      "flooringDesc": "Solid structural construction, masonry, and carpentry. We build a lasting foundation for your project.",
+      "viewServices": "View Services"
+    }
+  },
+  "expertise": {
+    "tag": "Expertise",
+    "title": "How We Work",
+    "desc": "Precision, reliability, and architectural excellence — tailored to the specific demands of private residences and residential developments across Switzerland.",
+    "processTitle": "From Vision to Reality",
+    "processTag": "Our Process",
+    "readyToStart": "Ready to Start Your Project?",
+    "contactDiscuss": "Contact our team to discuss your vision. We bring Swiss precision to every project, across all cantons.",
+    "contactUs": "Contact Us",
+    "services": {
+      "resTag": "Interior",
+      "resTitle": "Interior Finishes",
+      "resLead": "Precision interior finishes for any type of space.",
+      "resBody": "We offer complete and meticulous interior finishing services, ideal for private clients and complex renovations.",
+      "resCta": "Request Quote",
+      "resFeatures": [
+        "Mechanized plastering",
+        "Drywall / Plasterboard",
+        "Leveling compound",
+        "Washable painting",
+        "Ceramics"
+      ],
+      "intTag": "Exterior",
+      "intTitle": "Exterior Finishes",
+      "intLead": "Premium facades and exterior insulation.",
+      "intBody": "We execute exterior finishes and thermal insulation systems for both private residences and industrial facilities.",
+      "intCta": "Learn More",
+      "intFeatures": [
+        "Thermal facades",
+        "Polystyrene insulation",
+        "Mineral wool insulation",
+        "Exterior decorative plasters"
+      ],
+      "floorTag": "Structure",
+      "floorTitle": "Structural Works",
+      "floorLead": "The solid foundation of your construction project.",
+      "floorBody": "Our structural works teams deliver the core framework of your building, ensuring durability and safety.",
+      "floorCta": "View Services",
+      "floorFeatures": [
+        "Masonry",
+        "Carpentry",
+        "Concrete structures"
+      ]
+    },
+    "steps": [
+      {
+        "title": "Consultation",
+        "desc": "We begin with an in-depth meeting to understand your vision, requirements, budget, and timeline."
+      },
+      {
+        "title": "Design & Planning",
+        "desc": "Our team develops comprehensive project plans, ensuring full transparency on scope, materials, and cost."
+      },
+      {
+        "title": "Permits & Approvals",
+        "desc": "We handle all regulatory submissions and permits, navigating Swiss building law with expertise."
+      },
+      {
+        "title": "Construction",
+        "desc": "Precision execution by our specialist teams, with rigorous quality control at every stage."
+      },
+      {
+        "title": "Handover",
+        "desc": "Final inspection, full documentation, and handover — with a written satisfaction guarantee."
+      }
+    ]
+  },
+  "portfolio": {
+    "tag": "Portfolio",
+    "title": "Our Work",
+    "desc": "A selection of completed projects — residential construction, apartment finishing, and flooring executed with professionalism and quality materials.",
+    "categories": {
+      "termosistem": "Thermal System",
+      "finisaje": "Finishes",
+      "ceramica": "Ceramics",
+      "structuri": "Structures"
+    }
+  },
+  "company": {
+    "tag": "Company",
+    "title": "About ArcoBau",
+    "desc": "A Swiss construction company dedicated to quality residential building, interior finishing, and flooring — serving private clients across Switzerland with precision, reliability, and care.",
+    "cards": {
+      "heritageTitle": "Our Heritage",
+      "heritageDesc": "Rooted in Swiss craftsmanship, ArcoBau brings precision engineering and meticulous attention to detail to every project across Switzerland. Our expertise spans residential construction, interior finishing, and flooring — delivered with the reliability Swiss clients expect.",
+      "missionTitle": "Our Mission",
+      "missionDesc": "Construim Viitorul — We Build the Future. Our mission is to deliver high-quality construction and finishing services to private clients throughout Switzerland, combining the work ethic of skilled craftsmen with Swiss standards of quality and punctuality.",
+      "valuesTitle": "Our Values",
+      "valuesDesc": "Quality, reliability, and transparency form the core of our philosophy. We provide clear quotes, explain every stage of the work, and don't leave until everything is perfect. Written guarantee on all completed works."
+    },
+    "whyUsTag": "Why ArcoBau",
+    "whyUsTitle": "What Sets Us Apart",
+    "values": {
+      "teamsTitle": "Own Specialist Teams",
+      "teamsDesc": "We do not subcontract. We have our own teams for each trade: masonry, tiling, flooring, drylining, and installations.",
+      "guaranteeTitle": "Written Guarantee",
+      "guaranteeDesc": "We provide a written guarantee on all work carried out. If any issue arises, we return and resolve it at no additional cost.",
+      "punctualityTitle": "Swiss Punctuality",
+      "punctualityDesc": "We set realistic timelines from the start and honour them. We communicate proactively about every stage of the project.",
+      "materialsTitle": "Premium Materials",
+      "materialsDesc": "We use materials from verified Swiss and European suppliers. We present the options and prices transparently — no hidden costs."
+    },
+    "journeyTag": "Our Journey",
+    "journeyTitle": "20+ Years of Experience",
+    "timeline": [
+      {
+        "year": "2010",
+        "event": "The beginnings – first finishing projects and gaining international experience"
+      },
+      {
+        "year": "2013",
+        "event": "Expanding our teams and taking on our first full construction projects"
+      },
+      {
+        "year": "2016",
+        "event": "Developing partnerships with premium material suppliers across Europe"
+      },
+      {
+        "year": "2019",
+        "event": "Over 100 projects successfully completed for a diverse range of clients"
+      },
+      {
+        "year": "2026",
+        "event": "Vast market experience, with hundreds of delivered projects and teams of international professionals"
+      }
+    ],
+    "stats": {
+      "years": "Years of Experience",
+      "projects": "Projects Completed",
+      "quality": "Quality Guaranteed"
+    },
+    "commitmentTag": "Our Commitment",
+    "commitmentTitle": "Built on Trust",
+    "commitmentDesc": "Every project we undertake is a testament to our commitment to quality. From the first consultation to the final handover, ArcoBau stands behind every decision with full transparency and professional integrity — the Swiss way.",
+    "getInTouch": "Get In Touch"
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Start Your Project",
+    "desc": "We would love to hear about your vision. Fill out the form below and one of our specialists will be in touch within one business day.",
+    "getInTouch": "Get In Touch",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "hours": "Office Hours",
+    "form": {
+      "successTitle": "Message Received",
+      "successDesc": "Thank you for reaching out. We will contact you within one business day.",
+      "title": "Project Inquiry",
+      "nameLabel": "Full Name *",
+      "namePlaceholder": "Hans Müller",
+      "emailLabel": "Email Address *",
+      "emailPlaceholder": "hans@example.ch",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+41 44 000 00 00",
+      "typeLabel": "Project Type",
+      "typeSelect": "Select a type",
+      "typeRes": "Residential",
+      "typeCom": "Commercial",
+      "typePub": "Public / Government",
+      "typeRen": "Renovation",
+      "typeOther": "Other",
+      "messageLabel": "Project Description *",
+      "messagePlaceholder": "Describe your project vision, location, timeline, and any specific requirements...",
+      "submitBtn": "Send Inquiry",
+      "privacyMsg": "By submitting, you agree to our Privacy Policy. We will respond within one business day."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 ArcoBau AG Zürich. Construim Viitorul · Swiss Precision.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "legal": "Legal",
+    "followUs": "Follow Us",
+    "servicesList": {
+      "interior": "Interior Finishes",
+      "exterior": "Exterior Finishes",
+      "structure": "Structural Works",
+      "ceramics": "Ceramics"
+    }
+  }
+}
