@@ -1,0 +1,39 @@
+name: Auto-Translate from Romanian
+
+on:
+  push:
+    paths:
+      - 'data/content/ro.json'
+    branches:
+      - main
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Translate RO -> EN, DE, FR, IT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/translate.py
+
+      - name: Commit translations
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Auto Translate Bot"
+          git add data/content/en.json data/content/de.json data/content/fr.json data/content/it.json
+          git diff --staged --quiet || git commit -m "auto: translate from Romanian"
+          git push
