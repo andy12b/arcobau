@@ -7,15 +7,19 @@ import { useLanguage } from "@/lib/LanguageContext";
 export default function Footer() {
   const { t } = useLanguage();
 
-  const handleSocialClick = (e: React.MouseEvent<HTMLAnchorElement>, platform: 'instagram' | 'tiktok') => {
+  const handleSocialClick = (e: React.MouseEvent<HTMLAnchorElement>, platform: 'instagram' | 'tiktok' | 'facebook') => {
     if (typeof window !== "undefined" && /Mobi|Android|iPhone/i.test(navigator.userAgent)) {
       e.preventDefault();
       const appUrl = platform === 'instagram' 
         ? "instagram://user?username=arcobau.gmbh" 
-        : "tiktok://user?screen_name=arcobau";
+        : platform === 'tiktok'
+        ? "tiktok://user?screen_name=arcobau"
+        : "fb://profile/61589457463612";
       const webUrl = platform === 'instagram'
         ? "https://www.instagram.com/arcobau.gmbh"
-        : "https://www.tiktok.com/@arcobau";
+        : platform === 'tiktok'
+        ? "https://www.tiktok.com/@arcobau"
+        : "https://www.facebook.com/profile.php?id=61589457463612";
         
       window.location.href = appUrl;
       setTimeout(() => {
@@ -150,6 +154,13 @@ export default function Footer() {
               <a href="https://www.tiktok.com/@arcobau" onClick={(e) => handleSocialClick(e, 'tiktok')} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gold-ochre hover:border-gold-ochre transition-all duration-300 group" aria-label="TikTok">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="group-hover:scale-110 transition-transform">
                   <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.77 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" />
+                </svg>
+              </a>
+
+              {/* Facebook */}
+              <a href="https://www.facebook.com/profile.php?id=61589457463612" onClick={(e) => handleSocialClick(e, 'facebook')} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gold-ochre hover:border-gold-ochre transition-all duration-300 group" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="group-hover:scale-110 transition-transform">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
               </a>
             </div>
