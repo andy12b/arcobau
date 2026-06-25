@@ -233,3 +233,55 @@ collections:
                   - {label: "Exterior", name: exterior, widget: string}
                   - {label: "Structuri", name: structure, widget: string}
                   - {label: "Ceramică", name: ceramics, widget: string}
+
+  - name: "portfolio_termosistem"
+    label: "📷 Portofoliu - Termosistem"
+    description: "Gestioneaza pozele din categoria Termosistem."
+    folder: "data/portfolio/termosistem"
+    create: true
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Termosistem"}
+      - {label: "Imagine", name: image, widget: image}
+      - {label: "Categorie", name: category, widget: hidden, default: "termosistem"}
+
+  - name: "portfolio_finisaje"
+    label: "📷 Portofoliu - Finisaje"
+    description: "Gestioneaza pozele din categoria Finisaje."
+    folder: "data/portfolio/finisaje"
+    create: true
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Finisaje"}
+      - {label: "Imagine", name: image, widget: image}
+      - {label: "Categorie", name: category, widget: hidden, default: "finisaje"}
+
+  - name: "portfolio_ceramica"
+    label: "📷 Portofoliu - Ceramica"
+    description: "Gestioneaza pozele din categoria Ceramica."
+    folder: "data/portfolio/ceramica"
+    create: true
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Ceramica"}
+      - {label: "Imagine", name: image, widget: image}
+      - {label: "Categorie", name: category, widget: hidden, default: "ceramica"}
+
+  - name: "portfolio_structuri"
+    label: "📷 Portofoliu - Structuri"
+    description: "Gestioneaza pozele din categoria Structuri."
+    folder: "data/portfolio/structuri"
+    create: true
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Structuri"}
+      - {label: "Imagine", name: image, widget: image}
+      - {label: "Categorie", name: category, widget: hidden, default: "structuri"}
