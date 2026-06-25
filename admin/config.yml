@@ -1,0 +1,527 @@
+backend:
+  name: github
+  repo: andy12b/arcobau
+  branch: main
+media_folder: public/images
+public_folder: /images
+collections:
+- name: translations
+  label: Traduceri Site
+  folder: data/content
+  create: false
+  extension: json
+  format: json
+  editor:
+    preview: false
+  fields:
+  - label: Nav
+    name: nav
+    widget: object
+    collapsed: true
+    fields:
+    - label: Expertise
+      name: expertise
+      widget: string
+    - label: Portfolio
+      name: portfolio
+      widget: string
+    - label: Company
+      name: company
+      widget: string
+    - label: Contact
+      name: contact
+      widget: string
+  - label: Home
+    name: home
+    widget: object
+    collapsed: true
+    fields:
+    - label: Herotag
+      name: heroTag
+      widget: string
+    - label: Herotitle
+      name: heroTitle
+      widget: string
+    - label: Herosubtitle
+      name: heroSubtitle
+      widget: text
+    - label: Viewportfolio
+      name: viewPortfolio
+      widget: string
+    - label: Contactus
+      name: contactUs
+      widget: string
+    - label: Howwework
+      name: howWeWork
+      widget: string
+    - label: Tailoredexpertise
+      name: tailoredExpertise
+      widget: string
+    - label: Tailoredexpertisedesc
+      name: tailoredExpertiseDesc
+      widget: text
+    - label: Ourphilosophy
+      name: ourPhilosophy
+      widget: string
+    - label: Swissquality
+      name: swissQuality
+      widget: string
+    - label: Philosophydesc1
+      name: philosophyDesc1
+      widget: text
+    - label: Philosophydesc2
+      name: philosophyDesc2
+      widget: text
+    - label: Aboutus
+      name: aboutUs
+      widget: string
+    - label: Portfoliolabel
+      name: portfolioLabel
+      widget: string
+    - label: Recentprojects
+      name: recentProjects
+      widget: string
+    - label: Viewallprojects
+      name: viewAllProjects
+      widget: string
+    - label: Startyourproject
+      name: startYourProject
+      widget: string
+    - label: Readytobuild
+      name: readyToBuild
+      widget: string
+    - label: Contactteam
+      name: contactTeam
+      widget: text
+    - label: Getintouch
+      name: getInTouch
+      widget: string
+    - label: Stats
+      name: stats
+      widget: object
+      collapsed: true
+      fields:
+      - label: Years
+        name: years
+        widget: string
+      - label: Projects
+        name: projects
+        widget: string
+      - label: Satisfaction
+        name: satisfaction
+        widget: string
+    - label: Services
+      name: services
+      widget: object
+      collapsed: true
+      fields:
+      - label: Privateclients
+        name: privateClients
+        widget: string
+      - label: Privateclientsdesc
+        name: privateClientsDesc
+        widget: text
+      - label: Discoverservices
+        name: discoverServices
+        widget: string
+      - label: Aptfinishing
+        name: aptFinishing
+        widget: string
+      - label: Aptfinishingdesc
+        name: aptFinishingDesc
+        widget: text
+      - label: Learnmore
+        name: learnMore
+        widget: string
+      - label: Flooring
+        name: flooring
+        widget: string
+      - label: Flooringdesc
+        name: flooringDesc
+        widget: text
+      - label: Viewservices
+        name: viewServices
+        widget: string
+  - label: Expertise
+    name: expertise
+    widget: object
+    collapsed: true
+    fields:
+    - label: Tag
+      name: tag
+      widget: string
+    - label: Title
+      name: title
+      widget: string
+    - label: Desc
+      name: desc
+      widget: text
+    - label: Processtitle
+      name: processTitle
+      widget: string
+    - label: Processtag
+      name: processTag
+      widget: string
+    - label: Readytostart
+      name: readyToStart
+      widget: string
+    - label: Contactdiscuss
+      name: contactDiscuss
+      widget: text
+    - label: Contactus
+      name: contactUs
+      widget: string
+    - label: Services
+      name: services
+      widget: object
+      collapsed: true
+      fields:
+      - label: Restag
+        name: resTag
+        widget: string
+      - label: Restitle
+        name: resTitle
+        widget: string
+      - label: Reslead
+        name: resLead
+        widget: string
+      - label: Resbody
+        name: resBody
+        widget: text
+      - label: Rescta
+        name: resCta
+        widget: string
+      - label: Resfeatures
+        name: resFeatures
+        widget: list
+        field:
+          name: item
+          widget: string
+      - label: Inttag
+        name: intTag
+        widget: string
+      - label: Inttitle
+        name: intTitle
+        widget: string
+      - label: Intlead
+        name: intLead
+        widget: string
+      - label: Intbody
+        name: intBody
+        widget: text
+      - label: Intcta
+        name: intCta
+        widget: string
+      - label: Intfeatures
+        name: intFeatures
+        widget: list
+        field:
+          name: item
+          widget: string
+      - label: Floortag
+        name: floorTag
+        widget: string
+      - label: Floortitle
+        name: floorTitle
+        widget: string
+      - label: Floorlead
+        name: floorLead
+        widget: string
+      - label: Floorbody
+        name: floorBody
+        widget: text
+      - label: Floorcta
+        name: floorCta
+        widget: string
+      - label: Floorfeatures
+        name: floorFeatures
+        widget: list
+        field:
+          name: item
+          widget: string
+    - label: Steps
+      name: steps
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Desc
+        name: desc
+        widget: text
+  - label: Portfolio
+    name: portfolio
+    widget: object
+    collapsed: true
+    fields:
+    - label: Tag
+      name: tag
+      widget: string
+    - label: Title
+      name: title
+      widget: string
+    - label: Desc
+      name: desc
+      widget: text
+    - label: Categories
+      name: categories
+      widget: object
+      collapsed: true
+      fields:
+      - label: Termosistem
+        name: termosistem
+        widget: string
+      - label: Finisaje
+        name: finisaje
+        widget: string
+      - label: Ceramica
+        name: ceramica
+        widget: string
+      - label: Structuri
+        name: structuri
+        widget: string
+  - label: Company
+    name: company
+    widget: object
+    collapsed: true
+    fields:
+    - label: Tag
+      name: tag
+      widget: string
+    - label: Title
+      name: title
+      widget: string
+    - label: Desc
+      name: desc
+      widget: text
+    - label: Cards
+      name: cards
+      widget: object
+      collapsed: true
+      fields:
+      - label: Heritagetitle
+        name: heritageTitle
+        widget: string
+      - label: Heritagedesc
+        name: heritageDesc
+        widget: text
+      - label: Missiontitle
+        name: missionTitle
+        widget: string
+      - label: Missiondesc
+        name: missionDesc
+        widget: text
+      - label: Valuestitle
+        name: valuesTitle
+        widget: string
+      - label: Valuesdesc
+        name: valuesDesc
+        widget: text
+    - label: Whyustag
+      name: whyUsTag
+      widget: string
+    - label: Whyustitle
+      name: whyUsTitle
+      widget: string
+    - label: Values
+      name: values
+      widget: object
+      collapsed: true
+      fields:
+      - label: Teamstitle
+        name: teamsTitle
+        widget: string
+      - label: Teamsdesc
+        name: teamsDesc
+        widget: text
+      - label: Guaranteetitle
+        name: guaranteeTitle
+        widget: string
+      - label: Guaranteedesc
+        name: guaranteeDesc
+        widget: text
+      - label: Punctualitytitle
+        name: punctualityTitle
+        widget: string
+      - label: Punctualitydesc
+        name: punctualityDesc
+        widget: text
+      - label: Materialstitle
+        name: materialsTitle
+        widget: string
+      - label: Materialsdesc
+        name: materialsDesc
+        widget: text
+    - label: Journeytag
+      name: journeyTag
+      widget: string
+    - label: Journeytitle
+      name: journeyTitle
+      widget: string
+    - label: Timeline
+      name: timeline
+      widget: list
+      fields:
+      - label: Year
+        name: year
+        widget: string
+      - label: Event
+        name: event
+        widget: text
+    - label: Stats
+      name: stats
+      widget: object
+      collapsed: true
+      fields:
+      - label: Years
+        name: years
+        widget: string
+      - label: Projects
+        name: projects
+        widget: string
+      - label: Quality
+        name: quality
+        widget: string
+    - label: Commitmenttag
+      name: commitmentTag
+      widget: string
+    - label: Commitmenttitle
+      name: commitmentTitle
+      widget: string
+    - label: Commitmentdesc
+      name: commitmentDesc
+      widget: text
+    - label: Getintouch
+      name: getInTouch
+      widget: string
+  - label: Contact
+    name: contact
+    widget: object
+    collapsed: true
+    fields:
+    - label: Tag
+      name: tag
+      widget: string
+    - label: Title
+      name: title
+      widget: string
+    - label: Desc
+      name: desc
+      widget: text
+    - label: Getintouch
+      name: getInTouch
+      widget: string
+    - label: Address
+      name: address
+      widget: string
+    - label: Email
+      name: email
+      widget: string
+    - label: Phone
+      name: phone
+      widget: string
+    - label: Hours
+      name: hours
+      widget: string
+    - label: Form
+      name: form
+      widget: object
+      collapsed: true
+      fields:
+      - label: Successtitle
+        name: successTitle
+        widget: string
+      - label: Successdesc
+        name: successDesc
+        widget: text
+      - label: Title
+        name: title
+        widget: string
+      - label: Namelabel
+        name: nameLabel
+        widget: string
+      - label: Nameplaceholder
+        name: namePlaceholder
+        widget: string
+      - label: Emaillabel
+        name: emailLabel
+        widget: string
+      - label: Emailplaceholder
+        name: emailPlaceholder
+        widget: string
+      - label: Phonelabel
+        name: phoneLabel
+        widget: string
+      - label: Phoneplaceholder
+        name: phonePlaceholder
+        widget: string
+      - label: Typelabel
+        name: typeLabel
+        widget: string
+      - label: Typeselect
+        name: typeSelect
+        widget: string
+      - label: Typeres
+        name: typeRes
+        widget: string
+      - label: Typecom
+        name: typeCom
+        widget: string
+      - label: Typepub
+        name: typePub
+        widget: string
+      - label: Typeren
+        name: typeRen
+        widget: string
+      - label: Typeother
+        name: typeOther
+        widget: string
+      - label: Messagelabel
+        name: messageLabel
+        widget: string
+      - label: Messageplaceholder
+        name: messagePlaceholder
+        widget: text
+      - label: Submitbtn
+        name: submitBtn
+        widget: string
+      - label: Privacymsg
+        name: privacyMsg
+        widget: text
+  - label: Footer
+    name: footer
+    widget: object
+    collapsed: true
+    fields:
+    - label: Copyright
+      name: copyright
+      widget: text
+    - label: Navigation
+      name: navigation
+      widget: string
+    - label: Services
+      name: services
+      widget: string
+    - label: Legal
+      name: legal
+      widget: string
+    - label: Followus
+      name: followUs
+      widget: string
+    - label: Serviceslist
+      name: servicesList
+      widget: object
+      collapsed: true
+      fields:
+      - label: Interior
+        name: interior
+        widget: string
+      - label: Exterior
+        name: exterior
+        widget: string
+      - label: Structure
+        name: structure
+        widget: string
+      - label: Ceramics
+        name: ceramics
+        widget: string
