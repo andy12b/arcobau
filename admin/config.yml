@@ -11,18 +11,11 @@ locale: ro
 
 collections:
   - name: "content_ro"
-    label: "Conținut Site (Română)"
+    label: "🇷🇴 Conținut Site"
     description: "Editează textele site-ului în română. Celelalte limbi se vor traduce automat."
-    folder: "data/content"
-    create: false
-    extension: json
-    format: json
-    filter:
-      field: dummy
-      value: dummy
     files:
       - name: "ro"
-        label: "🇷🇴 Conținut Română"
+        label: "Conținut Română"
         file: "data/content/ro.json"
         fields:
           - label: "Navigare"
