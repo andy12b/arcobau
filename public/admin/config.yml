@@ -1,4 +1,4 @@
-backend:
+﻿backend:
   name: github
   repo: andy12b/arcobau
   branch: main
@@ -234,54 +234,50 @@ collections:
                   - {label: "Structuri", name: structure, widget: string}
                   - {label: "Ceramică", name: ceramics, widget: string}
 
-  - name: "portfolio_termosistem"
-    label: "📷 Portofoliu - Termosistem"
-    description: "Gestioneaza pozele din categoria Termosistem."
-    folder: "data/portfolio/termosistem"
-    create: true
-    extension: json
-    format: json
-    identifier_field: title
-    fields:
-      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Termosistem"}
-      - {label: "Imagine", name: image, widget: image}
-      - {label: "Categorie", name: category, widget: hidden, default: "termosistem"}
+  - name: "portfolio"
+    label: "Portofoliu - Imagini"
+    description: "Adauga, sterge sau reordoneaza pozele din fiecare categorie."
+    files:
+      - name: "termosistem"
+        label: "Termosistem"
+        file: "data/portfolio/termosistem.json"
+        fields:
+          - label: "Fotografii"
+            name: photos
+            widget: list
+            fields:
+              - {label: "Imagine", name: image, widget: image}
+              - {label: "Titlu", name: title, widget: string}
 
-  - name: "portfolio_finisaje"
-    label: "📷 Portofoliu - Finisaje"
-    description: "Gestioneaza pozele din categoria Finisaje."
-    folder: "data/portfolio/finisaje"
-    create: true
-    extension: json
-    format: json
-    identifier_field: title
-    fields:
-      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Finisaje"}
-      - {label: "Imagine", name: image, widget: image}
-      - {label: "Categorie", name: category, widget: hidden, default: "finisaje"}
+      - name: "finisaje"
+        label: "Finisaje"
+        file: "data/portfolio/finisaje.json"
+        fields:
+          - label: "Fotografii"
+            name: photos
+            widget: list
+            fields:
+              - {label: "Imagine", name: image, widget: image}
+              - {label: "Titlu", name: title, widget: string}
 
-  - name: "portfolio_ceramica"
-    label: "📷 Portofoliu - Ceramica"
-    description: "Gestioneaza pozele din categoria Ceramica."
-    folder: "data/portfolio/ceramica"
-    create: true
-    extension: json
-    format: json
-    identifier_field: title
-    fields:
-      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Ceramica"}
-      - {label: "Imagine", name: image, widget: image}
-      - {label: "Categorie", name: category, widget: hidden, default: "ceramica"}
+      - name: "ceramica"
+        label: "Ceramica"
+        file: "data/portfolio/ceramica.json"
+        fields:
+          - label: "Fotografii"
+            name: photos
+            widget: list
+            fields:
+              - {label: "Imagine", name: image, widget: image}
+              - {label: "Titlu", name: title, widget: string}
 
-  - name: "portfolio_structuri"
-    label: "📷 Portofoliu - Structuri"
-    description: "Gestioneaza pozele din categoria Structuri."
-    folder: "data/portfolio/structuri"
-    create: true
-    extension: json
-    format: json
-    identifier_field: title
-    fields:
-      - {label: "Titlu proiect", name: title, widget: string, default: "Proiect Structuri"}
-      - {label: "Imagine", name: image, widget: image}
-      - {label: "Categorie", name: category, widget: hidden, default: "structuri"}
+      - name: "structuri"
+        label: "Structuri"
+        file: "data/portfolio/structuri.json"
+        fields:
+          - label: "Fotografii"
+            name: photos
+            widget: list
+            fields:
+              - {label: "Imagine", name: image, widget: image}
+              - {label: "Titlu", name: title, widget: string}
