@@ -2,235 +2,235 @@
   "nav": {
     "expertise": "Dienstleistungen",
     "portfolio": "Portfolio",
-    "company": "Unternehmen",
-    "contact": "Kontakt"
+    "company": "Über uns",
+    "contact": "Kontakt:&#10;"
   },
   "home": {
-    "heroTag": "Schweizer Präzision · Zeitlose Qualität",
-    "heroTitle": "Die Zukunft\nbauen",
-    "heroSubtitle": "Wir bauen die Zukunft durch präzise Handwerkskunst, hochwertige Materialien und echte Hingabe für hervorragende Bauleistungen – in der ganzen Schweiz.",
-    "viewPortfolio": "Portfolio ansehen",
+    "heroTag": "Schweizer Genauigkeit · Zeitlose Qualität",
+    "heroTitle": "Wir bauen\nZukunft",
+    "heroSubtitle": "Wir bauen die Zukunft durch Präzisionshandwerk, hochwertige Materialien und ein echtes Engagement für Exzellenz im Bauwesen — in der ganzen Schweiz.",
+    "viewPortfolio": "Portfolio anzeigen",
     "contactUs": "Kontaktieren Sie uns",
-    "howWeWork": "Unsere Arbeitsweise",
-    "tailoredExpertise": "Maßgeschneiderte Expertise",
-    "tailoredExpertiseDesc": "Präzision, Zuverlässigkeit und handwerkliche Qualität – abgestimmt auf die spezifischen Bedürfnisse von Privatkunden in der ganzen Schweiz.",
+    "howWeWork": "Wie wir arbeiten",
+    "tailoredExpertise": "Benutzerdefinierte Expertise",
+    "tailoredExpertiseDesc": "Präzision, Zuverlässigkeit und handwerkliche Qualität — zugeschnitten auf die spezifischen Bedürfnisse von Privatkunden in der Schweiz.",
     "ourPhilosophy": "Unsere Philosophie",
     "swissQuality": "Schweizer Qualität,\nKeine Kompromisse",
-    "philosophyDesc1": "Wir behandeln jedes Projekt mit dem gleichen Ernst, unabhängig von der Größe. Spezialistenteams, hochwertige Materialien und ein praxisorientierter Ansatz – von der Erstberatung bis zur Schlüsselübergabe.",
-    "philosophyDesc2": "Vom Fliesen- und Bodenlegen über Gipserarbeiten bis zum Komplettbau – wir sind Ihr vertrauenswürdiger Partner für jede Bauphase in der Schweiz.",
-    "aboutUs": "Über Uns →",
+    "philosophyDesc1": "Wir behandeln jedes Projekt mit der gleichen Ernsthaftigkeit, unabhängig von der Größe. Spezialisierte Teams, hochwertige Materialien und eine direkte Ansprache — von der ersten Beratung bis zur endgültigen Übergabe.",
+    "philosophyDesc2": "Von Fliesen und Bodenbelägen über Verputz bis hin zum Komplettbau — wir sind Ihr zuverlässiger Partner für jede Bauphase in der Schweiz.",
+    "aboutUs": "Über uns",
     "portfolioLabel": "Portfolio",
-    "recentProjects": "Aktuelle Projekte",
-    "viewAllProjects": "Alle Projekte Ansehen →",
-    "startYourProject": "Projekt Starten",
+    "recentProjects": "Zuletzt geöffnete Projekte:",
+    "viewAllProjects": "Alle Projekte anzeigen →",
+    "startYourProject": "Starten Sie Ihr Projekt",
     "readyToBuild": "Bereit, etwas Außergewöhnliches zu bauen?",
-    "contactTeam": "Kontaktieren Sie unser Team, um Ihr Projekt zu besprechen. Wir bringen Präzisionshandwerk in jeden Bau in der ganzen Schweiz – ob gross oder klein.",
-    "getInTouch": "Kontakt Aufnehmen",
+    "contactTeam": "Kontaktieren Sie unser Team, um das Projekt zu besprechen. Wir bringen Handwerkskunst und Präzision in jedes Gebäude in der Schweiz — unabhängig von der Grösse.",
+    "getInTouch": "Nehmen Sie Kontakt mit uns auf",
     "stats": {
       "years": "Jahre Erfahrung",
       "projects": "Abgeschlossene Projekte",
       "satisfaction": "Kundenzufriedenheit"
     },
     "services": {
-      "privateClients": "Innenausbau",
-      "privateClientsDesc": "Präziser Innenausbau für Privatkunden und komplette Renovierungsprojekte. Wir liefern makellose Qualität.",
-      "discoverServices": "Dienstleistungen entdecken",
-      "aptFinishing": "Außenausbau",
-      "aptFinishingDesc": "Außenveredelungen und Wärmefassaden mit Polystyrol oder Mineralwolle. Dienstleistungen für den privaten und industriellen Bereich.",
-      "learnMore": "Mehr erfahren",
-      "flooring": "Rohbau & Struktur",
-      "flooringDesc": "Solider Rohbau, Mauerwerk und Zimmerei. Wir bauen ein dauerhaftes Fundament für Ihr Projekt.",
-      "viewServices": "Dienstleistungen ansehen"
+      "privateClients": "Innenausstattung",
+      "privateClientsDesc": "Präzise Innenausstattung für Privatkunden und komplette Renovierungsprojekte. Wir bieten einwandfreie Qualität.",
+      "discoverServices": "Erkunden Sie die Dienste",
+      "aptFinishing": "Exterieur-Finishes",
+      "aptFinishingDesc": "Außenverkleidungen und Verlegung von Thermofassaden mit Polystyrol oder Watte. Dienstleistungen für den privaten und industriellen Bereich.",
+      "learnMore": "Erfahr hier mehr!",
+      "flooring": "Aufbau",
+      "flooringDesc": "Bau-, Mauer- und Schreinerarbeiten bieten eine solide und nachhaltige Grundlage für Ihr Projekt.",
+      "viewServices": "Dienstleistungen anzeigen"
     }
   },
   "expertise": {
-    "tag": "Dienstleistungen",
-    "title": "Unsere Arbeitsweise",
-    "desc": "Präzision, Zuverlässigkeit und architektonische Exzellenz – abgestimmt auf die spezifischen Anforderungen privater Residenzen in der ganzen Schweiz.",
+    "tag": "Fachwissen",
+    "title": "Wie wir arbeiten",
+    "desc": "Genauigkeit, Zuverlässigkeit und architektonische Exzellenz — abgestimmt auf die spezifischen Anforderungen von Privathäusern und Wohnanlagen in der ganzen Schweiz.",
     "processTitle": "Von der Vision zur Realität",
     "processTag": "Unser Prozess",
-    "readyToStart": "Bereit, Ihr Projekt zu starten?",
-    "contactDiscuss": "Kontaktieren Sie unser Team, um Ihre Vision zu besprechen. Wir bringen Schweizer Präzision in jedes Projekt, in allen Kantonen.",
+    "readyToStart": "Möchtest Du jetzt starten? ",
+    "contactDiscuss": "Kontaktieren Sie unser Team, um Ihre Vision zu besprechen. Wir bringen Schweizer Präzision in jedes Projekt.",
     "contactUs": "Kontaktieren Sie uns",
     "services": {
-      "resTag": "Innen",
-      "resTitle": "Innenausbau",
-      "resLead": "Präziser Innenausbau für jede Art von Raum.",
-      "resBody": "Wir bieten komplette und sorgfältige Innenausbauarbeiten an, ideal für Privatkunden und komplexe Renovierungen.",
+      "resTag": "Durchwahl",
+      "resTitle": "Innenausstattung",
+      "resLead": "Präzise Innenausstattung für jede Art von Raum.",
+      "resBody": "Wir bieten komplette Innenausbau-Dienstleistungen, ideal für Privatkunden und für Baustellen, die komplette Renovierungen erfordern.",
       "resCta": "Angebot anfordern",
       "resFeatures": [
-        "Maschinenputz",
-        "Gipskarton / Rigips",
-        "Ausgleichsmasse",
-        "Abwaschbare Farbe",
-        "Keramik"
+        "Mechanisierter Putz",
+        "Rigips.",
+        "Nivellierputz",
+        "Waschbar",
+        "Steinzeug"
       ],
-      "intTag": "Außen",
-      "intTitle": "Außenausbau",
-      "intLead": "Premium-Fassaden und Außenisolierung.",
-      "intBody": "Wir führen Außenveredelungen und Wärmedämmverbundsysteme für Privatwohnungen und Industrieanlagen aus.",
-      "intCta": "Mehr erfahren",
+      "intTag": "Außen-",
+      "intTitle": "Exterieur-Finishes",
+      "intLead": "Hochwertige Fassaden und hochwertige Außendämmung.",
+      "intBody": "Wir führen Außenveredelungen und Thermofassaden durch, die wir sowohl für Privatkunden als auch im industriellen Bereich durchführen.",
+      "intCta": "Erfahr hier mehr!",
       "intFeatures": [
-        "Wärmefassaden",
+        "Montage von Wärmefassaden",
         "Polystyrol-Isolierung",
         "Mineralwolle-Isolierung",
-        "Dekorative Außenputze"
+        "Zierpflaster"
       ],
-      "floorTag": "Struktur",
-      "floorTitle": "Rohbau & Struktur",
-      "floorLead": "Das solide Fundament Ihres Bauprojekts.",
-      "floorBody": "Unsere Rohbauteams liefern das Kerngerüst Ihres Gebäudes und gewährleisten Langlebigkeit und Sicherheit.",
-      "floorCta": "Dienstleistungen ansehen",
+      "floorTag": "Aufbau",
+      "floorTitle": "Bauarbeiten",
+      "floorLead": "Das solide Fundament Ihrer Konstruktion.",
+      "floorBody": "Unsere Strukturteams leisten starke Arbeit, die für die Nachhaltigkeit eines jeden Gebäudes unerlässlich ist.",
+      "floorCta": "Dienstleistungen anzeigen",
       "floorFeatures": [
         "Mauerwerk",
-        "Zimmerei",
-        "Betonstrukturen"
+        "Tischlerei",
+        "Betonkonstruktionen"
       ]
     },
     "steps": [
       {
-        "title": "Beratung",
-        "desc": "Wir beginnen mit einem ausführlichen Gespräch, um Ihre Vision, Anforderungen, das Budget und den Zeitplan zu verstehen."
+        "title": "Unternehmensberater",
+        "desc": "Wir beginnen mit einer gründlichen Diskussion, um die Vision, die Anforderungen, das Budget und die Fristen zu verstehen."
       },
       {
         "title": "Planung",
-        "desc": "Unser Team erstellt umfassende Projektpläne und sorgt für volle Transparenz in Bezug auf Umfang, Materialien und Kosten."
+        "desc": "Unser Team entwickelt komplette Pläne und bietet volle Transparenz über Materialien und Kosten."
       },
       {
-        "title": "Bewilligungen",
-        "desc": "Wir kümmern uns um alle behördlichen Einreichungen und Bewilligungen und navigieren mit Expertise durch das Schweizer Baurecht."
+        "title": "Genehmigungen",
+        "desc": "Wir kümmern uns um alle notwendigen Genehmigungen und verfügen über umfangreiche Erfahrung mit dem schweizerischen Baurecht."
       },
       {
-        "title": "Ausführung",
-        "desc": "Präzise Ausführung durch unsere Spezialistenteams mit strenger Qualitätskontrolle in jeder Phase."
+        "title": "Durchführung",
+        "desc": "Präzise Ausführung durch unsere Teams mit strenger Qualitätskontrolle."
       },
       {
-        "title": "Übergabe",
-        "desc": "Endabnahme, vollständige Dokumentation und Übergabe – mit schriftlicher Zufriedenheitsgarantie."
+        "title": "Anlieferung",
+        "desc": "Endabnahme, vollständige Dokumentation und Übergabe — mit schriftlicher Gewährleistung."
       }
     ]
   },
   "portfolio": {
     "tag": "Portfolio",
     "title": "Unsere Arbeit",
-    "desc": "Eine Auswahl an abgeschlossenen Projekten – Wohnbau, Wohnungsausbau und Bodenbelagsarbeiten, professionell und mit hochwertigen Materialien ausgeführt.",
+    "desc": "Eine Auswahl abgeschlossener Projekte — Hausbau, Wohnungsgestaltung, professionell ausgeführte Oberflächen und Böden.",
     "categories": {
-      "termosistem": "Wärmedämmung",
-      "finisaje": "Ausbau",
-      "ceramica": "Keramik",
-      "structuri": "Strukturen"
+      "termosistem": "Thermosystem",
+      "finisaje": "Ausstattung",
+      "ceramica": "Steinzeug",
+      "structuri": "Bauwerke"
     }
   },
   "company": {
-    "tag": "Unternehmen",
+    "tag": "Gesellschaft leisten",
     "title": "Über ArcoBau",
-    "desc": "Ein Schweizer Bauunternehmen für hochwertigen Wohnbau, Innenausbau und Bodenbeläge – für Privatkunden in der ganzen Schweiz.",
+    "desc": "Ein Schweizer Unternehmen, das sich dem hochwertigen Wohnungsbau, der Innenausstattung und dem Bodenbelag verschrieben hat.",
     "cards": {
-      "heritageTitle": "Unsere Herkunft",
-      "heritageDesc": "Verwurzelt in der Schweizer Handwerkskunst bringt ArcoBau Präzisionstechnik und akribische Liebe zum Detail in jedes Projekt ein.",
-      "missionTitle": "Unsere Mission",
-      "missionDesc": "Construim Viitorul — Wir bauen die Zukunft. Unsere Mission ist es, Privatkunden hochwertige Bau- und Ausbaudienstleistungen zu bieten.",
-      "valuesTitle": "Unsere Werte",
-      "valuesDesc": "Qualität, Zuverlässigkeit und Transparenz bilden den Kern unserer Philosophie. Wir liefern klare Offerten und erklären jede Phase der Arbeit."
+      "heritageTitle": "Unsere Tradition",
+      "heritageDesc": "Basierend auf Schweizer Qualität bringt ArcoBau akribische Aufmerksamkeit auf jedes Projekt in der Schweiz.",
+      "missionTitle": "Unser Leitbild",
+      "missionDesc": "Wir bauen die Zukunft. Unsere Mission ist es, Kunden in der ganzen Schweiz qualitativ hochwertige Dienstleistungen zu bieten.",
+      "valuesTitle": "Unsere Werte<x id=\"1\"/>",
+      "valuesDesc": "Qualität, Zuverlässigkeit und Transparenz bilden unseren Kern. Wir bieten eine klare Preisgestaltung und erklären jeden Schritt."
     },
     "whyUsTag": "Warum ArcoBau",
-    "whyUsTitle": "Was uns auszeichnet",
+    "whyUsTitle": "Was zeichnet uns aus",
     "values": {
-      "teamsTitle": "Eigene Spezialistenteams",
-      "teamsDesc": "Wir beauftragen keine Subunternehmer. Wir haben eigene Teams für jedes Gewerk: Maurerarbeiten, Fliesenlegen, Bodenlegen, Trockenbau und Installationen.",
+      "teamsTitle": "Eigene Teams",
+      "teamsDesc": "Wir vergeben keine Unteraufträge. Wir haben unsere Teams für Mauerwerk, Fliesen, Parkett, Trockenbau und Sanitär.",
       "guaranteeTitle": "Schriftliche Garantie",
-      "guaranteeDesc": "Wir geben eine schriftliche Garantie auf alle ausgeführten Arbeiten. Sollte ein Problem auftreten, beheben wir es ohne zusätzliche Kosten.",
+      "guaranteeDesc": "Wir geben eine schriftliche Garantie für die Arbeiten. Wenn es ein Problem gibt, kommen wir zurück und beheben es ohne zusätzliche Kosten.",
       "punctualityTitle": "Schweizer Pünktlichkeit",
-      "punctualityDesc": "Wir setzen von Anfang an realistische Zeitpläne und halten diese ein. Wir kommunizieren proaktiv über jede Phase des Projekts.",
-      "materialsTitle": "Hochwertige Materialien",
-      "materialsDesc": "Wir verwenden Materialien von überprüften Schweizer und europäischen Lieferanten. Wir präsentieren Optionen und Preise transparent – ohne versteckte Kosten."
+      "punctualityDesc": "Wir setzen realistische Termine und halten diese ein. Wir kommunizieren proaktiv über den Stand der Arbeiten.",
+      "materialsTitle": "Premium-Materialien",
+      "materialsDesc": "Wir verwenden Materialien von geprüften europäischen und schweizerischen Lieferanten, die im Preis völlig transparent sind."
     },
-    "journeyTag": "Unser Weg",
-    "journeyTitle": "20+ Jahre Erfahrung",
+    "journeyTag": "Evolution",
+    "journeyTitle": "Mehr als 20 Jahre Erfahrung",
     "timeline": [
       {
-        "year": "2010",
-        "event": "Die Anfänge – erste Ausbauprojekte und Aufbau internationaler Erfahrung"
+        "year": "2010 ",
+        "event": "Anfänge – erste Projekte abschließen und internationale Erfahrungen sammeln"
       },
       {
         "year": "2013",
-        "event": "Erweiterung der Teams und Übernahme der ersten kompletten Bauprojekte"
+        "event": "Teams erweitern und erste Vollbauprojekte in Angriff nehmen"
       },
       {
         "year": "2016",
-        "event": "Aufbau von Partnerschaften mit europäischen Premium-Materiallieferanten"
+        "event": "Aufbau von Partnerschaften mit Premium-Materiallieferanten auf europäischer Ebene"
       },
       {
         "year": "2019",
-        "event": "Über 100 erfolgreich abgeschlossene Projekte für unterschiedlichste Kunden"
+        "event": "Über 100 erfolgreich abgeschlossene Projekte für eine Vielzahl von Kunden"
       },
       {
         "year": "2026",
-        "event": "Umfangreiche Markterfahrung mit hunderten übergebenen Projekten und internationalen Fachteams"
+        "event": "Umfangreiche Erfahrung auf dem Markt, mit Hunderten von gelieferten Projekten und Teams von internationalen Fachleuten"
       }
     ],
     "stats": {
       "years": "Jahre Erfahrung",
-      "projects": "Abgeschlossene Projekte",
+      "projects": "Projekte",
       "quality": "Garantierte Qualität"
     },
     "commitmentTag": "Unser Engagement",
-    "commitmentTitle": "Auf Vertrauen gebaut",
-    "commitmentDesc": "Jedes Projekt, das wir durchführen, ist ein Zeugnis unseres Engagements für Qualität. Von der ersten Beratung bis zur endgültigen Übergabe steht ArcoBau mit voller Transparenz und beruflicher Integrität hinter jeder Entscheidung – auf die Schweizer Art.",
-    "getInTouch": "Kontakt Aufnehmen"
+    "commitmentTitle": "Auf Vertrauen aufgebaut",
+    "commitmentDesc": "Jedes Projekt bestätigt unser Engagement. Von der Beratung bis zur Fertigstellung bietet ArcoBau Transparenz und professionelle Integrität — Swiss Style.",
+    "getInTouch": "Kontaktieren Sie uns"
   },
   "contact": {
-    "tag": "Kontakt",
-    "title": "Projekt Starten",
-    "desc": "Wir würden gerne mehr über Ihre Vision erfahren. Füllen Sie das folgende Formular aus und einer unserer Spezialisten wird sich melden.",
-    "getInTouch": "Kontakt Aufnehmen",
-    "address": "Adresse",
+    "tag": "Kontakt:&#10;",
+    "title": "Projekt starten",
+    "desc": "Wir würden uns freuen, von Ihren Plänen zu hören. Füllen Sie das untenstehende Formular aus und ein Spezialist wird sich schnellstmöglich bei Ihnen melden.",
+    "getInTouch": "Nehmen Sie Kontakt mit uns auf",
+    "address": "Hausanschrift",
     "email": "E-Mail",
-    "phone": "Telefon",
-    "hours": "Bürozeiten",
+    "phone": "Teleton",
+    "hours": "Programm",
     "contactInfo": {
       "addressStreet": "Bahnhofstrasse 1",
       "addressCity": "8001 Zürich, Schweiz",
       "email": "contact@arcobau.ch",
       "phone": "076 726 80 88",
       "directorName": "Nicolae Danciu",
-      "hoursWeekday": "Mo–Fr: 08:00–18:00 Uhr",
-      "hoursSaturday": "Sa: 09:00–14:00 Uhr"
+      "hoursWeekday": "Mo-Fr 08:00-18.00 Uhr",
+      "hoursSaturday": "Samstag: 09:00–14:00 Uhr"
     },
     "form": {
-      "successTitle": "Nachricht Erhalten",
-      "successDesc": "Vielen Dank. Wir werden uns innerhalb eines Werktages bei Ihnen melden.",
-      "title": "Projektanfrage",
-      "nameLabel": "Vollständiger Name *",
-      "namePlaceholder": "Hans Müller",
-      "emailLabel": "E-Mail Adresse *",
-      "emailPlaceholder": "hans@example.ch",
-      "phoneLabel": "Telefonnummer",
+      "successTitle": "Nachricht erhalten",
+      "successDesc": "Vielen Dank für Ihre Nachricht. Wir melden uns innerhalb von 1 Werktag bei dir.",
+      "title": "Beantragen Sie ein Angebot",
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Ion Popescu",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "ion@example.ro",
+      "phoneLabel": "Die Telefonnummer",
       "phonePlaceholder": "+41 44 000 00 00",
-      "typeLabel": "Projekttyp",
-      "typeSelect": "Typ auswählen",
+      "typeLabel": "Art des Vorhabens",
+      "typeSelect": "Wählen Sie einen Typ",
       "typeRes": "Wohnen",
-      "typeCom": "Gewerblich",
-      "typePub": "Öffentlich / Regierung",
+      "typeCom": "Kaufm. ",
+      "typePub": "Öffentlich",
       "typeRen": "Renovierung",
-      "typeOther": "Andere",
-      "messageLabel": "Projektbeschreibung *",
-      "messagePlaceholder": "Beschreiben Sie Ihre Projektvision, Ort, Zeitplan...",
-      "submitBtn": "Anfrage Senden",
-      "privacyMsg": "Mit der Übermittlung stimmen Sie unserer Datenschutzrichtlinie zu. Wir antworten innerhalb eines Werktages."
+      "typeOther": "Sonstiges",
+      "messageLabel": "KURZBESCHREIBUNG⁠ ",
+      "messagePlaceholder": "Beschreiben Sie Ihre Projektvision, Ihren Standort, Ihren gewünschten Begriff...",
+      "submitBtn": "Anfrage absenden",
+      "privacyMsg": "Mit dem Absenden erklären Sie sich mit der Datenschutzerklärung einverstanden."
     }
   },
   "footer": {
-    "copyright": "© 2026 ArcoBau AG Zürich. Construim Viitorul · Schweizer Präzision.",
-    "navigation": "Navigation",
+    "copyright": "© 2026 ArcoBau AG Zürich. Zukunft bauen · Schweizer Genauigkeit.",
+    "navigation": "Browser",
     "services": "Dienstleistungen",
-    "legal": "Rechtliches",
+    "legal": "Impressum",
     "followUs": "Folgen Sie uns",
     "servicesList": {
-      "interior": "Innenausbau",
-      "exterior": "Außenausbau",
-      "structure": "Rohbau & Struktur",
-      "ceramics": "Keramik"
+      "interior": "Innenausstattung",
+      "exterior": "Außenveredelungen",
+      "structure": "Bauwerke",
+      "ceramics": "Steinzeug"
     }
   }
 }
