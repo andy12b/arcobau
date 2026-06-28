@@ -188,6 +188,15 @@
     "email": "Email",
     "phone": "Téléphone",
     "hours": "Heures d'Ouverture",
+    "contactInfo": {
+      "addressStreet": "Bahnhofstrasse 1",
+      "addressCity": "8001 Zürich, Suisse",
+      "email": "contact@arcobau.ch",
+      "phone": "076 726 80 88",
+      "directorName": "Nicolae Danciu",
+      "hoursWeekday": "Lun–Ven : 08h00–18h00",
+      "hoursSaturday": "Sam : 09h00–14h00"
+    },
     "form": {
       "successTitle": "Message Reçu",
       "successDesc": "Merci de nous avoir contactés. Nous vous répondrons dans un délai d'un jour ouvrable.",

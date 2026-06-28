@@ -23,7 +23,7 @@ export default function ContactPage() {
         </svg>
       ),
       label: t.contact.address,
-      value: "Bahnhofstrasse 1, 8001 Zürich, Switzerland",
+      value: `${t.contact.contactInfo.addressStreet}, ${t.contact.contactInfo.addressCity}`,
     },
     {
       icon: (
@@ -32,7 +32,7 @@ export default function ContactPage() {
         </svg>
       ),
       label: t.contact.email,
-      value: "contact@arcobau.ch",
+      value: t.contact.contactInfo.email,
     },
     {
       icon: (
@@ -41,7 +41,7 @@ export default function ContactPage() {
         </svg>
       ),
       label: t.contact.phone,
-      value: "076 726 80 88 (Nicolae Danciu - Director)",
+      value: `${t.contact.contactInfo.phone} (${t.contact.contactInfo.directorName})`,
     },
     {
       icon: (
@@ -50,7 +50,7 @@ export default function ContactPage() {
         </svg>
       ),
       label: t.contact.hours,
-      value: "Mon–Fri: 08:00–18:00 CET",
+      value: `${t.contact.contactInfo.hoursWeekday} · ${t.contact.contactInfo.hoursSaturday}`,
     },
   ];
 

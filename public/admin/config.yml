@@ -203,6 +203,17 @@ collections:
               - {label: "Email (etichetă)", name: email, widget: string}
               - {label: "Telefon (etichetă)", name: phone, widget: string}
               - {label: "Program (etichetă)", name: hours, widget: string}
+              - label: "📍 Date de Contact (Adresă, Telefon, Email)"
+                name: contactInfo
+                widget: object
+                fields:
+                  - {label: "Stradă + Număr", name: addressStreet, widget: string}
+                  - {label: "Oraș + Cod Poștal", name: addressCity, widget: string}
+                  - {label: "Email", name: email, widget: string}
+                  - {label: "Telefon", name: phone, widget: string}
+                  - {label: "Nume Director", name: directorName, widget: string}
+                  - {label: "Program (Luni-Vineri)", name: hoursWeekday, widget: string}
+                  - {label: "Program (Sâmbătă)", name: hoursSaturday, widget: string}
               - label: "Formular"
                 name: form
                 widget: object
