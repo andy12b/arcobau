@@ -1,4 +1,4 @@
-﻿backend:
+backend:
   name: github
   repo: andy12b/arcobau
   branch: main
@@ -26,6 +26,8 @@ collections:
               - {label: "Portofoliu", name: portfolio, widget: string}
               - {label: "Companie", name: company, widget: string}
               - {label: "Contact", name: contact, widget: string}
+              - {label: "Impressum", name: impressum, widget: string}
+              - {label: "Datenschutz", name: datenschutz, widget: string}
 
           - label: "Pagina Principală"
             name: home
@@ -233,6 +235,17 @@ collections:
                   - {label: "Exterior", name: exterior, widget: string}
                   - {label: "Structuri", name: structure, widget: string}
                   - {label: "Ceramică", name: ceramics, widget: string}
+              - label: "Informații Contact (Footer & Pagini)"
+                name: contactInfo
+                widget: object
+                fields:
+                  - {label: "Stradă + Număr", name: addressStreet, widget: string, default: "Bahnhofstrasse 1"}
+                  - {label: "Oraș + Cod Poștal", name: addressCity, widget: string, default: "8001 Zürich, Schweiz"}
+                  - {label: "Email", name: email, widget: string, default: "contact@arcobau.ch"}
+                  - {label: "Telefon", name: phone, widget: string, default: "076 726 80 88"}
+                  - {label: "Nume Director", name: directorName, widget: string, default: "Nicolae Danciu"}
+                  - {label: "Program (Luni-Vineri)", name: hoursWeekday, widget: string, default: "Mo–Fr 08:00–18:00"}
+                  - {label: "Program (Sâmbătă)", name: hoursSaturday, widget: string, default: "Sa 09:00–14:00"}
 
   - name: "portfolio"
     label: "Portofoliu - Imagini"
@@ -281,3 +294,27 @@ collections:
             fields:
               - {label: "Imagine", name: image, widget: image}
               - {label: "Titlu", name: title, widget: string}
+
+  - name: "legal"
+    label: "⚖️ Pagini Legale"
+    description: "Editează datele din Impressum și Datenschutzerklärung."
+    files:
+      - name: "impressum"
+        label: "Impressum"
+        file: "data/legal/impressum.json"
+        fields:
+          - {label: "Denumire Companie", name: companyName, widget: string, default: "ArcoBau AG"}
+          - {label: "Stradă", name: addressStreet, widget: string, default: "Bahnhofstrasse 1"}
+          - {label: "Oraș", name: addressCity, widget: string, default: "8001 Zürich, Schweiz"}
+          - {label: "Email", name: email, widget: string, default: "contact@arcobau.ch"}
+          - {label: "Telefon", name: phone, widget: string, default: "076 726 80 88"}
+          - {label: "Director / Geschäftsführer", name: director, widget: string, default: "Nicolae Danciu"}
+          - {label: "Registru Comerț (Handelsregister)", name: registerInfo, widget: string, default: "Kanton Zürich"}
+          - {label: "Nr. MWST / TVA", name: vatNumber, widget: string, default: "Pe cerere / Auf Anfrage"}
+
+      - name: "datenschutz"
+        label: "Datenschutzerklärung"
+        file: "data/legal/datenschutz.json"
+        fields:
+          - {label: "Data ultimei actualizări", name: lastUpdated, widget: string, default: "Juni 2026"}
+          - {label: "Persoana responsabilă (Verantwortlicher)", name: responsible, widget: string, default: "Nicolae Danciu, ArcoBau AG"}
