@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ExpertisePage from "./ExpertisePage";
 
 export const metadata: Metadata = {
-  title: "Expertise – ArcoBau | Residential Construction & Finishing in Switzerland",
+  title: "Dienstleistungen",
   description:
-    "ArcoBau offers residential construction, interior finishing, and flooring services across Switzerland. Swiss precision, transparent pricing, written guarantee on all works.",
+    "ArcoBau bietet Innenausbau, Wärmedämmfassaden, Fliesenlegen und Rohbau in der ganzen Schweiz. Schweizer Präzision, transparente Preise, schriftliche Garantie auf alle Arbeiten.",
 };
 
 export default function Page() {

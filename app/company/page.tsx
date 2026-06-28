@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CompanyPage from "./CompanyPage";
 
 export const metadata: Metadata = {
-  title: "Company – ArcoBau | Swiss Construction & Finishing",
+  title: "Unternehmen",
   description:
-    "About ArcoBau — a Swiss construction company specialising in residential building, interior finishing, and flooring. 15+ years serving private clients across Switzerland.",
+    "Über ArcoBau AG – ein Schweizer Bauunternehmen spezialisiert auf Wohnbau, Innenausbau und Bodenbeläge. 15+ Jahre Erfahrung für Privatkunden in der ganzen Schweiz.",
 };
 
 export default function Page() {

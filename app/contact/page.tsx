@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ContactPage from "./ContactPage";
 
 export const metadata: Metadata = {
-  title: "Contact – ArcoBau AG Zurich",
+  title: "Kontakt",
   description:
-    "Contact ArcoBau – Bahnhofstrasse 1, 8001 Zürich, Switzerland. Email: contact@arcobau.ch. Start your project today.",
+    "Kontaktieren Sie ArcoBau AG – Bahnhofstrasse 1, 8001 Zürich, Schweiz. E-Mail: contact@arcobau.ch. Starten Sie noch heute Ihr Projekt.",
 };
 
 export default function Page() {

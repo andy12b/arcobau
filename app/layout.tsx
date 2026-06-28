@@ -13,17 +13,47 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ArcoBau AG – Swiss Construction & Interior Finishing",
+  title: {
+    default: "ArcoBau AG – Bau & Innenausbau Zürich Schweiz",
+    template: "%s – ArcoBau AG",
+  },
   description:
-    "ArcoBau AG Zürich. Swiss precision construction, interior finishing, flooring and tiling for private clients across Switzerland. Quality you can see.",
-  keywords: ["ArcoBau", "construction", "Zurich", "Switzerland", "residential", "flooring", "finishing", "renovation"],
+    "ArcoBau AG Zürich. Präziser Innenausbau, Wärmedämmung, Fliesenlegen und Rohbau für Privatkunden in der ganzen Schweiz. Schweizer Qualität – keine Kompromisse.",
+  keywords: [
+    "ArcoBau",
+    "Bauunternehmen Zürich",
+    "Innenausbau Schweiz",
+    "Wärmedämmung",
+    "Fliesenleger Zürich",
+    "Renovierung Schweiz",
+    "Fassade Zürich",
+    "Rohbau Schweiz",
+    "Bauunternehmen Schweiz",
+  ],
   authors: [{ name: "ArcoBau AG" }],
+  metadataBase: new URL("https://arcobau.ch"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "de-CH": "/",
+    },
+  },
   openGraph: {
-    title: "ArcoBau AG – Swiss Construction & Interior Finishing",
+    title: "ArcoBau AG – Bau & Innenausbau Zürich",
     description:
-      "Swiss precision construction, interior finishing and flooring for private clients across Switzerland.",
+      "Präziser Innenausbau, Wärmedämmung und Rohbau für Privatkunden in der ganzen Schweiz. Schweizer Qualität – keine Kompromisse.",
     type: "website",
     locale: "de_CH",
+    siteName: "ArcoBau AG",
+    url: "https://arcobau.ch",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   other: {
     google: "notranslate",

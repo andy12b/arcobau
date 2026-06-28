@@ -128,13 +128,16 @@ export default function Footer() {
               {t.footer.legal}
             </h4>
             <div className="flex flex-col gap-4 mb-8">
-              {["Imprint", "Privacy Policy"].map((item) => (
+              {[
+                { label: "Impressum", href: "/impressum" },
+                { label: "Datenschutzerklärung", href: "/datenschutz" },
+              ].map((item) => (
                 <Link
-                  key={item}
-                  href="/contact"
+                  key={item.href}
+                  href={item.href}
                   className="text-sm text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-300 w-fit"
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
             </div>
