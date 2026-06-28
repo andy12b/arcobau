@@ -38,7 +38,7 @@ export default function DatenschutzPage() {
             </p>
             <div className="bg-off-white p-4 text-sm text-charcoal">
               <strong>ArcoBau AG</strong><br />
-              Bahnhofstrasse 1, 8001 Zürich, Schweiz<br />
+              Chamerstrasse 172, 6300 Zug, Schweiz<br />
               Tel: <a href="tel:0767268088" className="hover:text-gold-ochre transition-colors">076 726 80 88</a><br />
               E-Mail: <a href="mailto:contact@arcobau.ch" className="hover:text-gold-ochre transition-colors">contact@arcobau.ch</a>
             </div>

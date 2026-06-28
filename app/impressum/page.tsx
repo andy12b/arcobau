@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Impressum",
   description:
-    "Impressum von ArcoBau AG – rechtliche Angaben gemäss Schweizer Recht. Bahnhofstrasse 1, 8001 Zürich.",
+    "Impressum von ArcoBau AG – rechtliche Angaben gemäss Schweizer Recht. Chamerstrasse 172, 6300 Zug.",
   robots: { index: true, follow: false },
 };
 
@@ -38,8 +38,8 @@ export default function ImpressumPage() {
               <div>
                 <p className="text-xs tracking-widest uppercase text-gold-ochre font-semibold mb-2">Adresse</p>
                 <p className="text-charcoal">
-                  Bahnhofstrasse 1<br />
-                  8001 Zürich<br />
+                  Chamerstrasse 172<br />
+                  6300 Zug<br />
                   Schweiz
                 </p>
               </div>
@@ -63,7 +63,7 @@ export default function ImpressumPage() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-gold-ochre font-semibold mb-2">Handelsregister</p>
-                <p className="text-charcoal">Kanton Zürich</p>
+                <p className="text-charcoal">Kanton Zug</p>
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-gold-ochre font-semibold mb-2">MWST-Nr.</p>

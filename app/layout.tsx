@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     "ArcoBau AG Zürich. Präziser Innenausbau, Wärmedämmung, Fliesenlegen und Rohbau für Privatkunden in der ganzen Schweiz. Schweizer Qualität – keine Kompromisse.",
   keywords: [
     "ArcoBau",
-    "Bauunternehmen Zürich",
+    "Bauunternehmen Zug",
     "Innenausbau Schweiz",
     "Wärmedämmung",
-    "Fliesenleger Zürich",
+    "Fliesenleger Zug",
     "Renovierung Schweiz",
-    "Fassade Zürich",
+    "Fassade Zug",
     "Rohbau Schweiz",
     "Bauunternehmen Schweiz",
   ],

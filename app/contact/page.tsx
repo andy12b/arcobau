@@ -4,7 +4,7 @@ import ContactPage from "./ContactPage";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie ArcoBau AG – Bahnhofstrasse 1, 8001 Zürich, Schweiz. E-Mail: contact@arcobau.ch. Starten Sie noch heute Ihr Projekt.",
+    "Kontaktieren Sie ArcoBau AG – Chamerstrasse 172, 6300 Zug, Schweiz. E-Mail: contact@arcobau.ch. Starten Sie noch heute Ihr Projekt.",
 };
 
 export default function Page() {

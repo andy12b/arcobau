@@ -1,4 +1,4 @@
-backend:
+﻿backend:
   name: github
   repo: andy12b/arcobau
   branch: main
@@ -250,8 +250,8 @@ collections:
                 name: contactInfo
                 widget: object
                 fields:
-                  - {label: "Stradă + Număr", name: addressStreet, widget: string, default: "Bahnhofstrasse 1"}
-                  - {label: "Oraș + Cod Poștal", name: addressCity, widget: string, default: "8001 Zürich, Schweiz"}
+                  - {label: "Stradă + Număr", name: addressStreet, widget: string, default: "Chamerstrasse 172"}
+                  - {label: "Oraș + Cod Poștal", name: addressCity, widget: string, default: "6300 Zug, Schweiz"}
                   - {label: "Email", name: email, widget: string, default: "contact@arcobau.ch"}
                   - {label: "Telefon", name: phone, widget: string, default: "076 726 80 88"}
                   - {label: "Nume Director", name: directorName, widget: string, default: "Nicolae Danciu"}
@@ -315,12 +315,12 @@ collections:
         file: "data/legal/impressum.json"
         fields:
           - {label: "Denumire Companie", name: companyName, widget: string, default: "ArcoBau AG"}
-          - {label: "Stradă", name: addressStreet, widget: string, default: "Bahnhofstrasse 1"}
-          - {label: "Oraș", name: addressCity, widget: string, default: "8001 Zürich, Schweiz"}
+          - {label: "Stradă", name: addressStreet, widget: string, default: "Chamerstrasse 172"}
+          - {label: "Oraș", name: addressCity, widget: string, default: "6300 Zug, Schweiz"}
           - {label: "Email", name: email, widget: string, default: "contact@arcobau.ch"}
           - {label: "Telefon", name: phone, widget: string, default: "076 726 80 88"}
           - {label: "Director / Geschäftsführer", name: director, widget: string, default: "Nicolae Danciu"}
-          - {label: "Registru Comerț (Handelsregister)", name: registerInfo, widget: string, default: "Kanton Zürich"}
+          - {label: "Registru Comerț (Handelsregister)", name: registerInfo, widget: string, default: "Kanton Zug"}
           - {label: "Nr. MWST / TVA", name: vatNumber, widget: string, default: "Pe cerere / Auf Anfrage"}
 
       - name: "datenschutz"
