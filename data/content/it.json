@@ -1,121 +1,121 @@
 {
   "nav": {
-    "expertise": "Servizi",
-    "portfolio": "Portfolio",
-    "company": "Azienda",
+    "expertise": "Services",
+    "portfolio": "Portfoliu",
+    "company": "Chi siamo",
     "contact": "Contatti"
   },
   "home": {
-    "heroTag": "Precisione Svizzera · Qualità Senza Tempo",
-    "heroTitle": "Costruire\nil Futuro",
-    "heroSubtitle": "Costruiamo il futuro attraverso artigianato di precisione, materiali di qualità e vera dedizione all'eccellenza in tutta la Svizzera.",
-    "viewPortfolio": "Vedi il Portfolio",
+    "heroTag": "Precisione svizzera · Qualità senza tempo",
+    "heroTitle": "Costruiamo il futuro",
+    "heroSubtitle": "Stiamo costruendo il futuro attraverso l'artigianato di precisione, materiali di qualità e un reale impegno per l'eccellenza nell'edilizia — in tutta la Svizzera.",
+    "viewPortfolio": "Visualizza portfolio",
     "contactUs": "Contattaci",
-    "howWeWork": "Come Lavoriamo",
-    "tailoredExpertise": "Competenza Su Misura",
-    "tailoredExpertiseDesc": "Precisione, affidabilità e artigianato di qualità, su misura per le esigenze specifiche dei clienti privati in Svizzera.",
-    "ourPhilosophy": "La Nostra Filosofia",
-    "swissQuality": "Qualità Svizzera,\nZero Compromessi",
-    "philosophyDesc1": "Trattiamo ogni progetto con la stessa serietà. Team specializzati e materiali di alta qualità dalla consulenza alla consegna.",
-    "philosophyDesc2": "Dalla posa di pavimenti e piastrelle all'intonacatura e costruzione completa, siamo il tuo partner di fiducia in Svizzera.",
-    "aboutUs": "Chi Siamo →",
-    "portfolioLabel": "Portfolio",
-    "recentProjects": "Progetti Recenti",
-    "viewAllProjects": "Vedi Tutti i Progetti →",
-    "startYourProject": "Inizia il Tuo Progetto",
-    "readyToBuild": "Pronto per costruire qualcosa di straordinario?",
-    "contactTeam": "Contatta il nostro team per discutere il tuo progetto. Portiamo precisione svizzera ad ogni costruzione, grande o piccola.",
-    "getInTouch": "Mettiti in Contatto",
+    "howWeWork": "Come lavoriamo",
+    "tailoredExpertise": "Competenza personalizzata",
+    "tailoredExpertiseDesc": "Precisione, affidabilità e qualità artigianale — su misura per le esigenze specifiche dei clienti privati in Svizzera.",
+    "ourPhilosophy": "La nostra filosofia",
+    "swissQuality": "Qualità svizzera,\nNessun compromesso",
+    "philosophyDesc1": "Trattiamo ogni progetto con la stessa serietà, indipendentemente dalle dimensioni. Team specializzati, materiali premium e un approccio diretto: dalla consulenza iniziale alla consegna finale.",
+    "philosophyDesc2": "Da piastrelle e pavimenti a intonaci e costruzioni complete — siamo il vostro partner affidabile per ogni fase di costruzione in Svizzera.",
+    "aboutUs": "Chi siamo",
+    "portfolioLabel": "Portfoliu",
+    "recentProjects": "Progetti recenti:",
+    "viewAllProjects": "Visualizza tutti i progetti →",
+    "startYourProject": "Inizia il tuo progetto",
+    "readyToBuild": "Pronto a costruire qualcosa di straordinario?",
+    "contactTeam": "Contatta il nostro team per discutere del progetto. Portiamo artigianalità e precisione in ogni edificio in Svizzera, indipendentemente dalle dimensioni.",
+    "getInTouch": "Contattaci",
     "stats": {
-      "years": "Anni di Esperienza",
-      "projects": "Progetti Completati",
-      "satisfaction": "Soddisfazione Clienti"
+      "years": "anni di esperienza",
+      "projects": "Progetti completati",
+      "satisfaction": "Soddisfazione del cliente"
     },
     "services": {
-      "privateClients": "Finiture d'Interni",
-      "privateClientsDesc": "Finiture d'interni di precisione per clienti privati e progetti di ristrutturazione completa. Offriamo una qualità impeccabile.",
-      "discoverServices": "Scopri i Servizi",
-      "aptFinishing": "Finiture d'Esterni",
-      "aptFinishingDesc": "Finiture esterne e facciate termiche con polistirene o lana minerale. Servizi per il settore privato e industriale.",
+      "privateClients": "Finiture interne",
+      "privateClientsDesc": "Finiture interne di precisione per clienti privati e progetti di ristrutturazione completi. Offriamo una qualità impeccabile.",
+      "discoverServices": "Esplora i Servizi",
+      "aptFinishing": "Finiture Esterne",
+      "aptFinishingDesc": "Finiture esterne e posa in opera di facciate termiche con polistirolo o cotone idrofilo. Servizi per il settore privato e industriale.",
       "learnMore": "Scopri di più",
       "flooring": "Struttura",
-      "flooringDesc": "Costruzione strutturale solida, muratura e carpenteria. Costruiamo basi durature per il tuo progetto.",
-      "viewServices": "Visualizza Servizi"
+      "flooringDesc": "Opere strutturali, murarie e di carpenteria per fornire una base solida e sostenibile al tuo progetto.",
+      "viewServices": "Visualizza servizi"
     }
   },
   "expertise": {
-    "tag": "Servizi",
-    "title": "Come Lavoriamo",
-    "desc": "Precisione e affidabilità adattate alle esigenze specifiche delle residenze private in Svizzera.",
+    "tag": "Competenza",
+    "title": "Come lavoriamo",
+    "desc": "Precisione, affidabilità ed eccellenza architettonica — su misura per le esigenze specifiche di residenze private e complessi residenziali in tutta la Svizzera.",
     "processTitle": "Dalla Visione alla Realtà",
-    "processTag": "Il Nostro Processo",
-    "readyToStart": "Pronto per Iniziare?",
-    "contactDiscuss": "Contattaci per discutere la tua visione. Portiamo la precisione svizzera in ogni progetto.",
+    "processTag": "Il nostro processo",
+    "readyToStart": "Sei pronto per iniziare?",
+    "contactDiscuss": "Contatta il nostro team per discutere la tua visione. Portiamo la precisione svizzera in ogni progetto.",
     "contactUs": "Contattaci",
     "services": {
-      "resTag": "Interni",
-      "resTitle": "Finiture d'Interni",
-      "resLead": "Finiture interne di precisione per ogni tipo di spazio.",
-      "resBody": "Offriamo servizi di finitura interna completi e meticolosi, ideali per clienti privati e ristrutturazioni complesse.",
-      "resCta": "Richiedi un Preventivo",
+      "resTag": "Interne",
+      "resTitle": "Finiture interne",
+      "resLead": "Finiture interne precise per ogni tipo di spazio.",
+      "resBody": "Offriamo servizi completi di finitura interna, ideali per clienti privati e per cantieri che necessitano di ristrutturazioni complete.",
+      "resCta": "Richiedi Preventivo",
       "resFeatures": [
         "Intonaco meccanizzato",
-        "Cartongesso / Rigips",
-        "Livellamento",
-        "Verniciatura lavabile",
+        "Cartongesso",
+        "Intonaco livellante",
+        "Lavabile.",
         "Ceramica"
       ],
-      "intTag": "Esterni",
-      "intTitle": "Finiture d'Esterni",
-      "intLead": "Facciate premium e isolamento esterno.",
-      "intBody": "Eseguiamo finiture esterne e sistemi di isolamento termico sia per residenze private che per strutture industriali.",
+      "intTag": "Esterne",
+      "intTitle": "Finiture Esterne",
+      "intLead": "Facciate premium e isolamento esterno di alta qualità.",
+      "intBody": "Eseguiamo finiture esterne e facciate termiche, che eseguiamo sia per clienti privati che nel settore industriale.",
       "intCta": "Scopri di più",
       "intFeatures": [
-        "Facciate termiche",
-        "Isolamento in polistirene",
+        "Installazione facciate termiche",
+        "Isolamento in polistirolo",
         "Isolamento in lana minerale",
-        "Intonaci decorativi esterni"
+        "Intonaci decorativi"
       ],
       "floorTag": "Struttura",
-      "floorTitle": "Lavori Strutturali",
-      "floorLead": "La solida base del tuo progetto di costruzione.",
-      "floorBody": "I nostri team strutturali realizzano l'ossatura del tuo edificio, garantendo durata e sicurezza.",
-      "floorCta": "Visualizza Servizi",
+      "floorTitle": "Opere Strutturali",
+      "floorLead": "Le solide basi della tua costruzione.",
+      "floorBody": "I nostri team di struttura forniscono un lavoro di resistenza essenziale per la sostenibilità di qualsiasi edificio.",
+      "floorCta": "Visualizza servizi",
       "floorFeatures": [
-        "Muratura",
+        "opere murarie",
         "Carpenteria",
-        "Strutture in cemento"
+        "Strutture in calcestruzzo"
       ]
     },
     "steps": [
       {
         "title": "Consulenza",
-        "desc": "Iniziamo con un incontro per capire visione, budget e tempistiche."
+        "desc": "Iniziamo con una discussione approfondita per comprendere la visione, i requisiti, il budget e le scadenze."
       },
       {
         "title": "Pianificazione",
-        "desc": "Sviluppiamo piani trasparenti su materiali e costi."
+        "desc": "Il nostro team sviluppa piani completi, fornendo piena trasparenza su materiali e costi."
       },
       {
-        "title": "Permessi",
-        "desc": "Gestiamo la burocrazia navigando nel diritto edilizio svizzero."
+        "title": "Approvazioni",
+        "desc": "Ci occupiamo di tutti i permessi necessari, avendo una vasta esperienza con il diritto edilizio svizzero."
       },
       {
-        "title": "Costruzione",
-        "desc": "Esecuzione di precisione dai nostri team specializzati."
+        "title": "Esec",
+        "desc": "Esecuzione di precisione da parte dei nostri team con un rigoroso controllo di qualità."
       },
       {
-        "title": "Consegna",
-        "desc": "Ispezione finale e consegna con garanzia."
+        "title": "Insegnamento",
+        "desc": "Controllo finale, documentazione completa e consegna — con garanzia scritta."
       }
     ]
   },
   "portfolio": {
-    "tag": "Portfolio",
-    "title": "I Nostri Lavori",
-    "desc": "Una selezione di progetti completati, eseguiti con professionalità e materiali di qualità.",
+    "tag": "Portfoliu",
+    "title": "I nostri lavori",
+    "desc": "Una selezione di progetti completati: costruzione di case, progettazione di appartamenti, finiture e pavimenti eseguiti professionalmente.",
     "categories": {
-      "termosistem": "Sistema Termico",
+      "termosistem": "sistema termico",
       "finisaje": "Finiture",
       "ceramica": "Ceramica",
       "structuri": "Strutture"
@@ -123,113 +123,113 @@
   },
   "company": {
     "tag": "Azienda",
-    "title": "Chi Siamo",
-    "desc": "Un'impresa edile svizzera dedicata alla costruzione residenziale e alle finiture di qualità.",
+    "title": "Informazioni su ArcoBau",
+    "desc": "Azienda svizzera dedicata all'edilizia residenziale di qualità, alle finiture interne e alle pavimentazioni.",
     "cards": {
-      "heritageTitle": "La Nostra Eredità",
-      "heritageDesc": "Radicata nell'artigianato svizzero, ArcoBau porta ingegneria di precisione ad ogni progetto.",
-      "missionTitle": "La Nostra Missione",
-      "missionDesc": "Costruim Viitorul — Costruiamo il Futuro. La nostra missione è fornire servizi edili di alta qualità in Svizzera.",
-      "valuesTitle": "I Nostri Valori",
-      "valuesDesc": "Qualità, affidabilità e trasparenza sono il cuore della nostra filosofia."
+      "heritageTitle": "La nostra tradizione",
+      "heritageDesc": "Basato sulla qualità svizzera, ArcoBau porta un'attenzione meticolosa a ogni progetto in Svizzera.",
+      "missionTitle": "La nostra Mission",
+      "missionDesc": "Stiamo costruendo il futuro. La nostra missione è fornire servizi di alta qualità ai clienti in tutta la Svizzera.",
+      "valuesTitle": "I nostri valori",
+      "valuesDesc": "Qualità, affidabilità e trasparenza sono il nostro cuore. Offriamo prezzi chiari e spieghiamo ogni passaggio."
     },
     "whyUsTag": "Perché ArcoBau",
-    "whyUsTitle": "Cosa Ci Distingue",
+    "whyUsTitle": "Cosa ci differenzia",
     "values": {
-      "teamsTitle": "I Nostri Team",
-      "teamsDesc": "Non subappaltiamo. Abbiamo i nostri team per ogni mestiere: muratura, piastrelle, pavimenti e impianti.",
-      "guaranteeTitle": "Garanzia Scritta",
-      "guaranteeDesc": "Forniamo una garanzia scritta su tutti i lavori eseguiti.",
-      "punctualityTitle": "Puntualità Svizzera",
-      "punctualityDesc": "Stabiliamo tempistiche realistiche e le rispettiamo rigorosamente.",
+      "teamsTitle": "Le proprie squadre",
+      "teamsDesc": "Non subappaltiamo. Abbiamo i nostri team di muratura, piastrelle, parquet, cartongesso e idraulica.",
+      "guaranteeTitle": "Scritto in garanzia",
+      "guaranteeDesc": "Forniamo una garanzia scritta per i lavori. Se c'è un problema, torneremo a risolverlo senza costi aggiuntivi.",
+      "punctualityTitle": "Puntualità svizzera",
+      "punctualityDesc": "Stabiliamo scadenze realistiche e le rispettiamo. Comunichiamo in modo proattivo lo stato dei lavori.",
       "materialsTitle": "Materiali Premium",
-      "materialsDesc": "Utilizziamo materiali da fornitori svizzeri verificati. Mostriamo opzioni e prezzi in modo trasparente."
+      "materialsDesc": "Utilizziamo materiali di fornitori europei e svizzeri verificati, totalmente trasparenti nel prezzo."
     },
-    "journeyTag": "Il Nostro Percorso",
-    "journeyTitle": "20+ Anni di Esperienza",
+    "journeyTag": "Evoluzione",
+    "journeyTitle": "anni di esperienza",
     "timeline": [
       {
         "year": "2010",
-        "event": "Gli inizi – primi progetti di finitura ed esperienza internazionale"
+        "event": "Inizi – prime finiture di progetti e acquisizione di esperienza internazionale"
       },
       {
-        "year": "2013",
-        "event": "Espansione dei team e primi progetti di costruzione completa"
+        "year": "<it pos=\"begin\" x=\"0\"><a0></it><it pos=\"begin\" x=\"1\"><f1></it>2013, n.",
+        "event": "Ampliare i team e affrontare i primi progetti di costruzione completi"
       },
       {
         "year": "2016",
-        "event": "Sviluppo di partnership con fornitori europei di materiali di pregio"
+        "event": "Sviluppare partnership con fornitori di materiali premium a livello europeo"
       },
       {
         "year": "2019",
-        "event": "Oltre 100 progetti completati con successo per una vasta clientela"
+        "event": "Oltre 100 progetti completati con successo per una vasta gamma di clienti"
       },
       {
         "year": "2026",
-        "event": "Vasta esperienza nel mercato, centinaia di progetti consegnati e team di professionisti internazionali"
+        "event": "Vasta esperienza nel mercato, con centinaia di progetti consegnati e team di professionisti internazionali"
       }
     ],
     "stats": {
-      "years": "Anni di Esperienza",
-      "projects": "Progetti Completati",
+      "years": "anni di esperienza",
+      "projects": "Progetti",
       "quality": "Qualità Garantita"
     },
-    "commitmentTag": "Il Nostro Impegno",
-    "commitmentTitle": "Costruito sulla Fiducia",
-    "commitmentDesc": "Ogni progetto è una testimonianza del nostro impegno per la qualità.",
+    "commitmentTag": "Il nostro impegno",
+    "commitmentTitle": "Costruito sulla fiducia",
+    "commitmentDesc": "Ogni progetto conferma il nostro impegno. Dalla consulenza al completamento, ArcoBau offre trasparenza e integrità professionale — stile svizzero.",
     "getInTouch": "Contattaci"
   },
   "contact": {
     "tag": "Contatti",
-    "title": "Inizia il Progetto",
-    "desc": "Vorremmo conoscere la tua visione. Compila il modulo e un nostro specialista ti contatterà.",
-    "getInTouch": "Mettiti in Contatto",
+    "title": "Avvia progetto",
+    "desc": "Ci piacerebbe conoscere i tuoi piani. Compila il modulo sottostante e uno specialista ti risponderà rapidamente.",
+    "getInTouch": "Contattaci",
     "address": "Indirizzo",
-    "email": "Email",
-    "phone": "Telefono",
-    "hours": "Orari",
+    "email": "Posta elettronica",
+    "phone": "Tolofono",
+    "hours": "Programma",
     "contactInfo": {
-      "addressStreet": "Chamerstrasse 172",
-      "addressCity": "6300 Zug, Schweiz",
+      "addressStreet": "Bahnhofstrasse 1",
+      "addressCity": "8001 Zurigo, Svizzera",
       "email": "contact@arcobau.ch",
       "phone": "076 726 80 88",
       "directorName": "Nicolae Danciu",
-      "hoursWeekday": "Lun–Ven: 08:00–18:00",
-      "hoursSaturday": "Sab: 09:00–14:00"
+      "hoursWeekday": "Lunedì-venerdì: 08:00–18:00",
+      "hoursSaturday": "Sabato: 09:00–14:00"
     },
     "form": {
-      "successTitle": "Messaggio Ricevuto",
-      "successDesc": "Grazie. Ti risponderemo entro un giorno lavorativo.",
-      "title": "Richiesta Progetto",
-      "nameLabel": "Nome Completo *",
-      "namePlaceholder": "Hans Müller",
-      "emailLabel": "Email *",
-      "emailPlaceholder": "hans@example.ch",
+      "successTitle": "Messaggio ricevuto",
+      "successDesc": "Grazie per il messaggio. Ti risponderemo entro 1 giorno lavorativo.",
+      "title": "Richiesta preventivo",
+      "nameLabel": "Nome completo",
+      "namePlaceholder": "Ion Popescu",
+      "emailLabel": "Indirizzo di posta elettronica",
+      "emailPlaceholder": "ion@example.ro",
       "phoneLabel": "Telefono",
       "phonePlaceholder": "+41 44 000 00 00",
-      "typeLabel": "Tipo di Progetto",
-      "typeSelect": "Seleziona",
+      "typeLabel": "Tipo di progetto",
+      "typeSelect": "Seleziona una tipologia",
       "typeRes": "Residenziale",
       "typeCom": "Commerciale",
-      "typePub": "Pubblico",
+      "typePub": "Pubblica",
       "typeRen": "Ristrutturazione",
       "typeOther": "Altro",
-      "messageLabel": "Descrizione del Progetto *",
-      "messagePlaceholder": "Descrivi la tua visione, luogo, tempi...",
-      "submitBtn": "Invia Richiesta",
-      "privacyMsg": "Inviando accetti la nostra Privacy Policy."
+      "messageLabel": "Descrizione del progetto",
+      "messagePlaceholder": "Descrivi la visione del progetto, la posizione, il termine desiderato...",
+      "submitBtn": "Invia richiesta",
+      "privacyMsg": "Inviando, accetti l'Informativa sulla privacy."
     }
   },
   "footer": {
-    "copyright": "© 2026 ArcoBau AG Zürich. Costruiamo il Futuro · Precisione Svizzera.",
+    "copyright": "© 2026 ArcoBau AG Zurigo. Costruire il futuro · Precisione svizzera.",
     "navigation": "Navigazione",
-    "services": "Servizi",
-    "legal": "Note Legali",
+    "services": "Services",
+    "legal": "Informazioni legali",
     "followUs": "Seguici",
     "servicesList": {
-      "interior": "Finiture d'Interni",
-      "exterior": "Finiture d'Esterni",
-      "structure": "Lavori Strutturali",
+      "interior": "Finiture interne",
+      "exterior": "Finiture esterne",
+      "structure": "Strutture",
       "ceramics": "Ceramica"
     }
   }
