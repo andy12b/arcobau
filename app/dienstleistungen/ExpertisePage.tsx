@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function ExpertisePage() {
   const { t } = useLanguage();
+  const imgData = translations.RO.expertise.services;
 
   const services = [
     {
@@ -22,7 +24,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.resBody,
       cta: t.expertise.services.resCta,
       features: t.expertise.services.resFeatures,
-      img: t.expertise.services.resImg || "/images/ceramica/ceramica-6.jpeg",
+      img: imgData.resImg || "/images/ceramica/ceramica-6.jpeg",
       href: "/kontakt",
     },
     {
@@ -39,7 +41,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.intBody,
       cta: t.expertise.services.intCta,
       features: t.expertise.services.intFeatures,
-      img: t.expertise.services.intImg || "/images/termosistem/termosistem-2.jpeg",
+      img: imgData.intImg || "/images/termosistem/termosistem-2.jpeg",
       href: "/kontakt",
     },
     {
@@ -55,7 +57,7 @@ export default function ExpertisePage() {
       body: t.expertise.services.floorBody,
       cta: t.expertise.services.floorCta,
       features: t.expertise.services.floorFeatures,
-      img: t.expertise.services.floorImg || "/images/structuri/structuri-1.jpeg",
+      img: imgData.floorImg || "/images/structuri/structuri-1.jpeg",
       href: "/kontakt",
     },
   ];

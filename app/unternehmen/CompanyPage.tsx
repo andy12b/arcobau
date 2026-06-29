@@ -4,23 +4,25 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function CompanyPage() {
   const { t } = useLanguage();
+  const imgData = translations.RO.company.cards;
 
   const cards = [
     {
-      img: t.company.cards.heritageImg || "/images/fatade-case/fatade-case-1.jpeg",
+      img: imgData.heritageImg || "/images/fatade-case/fatade-case-1.jpeg",
       title: t.company.cards.heritageTitle,
       body: t.company.cards.heritageDesc,
     },
     {
-      img: t.company.cards.missionImg || "/images/ceramica/ceramica-2.jpeg",
+      img: imgData.missionImg || "/images/ceramica/ceramica-2.jpeg",
       title: t.company.cards.missionTitle,
       body: t.company.cards.missionDesc,
     },
     {
-      img: t.company.cards.valuesImg || "/images/ceramica/ceramica-1.jpeg",
+      img: imgData.valuesImg || "/images/ceramica/ceramica-1.jpeg",
       title: t.company.cards.valuesTitle,
       body: t.company.cards.valuesDesc,
     },
