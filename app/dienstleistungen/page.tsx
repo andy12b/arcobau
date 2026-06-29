@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "ArcoBau bietet Innenausbau, Wärmedämmfassaden, Fliesenlegen und Rohbau in der ganzen Schweiz. Schweizer Präzision, transparente Preise, schriftliche Garantie auf alle Arbeiten.",
   alternates: {
-    canonical: "/dienstleistungen",
+    canonical: "/dienstleistungen/",
   },
 };
 
