@@ -635,15 +635,6 @@ collections:
               - label: Subtitlu Hero
                 name: heroSubtitle
                 widget: text
-              - label: Imagine Hero 1
-                name: heroImg1
-                widget: image
-              - label: Imagine Hero 2
-                name: heroImg2
-                widget: image
-              - label: Imagine Hero 3
-                name: heroImg3
-                widget: image
               - label: Buton Portfolio
                 name: viewPortfolio
                 widget: string
@@ -659,9 +650,6 @@ collections:
               - label: Descriere Expertiză
                 name: tailoredExpertiseDesc
                 widget: text
-              - label: Imagine Filozofie
-                name: philosophyImg
-                widget: image
               - label: Filozofia Noastră (titlu)
                 name: ourPhilosophy
                 widget: string
@@ -686,15 +674,6 @@ collections:
               - label: Vezi Toate Proiectele
                 name: viewAllProjects
                 widget: string
-              - label: Imagine Portofoliu 1
-                name: portfolioImg1
-                widget: image
-              - label: Imagine Portofoliu 2
-                name: portfolioImg2
-                widget: image
-              - label: Imagine Portofoliu 3
-                name: portfolioImg3
-                widget: image
               - label: Începe Proiectul Tău
                 name: startYourProject
                 widget: string
@@ -733,9 +712,6 @@ collections:
                   - label: Descoperă Serviciile
                     name: discoverServices
                     widget: string
-                  - label: Imagine Finisaje Interioare
-                    name: privateClientsImg
-                    widget: image
                   - label: Finisaje Exterioare (titlu)
                     name: aptFinishing
                     widget: string
@@ -745,9 +721,6 @@ collections:
                   - label: Află Mai Multe
                     name: learnMore
                     widget: string
-                  - label: Imagine Finisaje Exterioare
-                    name: aptFinishingImg
-                    widget: image
                   - label: Structuri (titlu)
                     name: flooring
                     widget: string
@@ -757,9 +730,6 @@ collections:
                   - label: Vezi Serviciile
                     name: viewServices
                     widget: string
-                  - label: Imagine Structuri
-                    name: flooringImg
-                    widget: image
           - label: Pagina Servicii
             name: expertise
             widget: object
@@ -807,9 +777,6 @@ collections:
                   - label: Buton Interior
                     name: resCta
                     widget: string
-                  - label: Imagine Interior
-                    name: resImg
-                    widget: image
                   - label: Caracteristici Interior
                     name: resFeatures
                     widget: list
@@ -831,9 +798,6 @@ collections:
                   - label: Buton Exterior
                     name: intCta
                     widget: string
-                  - label: Imagine Exterior
-                    name: intImg
-                    widget: image
                   - label: Caracteristici Exterior
                     name: intFeatures
                     widget: list
@@ -855,9 +819,6 @@ collections:
                   - label: Buton Structuri
                     name: floorCta
                     widget: string
-                  - label: Imagine Structuri
-                    name: floorImg
-                    widget: image
                   - label: Caracteristici Structuri
                     name: floorFeatures
                     widget: list
@@ -926,27 +887,18 @@ collections:
                   - label: Tradiție - Text
                     name: heritageDesc
                     widget: text
-                  - label: Tradiție - Imagine
-                    name: heritageImg
-                    widget: image
                   - label: Misiune - Titlu
                     name: missionTitle
                     widget: string
                   - label: Misiune - Text
                     name: missionDesc
                     widget: text
-                  - label: Misiune - Imagine
-                    name: missionImg
-                    widget: image
                   - label: Valori - Titlu
                     name: valuesTitle
                     widget: string
                   - label: Valori - Text
                     name: valuesDesc
                     widget: text
-                  - label: Valori - Imagine
-                    name: valuesImg
-                    widget: image
               - label: Tag De Ce Noi
                 name: whyUsTag
                 widget: string
@@ -1219,15 +1171,6 @@ collections:
               - label: Subtitlu Hero
                 name: heroSubtitle
                 widget: text
-              - label: Imagine Hero 1
-                name: heroImg1
-                widget: image
-              - label: Imagine Hero 2
-                name: heroImg2
-                widget: image
-              - label: Imagine Hero 3
-                name: heroImg3
-                widget: image
               - label: Buton Portfolio
                 name: viewPortfolio
                 widget: string
@@ -1243,9 +1186,6 @@ collections:
               - label: Descriere Expertiză
                 name: tailoredExpertiseDesc
                 widget: text
-              - label: Imagine Filozofie
-                name: philosophyImg
-                widget: image
               - label: Filozofia Noastră (titlu)
                 name: ourPhilosophy
                 widget: string
@@ -1270,15 +1210,6 @@ collections:
               - label: Vezi Toate Proiectele
                 name: viewAllProjects
                 widget: string
-              - label: Imagine Portofoliu 1
-                name: portfolioImg1
-                widget: image
-              - label: Imagine Portofoliu 2
-                name: portfolioImg2
-                widget: image
-              - label: Imagine Portofoliu 3
-                name: portfolioImg3
-                widget: image
               - label: Începe Proiectul Tău
                 name: startYourProject
                 widget: string
@@ -1317,9 +1248,6 @@ collections:
                   - label: Descoperă Serviciile
                     name: discoverServices
                     widget: string
-                  - label: Imagine Finisaje Interioare
-                    name: privateClientsImg
-                    widget: image
                   - label: Finisaje Exterioare (titlu)
                     name: aptFinishing
                     widget: string
@@ -1329,9 +1257,6 @@ collections:
                   - label: Află Mai Multe
                     name: learnMore
                     widget: string
-                  - label: Imagine Finisaje Exterioare
-                    name: aptFinishingImg
-                    widget: image
                   - label: Structuri (titlu)
                     name: flooring
                     widget: string
@@ -1341,9 +1266,6 @@ collections:
                   - label: Vezi Serviciile
                     name: viewServices
                     widget: string
-                  - label: Imagine Structuri
-                    name: flooringImg
-                    widget: image
           - label: Pagina Servicii
             name: expertise
             widget: object
@@ -1391,9 +1313,6 @@ collections:
                   - label: Buton Interior
                     name: resCta
                     widget: string
-                  - label: Imagine Interior
-                    name: resImg
-                    widget: image
                   - label: Caracteristici Interior
                     name: resFeatures
                     widget: list
@@ -1415,9 +1334,6 @@ collections:
                   - label: Buton Exterior
                     name: intCta
                     widget: string
-                  - label: Imagine Exterior
-                    name: intImg
-                    widget: image
                   - label: Caracteristici Exterior
                     name: intFeatures
                     widget: list
@@ -1439,9 +1355,6 @@ collections:
                   - label: Buton Structuri
                     name: floorCta
                     widget: string
-                  - label: Imagine Structuri
-                    name: floorImg
-                    widget: image
                   - label: Caracteristici Structuri
                     name: floorFeatures
                     widget: list
@@ -1510,27 +1423,18 @@ collections:
                   - label: Tradiție - Text
                     name: heritageDesc
                     widget: text
-                  - label: Tradiție - Imagine
-                    name: heritageImg
-                    widget: image
                   - label: Misiune - Titlu
                     name: missionTitle
                     widget: string
                   - label: Misiune - Text
                     name: missionDesc
                     widget: text
-                  - label: Misiune - Imagine
-                    name: missionImg
-                    widget: image
                   - label: Valori - Titlu
                     name: valuesTitle
                     widget: string
                   - label: Valori - Text
                     name: valuesDesc
                     widget: text
-                  - label: Valori - Imagine
-                    name: valuesImg
-                    widget: image
               - label: Tag De Ce Noi
                 name: whyUsTag
                 widget: string
@@ -1803,15 +1707,6 @@ collections:
               - label: Subtitlu Hero
                 name: heroSubtitle
                 widget: text
-              - label: Imagine Hero 1
-                name: heroImg1
-                widget: image
-              - label: Imagine Hero 2
-                name: heroImg2
-                widget: image
-              - label: Imagine Hero 3
-                name: heroImg3
-                widget: image
               - label: Buton Portfolio
                 name: viewPortfolio
                 widget: string
@@ -1827,9 +1722,6 @@ collections:
               - label: Descriere Expertiză
                 name: tailoredExpertiseDesc
                 widget: text
-              - label: Imagine Filozofie
-                name: philosophyImg
-                widget: image
               - label: Filozofia Noastră (titlu)
                 name: ourPhilosophy
                 widget: string
@@ -1854,15 +1746,6 @@ collections:
               - label: Vezi Toate Proiectele
                 name: viewAllProjects
                 widget: string
-              - label: Imagine Portofoliu 1
-                name: portfolioImg1
-                widget: image
-              - label: Imagine Portofoliu 2
-                name: portfolioImg2
-                widget: image
-              - label: Imagine Portofoliu 3
-                name: portfolioImg3
-                widget: image
               - label: Începe Proiectul Tău
                 name: startYourProject
                 widget: string
@@ -1901,9 +1784,6 @@ collections:
                   - label: Descoperă Serviciile
                     name: discoverServices
                     widget: string
-                  - label: Imagine Finisaje Interioare
-                    name: privateClientsImg
-                    widget: image
                   - label: Finisaje Exterioare (titlu)
                     name: aptFinishing
                     widget: string
@@ -1913,9 +1793,6 @@ collections:
                   - label: Află Mai Multe
                     name: learnMore
                     widget: string
-                  - label: Imagine Finisaje Exterioare
-                    name: aptFinishingImg
-                    widget: image
                   - label: Structuri (titlu)
                     name: flooring
                     widget: string
@@ -1925,9 +1802,6 @@ collections:
                   - label: Vezi Serviciile
                     name: viewServices
                     widget: string
-                  - label: Imagine Structuri
-                    name: flooringImg
-                    widget: image
           - label: Pagina Servicii
             name: expertise
             widget: object
@@ -1975,9 +1849,6 @@ collections:
                   - label: Buton Interior
                     name: resCta
                     widget: string
-                  - label: Imagine Interior
-                    name: resImg
-                    widget: image
                   - label: Caracteristici Interior
                     name: resFeatures
                     widget: list
@@ -1999,9 +1870,6 @@ collections:
                   - label: Buton Exterior
                     name: intCta
                     widget: string
-                  - label: Imagine Exterior
-                    name: intImg
-                    widget: image
                   - label: Caracteristici Exterior
                     name: intFeatures
                     widget: list
@@ -2023,9 +1891,6 @@ collections:
                   - label: Buton Structuri
                     name: floorCta
                     widget: string
-                  - label: Imagine Structuri
-                    name: floorImg
-                    widget: image
                   - label: Caracteristici Structuri
                     name: floorFeatures
                     widget: list
@@ -2094,27 +1959,18 @@ collections:
                   - label: Tradiție - Text
                     name: heritageDesc
                     widget: text
-                  - label: Tradiție - Imagine
-                    name: heritageImg
-                    widget: image
                   - label: Misiune - Titlu
                     name: missionTitle
                     widget: string
                   - label: Misiune - Text
                     name: missionDesc
                     widget: text
-                  - label: Misiune - Imagine
-                    name: missionImg
-                    widget: image
                   - label: Valori - Titlu
                     name: valuesTitle
                     widget: string
                   - label: Valori - Text
                     name: valuesDesc
                     widget: text
-                  - label: Valori - Imagine
-                    name: valuesImg
-                    widget: image
               - label: Tag De Ce Noi
                 name: whyUsTag
                 widget: string
@@ -2387,15 +2243,6 @@ collections:
               - label: Subtitlu Hero
                 name: heroSubtitle
                 widget: text
-              - label: Imagine Hero 1
-                name: heroImg1
-                widget: image
-              - label: Imagine Hero 2
-                name: heroImg2
-                widget: image
-              - label: Imagine Hero 3
-                name: heroImg3
-                widget: image
               - label: Buton Portfolio
                 name: viewPortfolio
                 widget: string
@@ -2411,9 +2258,6 @@ collections:
               - label: Descriere Expertiză
                 name: tailoredExpertiseDesc
                 widget: text
-              - label: Imagine Filozofie
-                name: philosophyImg
-                widget: image
               - label: Filozofia Noastră (titlu)
                 name: ourPhilosophy
                 widget: string
@@ -2438,15 +2282,6 @@ collections:
               - label: Vezi Toate Proiectele
                 name: viewAllProjects
                 widget: string
-              - label: Imagine Portofoliu 1
-                name: portfolioImg1
-                widget: image
-              - label: Imagine Portofoliu 2
-                name: portfolioImg2
-                widget: image
-              - label: Imagine Portofoliu 3
-                name: portfolioImg3
-                widget: image
               - label: Începe Proiectul Tău
                 name: startYourProject
                 widget: string
@@ -2485,9 +2320,6 @@ collections:
                   - label: Descoperă Serviciile
                     name: discoverServices
                     widget: string
-                  - label: Imagine Finisaje Interioare
-                    name: privateClientsImg
-                    widget: image
                   - label: Finisaje Exterioare (titlu)
                     name: aptFinishing
                     widget: string
@@ -2497,9 +2329,6 @@ collections:
                   - label: Află Mai Multe
                     name: learnMore
                     widget: string
-                  - label: Imagine Finisaje Exterioare
-                    name: aptFinishingImg
-                    widget: image
                   - label: Structuri (titlu)
                     name: flooring
                     widget: string
@@ -2509,9 +2338,6 @@ collections:
                   - label: Vezi Serviciile
                     name: viewServices
                     widget: string
-                  - label: Imagine Structuri
-                    name: flooringImg
-                    widget: image
           - label: Pagina Servicii
             name: expertise
             widget: object
@@ -2559,9 +2385,6 @@ collections:
                   - label: Buton Interior
                     name: resCta
                     widget: string
-                  - label: Imagine Interior
-                    name: resImg
-                    widget: image
                   - label: Caracteristici Interior
                     name: resFeatures
                     widget: list
@@ -2583,9 +2406,6 @@ collections:
                   - label: Buton Exterior
                     name: intCta
                     widget: string
-                  - label: Imagine Exterior
-                    name: intImg
-                    widget: image
                   - label: Caracteristici Exterior
                     name: intFeatures
                     widget: list
@@ -2607,9 +2427,6 @@ collections:
                   - label: Buton Structuri
                     name: floorCta
                     widget: string
-                  - label: Imagine Structuri
-                    name: floorImg
-                    widget: image
                   - label: Caracteristici Structuri
                     name: floorFeatures
                     widget: list
@@ -2678,27 +2495,18 @@ collections:
                   - label: Tradiție - Text
                     name: heritageDesc
                     widget: text
-                  - label: Tradiție - Imagine
-                    name: heritageImg
-                    widget: image
                   - label: Misiune - Titlu
                     name: missionTitle
                     widget: string
                   - label: Misiune - Text
                     name: missionDesc
                     widget: text
-                  - label: Misiune - Imagine
-                    name: missionImg
-                    widget: image
                   - label: Valori - Titlu
                     name: valuesTitle
                     widget: string
                   - label: Valori - Text
                     name: valuesDesc
                     widget: text
-                  - label: Valori - Imagine
-                    name: valuesImg
-                    widget: image
               - label: Tag De Ce Noi
                 name: whyUsTag
                 widget: string
