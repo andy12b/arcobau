@@ -40,8 +40,18 @@
       "learnMore": "EN SAVOIR PLUS",
       "flooring": "Structure",
       "flooringDesc": "Les travaux de charpente, de maçonnerie et de menuiserie fournissent une base solide et durable à votre projet.",
-      "viewServices": "Voir les services"
-    }
+      "viewServices": "Voir les services",
+      "privateClientsImg": "/images/finisaje/finisaje-9.jpeg",
+      "aptFinishingImg": "/images/termosistem/termosistem-30.jpeg",
+      "flooringImg": "/images/structuri/structuri-22.jpeg"
+    },
+    "heroImg1": "/images/termosistem/termosistem-60.jpeg",
+    "heroImg2": "/images/ceramica/ceramica-28.jpeg",
+    "heroImg3": "/images/finisaje/finisaje-1.jpeg",
+    "philosophyImg": "/images/ceramica/ceramica-80.jpeg",
+    "portfolioImg1": "/images/ceramica/ceramica-50.jpeg",
+    "portfolioImg2": "/images/termosistem/termosistem-55.jpeg",
+    "portfolioImg3": "/images/finisaje/finisaje-1.jpeg"
   },
   "expertise": {
     "tag": "Expertise",

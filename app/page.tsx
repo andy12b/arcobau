@@ -10,15 +10,14 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Imagini hero din portofoliu real
-const heroImages = [
-  "/images/termosistem/termosistem-60.jpeg",
-  "/images/ceramica/ceramica-28.jpeg",
-  "/images/finisaje/finisaje-1.jpeg",
-];
-
 export default function HomePage() {
   const { t } = useLanguage();
+
+  const heroImages = [
+    t.home.heroImg1 || "/images/termosistem/termosistem-60.jpeg",
+    t.home.heroImg2 || "/images/ceramica/ceramica-28.jpeg",
+    t.home.heroImg3 || "/images/finisaje/finisaje-1.jpeg",
+  ];
   const heroRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLDivElement>(null);
   const heroImgRef = useRef<HTMLDivElement>(null);
@@ -35,7 +34,7 @@ export default function HomePage() {
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
       href: "/dienstleistungen",
-      img: "/images/finisaje/finisaje-9.jpeg",
+      img: t.home.services.privateClientsImg || "/images/finisaje/finisaje-9.jpeg",
     },
     {
       icon: (
@@ -49,7 +48,7 @@ export default function HomePage() {
       description: t.home.services.aptFinishingDesc,
       cta: t.home.services.learnMore,
       href: "/dienstleistungen",
-      img: "/images/termosistem/termosistem-30.jpeg",
+      img: t.home.services.aptFinishingImg || "/images/termosistem/termosistem-30.jpeg",
     },
     {
       icon: (
@@ -62,7 +61,7 @@ export default function HomePage() {
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
       href: "/dienstleistungen",
-      img: "/images/structuri/structuri-22.jpeg",
+      img: t.home.services.flooringImg || "/images/structuri/structuri-22.jpeg",
     },
   ];
 
@@ -237,7 +236,7 @@ export default function HomePage() {
             <AnimatedSection animation="slide-left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/ceramica/ceramica-80.jpeg"
+                  src={t.home.philosophyImg || "/images/ceramica/ceramica-80.jpeg"}
                   alt="Calitate premium ArcoBau"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -315,9 +314,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
-              { img: "/images/ceramica/ceramica-50.jpeg", categoryKey: "ceramica" as const, titleKey: "project1" as const },
-              { img: "/images/termosistem/termosistem-55.jpeg", categoryKey: "termosistem" as const, titleKey: "project2" as const },
-              { img: "/images/finisaje/finisaje-1.jpeg", categoryKey: "finisaje" as const, titleKey: "project3" as const },
+              { img: t.home.portfolioImg1 || "/images/ceramica/ceramica-50.jpeg", categoryKey: "ceramica" as const, titleKey: "project1" as const },
+              { img: t.home.portfolioImg2 || "/images/termosistem/termosistem-55.jpeg", categoryKey: "termosistem" as const, titleKey: "project2" as const },
+              { img: t.home.portfolioImg3 || "/images/finisaje/finisaje-1.jpeg", categoryKey: "finisaje" as const, titleKey: "project3" as const },
             ]).map((item, i) => {
               const category = t.portfolio.categories[item.categoryKey];
               return (
