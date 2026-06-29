@@ -56,8 +56,9 @@
       "resTag": "Durchwahl",
       "resTitle": "Innenausstattung",
       "resLead": "Präzise Innenausstattung für jede Art von Raum.",
-      "resBody": "Wir bieten komplette Innenausbau-Dienstleistungen, ideal für Privatkunden und für Baustellen, die komplette Renovierungen erfordern.",
+      "resBody": "Wir bieten komplette und sorgfältige Innenausbauarbeiten an, ideal für Privatkunden und komplexe Renovierungen.",
       "resCta": "Angebot anfordern",
+      "resImg": "/images/ceramica/ceramica-6.jpeg",
       "resFeatures": [
         "Mechanisierter Putz",
         "Rigips.",
@@ -68,8 +69,9 @@
       "intTag": "Außen-",
       "intTitle": "Exterieur-Finishes",
       "intLead": "Hochwertige Fassaden und hochwertige Außendämmung.",
-      "intBody": "Wir führen Außenveredelungen und Thermofassaden durch, die wir sowohl für Privatkunden als auch im industriellen Bereich durchführen.",
-      "intCta": "Erfahr hier mehr!",
+      "intBody": "Wir führen Außenveredelungen und Wärmedämmverbundsysteme für Privatwohnungen und Industrieanlagen aus.",
+      "intCta": "Mehr erfahren",
+      "intImg": "/images/termosistem/termosistem-2.jpeg",
       "intFeatures": [
         "Montage von Wärmefassaden",
         "Polystyrol-Isolierung",
@@ -79,8 +81,9 @@
       "floorTag": "Aufbau",
       "floorTitle": "Bauarbeiten",
       "floorLead": "Das solide Fundament Ihrer Konstruktion.",
-      "floorBody": "Unsere Strukturteams leisten starke Arbeit, die für die Nachhaltigkeit eines jeden Gebäudes unerlässlich ist.",
-      "floorCta": "Dienstleistungen anzeigen",
+      "floorBody": "Unsere Rohbauteams liefern das Kerngerüst Ihres Gebäudes und gewährleisten Langlebigkeit und Sicherheit.",
+      "floorCta": "Dienstleistungen ansehen",
+      "floorImg": "/images/structuri/structuri-1.jpeg",
       "floorFeatures": [
         "Mauerwerk",
         "Tischlerei",
@@ -127,11 +130,14 @@
     "desc": "Ein Schweizer Unternehmen, das sich dem hochwertigen Wohnungsbau, der Innenausstattung und dem Bodenbelag verschrieben hat.",
     "cards": {
       "heritageTitle": "Unsere Tradition",
-      "heritageDesc": "Basierend auf Schweizer Qualität bringt ArcoBau akribische Aufmerksamkeit auf jedes Projekt in der Schweiz.",
-      "missionTitle": "Unser Leitbild",
-      "missionDesc": "Wir bauen die Zukunft. Unsere Mission ist es, Kunden in der ganzen Schweiz qualitativ hochwertige Dienstleistungen zu bieten.",
+      "heritageDesc": "Basierend auf Schweizer Qualität bringt ArcoBau in jedes Projekt in der Schweiz größte Sorgfalt ein.",
+      "heritageImg": "/images/fatade-case/fatade-case-1.jpeg",
+      "missionTitle": "Unsere Mission",
+      "missionDesc": "Wir bauen die Zukunft. Unsere Mission ist es, Kunden in der ganzen Schweiz hochwertige Dienstleistungen anzubieten.",
+      "missionImg": "/images/ceramica/ceramica-2.jpeg",
       "valuesTitle": "Unsere Werte<x id=\"1\"/>",
-      "valuesDesc": "Qualität, Zuverlässigkeit und Transparenz bilden unseren Kern. Wir bieten eine klare Preisgestaltung und erklären jeden Schritt."
+      "valuesDesc": "Qualität, Zuverlässigkeit und Transparenz bilden unseren Kern. Wir bieten klare Preise und erklären jeden Schritt.",
+      "valuesImg": "/images/ceramica/ceramica-1.jpeg"
     },
     "whyUsTag": "Warum ArcoBau",
     "whyUsTitle": "Was zeichnet uns aus",

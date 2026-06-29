@@ -22,8 +22,8 @@ export default function ExpertisePage() {
       body: t.expertise.services.resBody,
       cta: t.expertise.services.resCta,
       features: t.expertise.services.resFeatures,
-      img: "/images/ceramica/ceramica-6.jpeg",
-      href: "/contact",
+      img: t.expertise.services.resImg || "/images/ceramica/ceramica-6.jpeg",
+      href: "/kontakt",
     },
     {
       icon: (
@@ -39,8 +39,8 @@ export default function ExpertisePage() {
       body: t.expertise.services.intBody,
       cta: t.expertise.services.intCta,
       features: t.expertise.services.intFeatures,
-      img: "/images/termosistem/termosistem-2.jpeg",
-      href: "/contact",
+      img: t.expertise.services.intImg || "/images/termosistem/termosistem-2.jpeg",
+      href: "/kontakt",
     },
     {
       icon: (
@@ -55,8 +55,8 @@ export default function ExpertisePage() {
       body: t.expertise.services.floorBody,
       cta: t.expertise.services.floorCta,
       features: t.expertise.services.floorFeatures,
-      img: "/images/structuri/structuri-1.jpeg",
-      href: "/contact",
+      img: t.expertise.services.floorImg || "/images/structuri/structuri-1.jpeg",
+      href: "/kontakt",
     },
   ];
 
@@ -205,7 +205,7 @@ export default function ExpertisePage() {
               </div>
               <div style={{ flexShrink: 0 }}>
                 <Link
-                  href="/contact"
+                  href="/kontakt"
                   className="inline-block bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-gold-ochre transition-colors duration-300"
                   style={{ whiteSpace: "nowrap" }}
                 >

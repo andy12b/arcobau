@@ -58,6 +58,7 @@
       "resLead": "Finisaje interioare cu precizie pentru orice tip de spațiu.",
       "resBody": "Oferim servicii complete de finisare interioară, ideale pentru clienții privați și pentru șantiere care necesită renovări complete.",
       "resCta": "Cere o Ofertă",
+      "resImg": "/images/ceramica/ceramica-6.jpeg",
       "resFeatures": [
         "Tencuială mecanizată",
         "Rigips",
@@ -70,6 +71,7 @@
       "intLead": "Fațade premium și izolație exterioară de înaltă calitate.",
       "intBody": "Realizăm finisaje exterioare și fațade termice, pe care le executăm atât pentru clienții privați, cât și în sectorul industrial.",
       "intCta": "Află Mai Multe",
+      "intImg": "/images/termosistem/termosistem-2.jpeg",
       "intFeatures": [
         "Montare fațade termice",
         "Izolație cu polistiren",
@@ -81,6 +83,7 @@
       "floorLead": "Fundația solidă a construcției tale.",
       "floorBody": "Echipele noastre de structură asigură lucrări de rezistență esențiale pentru durabilitatea oricărei clădiri.",
       "floorCta": "Vezi Serviciile",
+      "floorImg": "/images/structuri/structuri-1.jpeg",
       "floorFeatures": [
         "Zidărie",
         "Dulgherie",
@@ -128,10 +131,13 @@
     "cards": {
       "heritageTitle": "Tradiția Noastră",
       "heritageDesc": "Având la bază calitatea elvețiană, ArcoBau aduce atenție meticuloasă la fiecare proiect din Elveția.",
+      "heritageImg": "/images/fatade-case/fatade-case-1.jpeg",
       "missionTitle": "Misiunea Noastră",
       "missionDesc": "Construim Viitorul. Misiunea noastră este să oferim servicii de înaltă calitate clienților din întreaga Elveție.",
+      "missionImg": "/images/ceramica/ceramica-2.jpeg",
       "valuesTitle": "Valorile Noastre",
-      "valuesDesc": "Calitatea, fiabilitatea și transparența formează nucleul nostru. Oferim prețuri clare și explicăm fiecare pas."
+      "valuesDesc": "Calitatea, fiabilitatea și transparența formează nucleul nostru. Oferim prețuri clare și explicăm fiecare pas.",
+      "valuesImg": "/images/ceramica/ceramica-1.jpeg"
     },
     "whyUsTag": "De Ce ArcoBau",
     "whyUsTitle": "Ce Ne Diferențiază",

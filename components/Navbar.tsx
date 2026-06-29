@@ -28,9 +28,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/expertise", label: t.nav.expertise },
+    { href: "/dienstleistungen", label: t.nav.expertise },
     { href: "/portfolio", label: t.nav.portfolio },
-    { href: "/company", label: t.nav.company },
+    { href: "/unternehmen", label: t.nav.company },
   ];
 
   useEffect(() => {
@@ -141,7 +141,7 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/contact"
+              href="/kontakt"
               className="bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-10 py-4 transition-colors duration-300 hover:bg-gold-ochre ml-sm"
             >
               {t.nav.contact}
@@ -236,7 +236,7 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/contact"
+              href="/kontakt"
               onClick={() => setMobileOpen(false)}
               className="bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-6 py-4 text-center mt-2 hover:bg-gold-ochre transition-colors duration-300"
             >
@@ -256,10 +256,10 @@ export default function Navbar() {
             { href: "/portfolio", icon: (
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
             ), label: t.nav.portfolio },
-            { href: "/expertise", icon: (
+            { href: "/dienstleistungen", icon: (
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
             ), label: t.nav.expertise },
-            { href: "/contact", icon: (
+            { href: "/kontakt", icon: (
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             ), label: t.nav.contact },
           ].map((item) => {

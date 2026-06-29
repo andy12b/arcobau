@@ -88,10 +88,10 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-4">
               {[
-                { label: t.nav.expertise, href: "/expertise" },
+                { label: t.nav.expertise, href: "/dienstleistungen" },
                 { label: t.nav.portfolio, href: "/portfolio" },
-                { label: t.nav.company, href: "/company" },
-                { label: t.nav.contact, href: "/contact" },
+                { label: t.nav.company, href: "/unternehmen" },
+                { label: t.nav.contact, href: "/kontakt" },
               ].map((item) => (
                 <Link
                   key={item.href}
@@ -113,7 +113,7 @@ export default function Footer() {
               {[t.footer.servicesList.interior, t.footer.servicesList.exterior, t.footer.servicesList.structure, t.footer.servicesList.ceramics].map((item) => (
                 <Link
                   key={item}
-                  href="/expertise"
+                  href="/dienstleistungen"
                   className="text-sm text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-300 w-fit"
                 >
                   {item}

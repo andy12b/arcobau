@@ -34,7 +34,7 @@ export default function HomePage() {
       title: t.home.services.privateClients,
       description: t.home.services.privateClientsDesc,
       cta: t.home.services.discoverServices,
-      href: "/expertise",
+      href: "/dienstleistungen",
       img: "/images/finisaje/finisaje-9.jpeg",
     },
     {
@@ -48,7 +48,7 @@ export default function HomePage() {
       title: t.home.services.aptFinishing,
       description: t.home.services.aptFinishingDesc,
       cta: t.home.services.learnMore,
-      href: "/expertise",
+      href: "/dienstleistungen",
       img: "/images/termosistem/termosistem-30.jpeg",
     },
     {
@@ -61,7 +61,7 @@ export default function HomePage() {
       title: t.home.services.flooring,
       description: t.home.services.flooringDesc,
       cta: t.home.services.viewServices,
-      href: "/expertise",
+      href: "/dienstleistungen",
       img: "/images/structuri/structuri-22.jpeg",
     },
   ];
@@ -166,7 +166,7 @@ export default function HomePage() {
                   {t.home.viewPortfolio}
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/kontakt"
                   className="border border-white/60 text-pure-white text-xs font-semibold tracking-widest uppercase px-10 py-4 hover:border-gold-ochre hover:text-gold-ochre transition-all duration-300 text-center"
                 >
                   {t.home.contactUs}
@@ -256,7 +256,7 @@ export default function HomePage() {
                 {t.home.philosophyDesc2}
               </p>
               <Link
-                href="/company"
+                href="/unternehmen"
                 className="inline-flex items-center gap-2 bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-10 py-4 hover:bg-gold-ochre transition-colors duration-300"
               >
                 {t.home.aboutUs}
@@ -371,7 +371,7 @@ export default function HomePage() {
                 {t.home.contactTeam}
               </p>
               <Link
-                href="/contact"
+                href="/kontakt"
                 className="inline-block bg-gold-ochre text-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-white hover:text-charcoal transition-all duration-300"
               >
                 {t.home.getInTouch}

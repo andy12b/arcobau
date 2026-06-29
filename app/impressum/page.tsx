@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Impressum von ArcoBau AG – rechtliche Angaben gemäss Schweizer Recht. Chamerstrasse 172, 6300 Zug.",
   robots: { index: true, follow: false },
+  alternates: {
+    canonical: "/impressum",
+  },
 };
 
 export default function ImpressumPage() {

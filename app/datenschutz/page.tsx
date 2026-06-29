@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Datenschutzerklärung von ArcoBau AG gemäss Schweizer Datenschutzgesetz (DSG) und DSGVO.",
   robots: { index: true, follow: false },
+  alternates: {
+    canonical: "/datenschutz",
+  },
 };
 
 export default function DatenschutzPage() {

@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/expertise`,
+      url: `${baseUrl}/dienstleistungen`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
@@ -26,13 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/company`,
+      url: `${baseUrl}/unternehmen`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/kontakt`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.8,

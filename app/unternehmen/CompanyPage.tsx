@@ -10,17 +10,17 @@ export default function CompanyPage() {
 
   const cards = [
     {
-      img: "/images/fatade-case/fatade-case-1.jpeg",
+      img: t.company.cards.heritageImg || "/images/fatade-case/fatade-case-1.jpeg",
       title: t.company.cards.heritageTitle,
       body: t.company.cards.heritageDesc,
     },
     {
-      img: "/images/ceramica/ceramica-2.jpeg",
+      img: t.company.cards.missionImg || "/images/ceramica/ceramica-2.jpeg",
       title: t.company.cards.missionTitle,
       body: t.company.cards.missionDesc,
     },
     {
-      img: "/images/ceramica/ceramica-1.jpeg",
+      img: t.company.cards.valuesImg || "/images/ceramica/ceramica-1.jpeg",
       title: t.company.cards.valuesTitle,
       body: t.company.cards.valuesDesc,
     },
@@ -237,7 +237,7 @@ export default function CompanyPage() {
                 {t.company.commitmentDesc}
               </p>
               <Link
-                href="/contact"
+                href="/kontakt"
                 className="inline-block bg-charcoal text-pure-white text-xs font-semibold tracking-widest uppercase px-12 py-5 hover:bg-gold-ochre transition-colors duration-300"
               >
                 {t.company.getInTouch}
