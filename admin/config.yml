@@ -3040,3 +3040,20 @@ collections:
             name: responsible
             widget: string
             default: Nicolae Danciu, ArcoBau AG
+  - name: settings
+    label: ⚙️ Setări Site (Logo & Favicon)
+    description: Modifică logo-urile și iconița site-ului (Favicon).
+    files:
+      - name: global
+        label: Logo & Favicon
+        file: data/settings/global.json
+        fields:
+          - label: Logo Navbar (Meniu)
+            name: logoNavbar
+            widget: image
+          - label: Logo Footer (Subsol)
+            name: logoFooter
+            widget: image
+          - label: Favicon (Iconiță Browser)
+            name: favicon
+            widget: image
