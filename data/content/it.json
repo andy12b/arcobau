@@ -85,7 +85,10 @@
         "opere murarie",
         "Carpenteria",
         "Strutture in calcestruzzo"
-      ]
+      ],
+      "resImg": "/images/ceramica/ceramica-6.jpeg",
+      "intImg": "/images/termosistem/termosistem-2.jpeg",
+      "floorImg": "/images/structuri/structuri-1.jpeg"
     },
     "steps": [
       {
@@ -131,7 +134,10 @@
       "missionTitle": "La nostra Mission",
       "missionDesc": "Stiamo costruendo il futuro. La nostra missione è fornire servizi di alta qualità ai clienti in tutta la Svizzera.",
       "valuesTitle": "I nostri valori",
-      "valuesDesc": "Qualità, affidabilità e trasparenza sono il nostro cuore. Offriamo prezzi chiari e spieghiamo ogni passaggio."
+      "valuesDesc": "Qualità, affidabilità e trasparenza sono il nostro cuore. Offriamo prezzi chiari e spieghiamo ogni passaggio.",
+      "heritageImg": "/images/fatade-case/fatade-case-1.jpeg",
+      "missionImg": "/images/ceramica/ceramica-2.jpeg",
+      "valuesImg": "/images/ceramica/ceramica-1.jpeg"
     },
     "whyUsTag": "Perché ArcoBau",
     "whyUsTitle": "Cosa ci differenzia",

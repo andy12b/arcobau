@@ -1116,6 +1116,1668 @@ collections:
                     name: hoursSaturday
                     widget: string
                     default: Sa 09:00–14:00
+  - name: content_en
+    label: 🇬🇧 Conținut Site (Engleză)
+    description: Editează textele site-ului în engleză.
+    files:
+      - name: en
+        label: Conținut Engleză
+        file: data/content/en.json
+        fields:
+          - label: Navigare
+            name: nav
+            widget: object
+            fields:
+              - label: Servicii
+                name: expertise
+                widget: string
+              - label: Portofoliu
+                name: portfolio
+                widget: string
+              - label: Companie
+                name: company
+                widget: string
+              - label: Contact
+                name: contact
+                widget: string
+              - label: Impressum
+                name: impressum
+                widget: string
+              - label: Datenschutz
+                name: datenschutz
+                widget: string
+          - label: Pagina Principală
+            name: home
+            widget: object
+            fields:
+              - label: Tag Hero
+                name: heroTag
+                widget: string
+              - label: Titlu Hero
+                name: heroTitle
+                widget: string
+              - label: Subtitlu Hero
+                name: heroSubtitle
+                widget: text
+              - label: Buton Portfolio
+                name: viewPortfolio
+                widget: string
+              - label: Buton Contact
+                name: contactUs
+                widget: string
+              - label: Cum Lucrăm (titlu)
+                name: howWeWork
+                widget: string
+              - label: Expertiză Personalizată
+                name: tailoredExpertise
+                widget: string
+              - label: Descriere Expertiză
+                name: tailoredExpertiseDesc
+                widget: text
+              - label: Filozofia Noastră (titlu)
+                name: ourPhilosophy
+                widget: string
+              - label: Calitate (titlu)
+                name: swissQuality
+                widget: string
+              - label: Paragraf Filozofie 1
+                name: philosophyDesc1
+                widget: text
+              - label: Paragraf Filozofie 2
+                name: philosophyDesc2
+                widget: text
+              - label: Despre Noi (link)
+                name: aboutUs
+                widget: string
+              - label: Label Portfolio
+                name: portfolioLabel
+                widget: string
+              - label: Proiecte Recente
+                name: recentProjects
+                widget: string
+              - label: Vezi Toate Proiectele
+                name: viewAllProjects
+                widget: string
+              - label: Începe Proiectul Tău
+                name: startYourProject
+                widget: string
+              - label: Titlu CTA
+                name: readyToBuild
+                widget: string
+              - label: Text CTA
+                name: contactTeam
+                widget: text
+              - label: Buton Ia Legătura
+                name: getInTouch
+                widget: string
+              - label: Statistici
+                name: stats
+                widget: object
+                fields:
+                  - label: Ani Experiență
+                    name: years
+                    widget: string
+                  - label: Proiecte
+                    name: projects
+                    widget: string
+                  - label: Satisfacție
+                    name: satisfaction
+                    widget: string
+              - label: Servicii Homepage
+                name: services
+                widget: object
+                fields:
+                  - label: Finisaje Interioare (titlu)
+                    name: privateClients
+                    widget: string
+                  - label: Finisaje Interioare (descriere)
+                    name: privateClientsDesc
+                    widget: text
+                  - label: Descoperă Serviciile
+                    name: discoverServices
+                    widget: string
+                  - label: Finisaje Exterioare (titlu)
+                    name: aptFinishing
+                    widget: string
+                  - label: Finisaje Exterioare (descriere)
+                    name: aptFinishingDesc
+                    widget: text
+                  - label: Află Mai Multe
+                    name: learnMore
+                    widget: string
+                  - label: Structuri (titlu)
+                    name: flooring
+                    widget: string
+                  - label: Structuri (descriere)
+                    name: flooringDesc
+                    widget: text
+                  - label: Vezi Serviciile
+                    name: viewServices
+                    widget: string
+          - label: Pagina Servicii
+            name: expertise
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Titlu Proces
+                name: processTitle
+                widget: string
+              - label: Tag Proces
+                name: processTag
+                widget: string
+              - label: Gata să Înceapă?
+                name: readyToStart
+                widget: string
+              - label: Text Contact Discuție
+                name: contactDiscuss
+                widget: text
+              - label: Buton Contact
+                name: contactUs
+                widget: string
+              - label: Servicii Detaliate
+                name: services
+                widget: object
+                fields:
+                  - label: Tag Interior
+                    name: resTag
+                    widget: string
+                  - label: Titlu Interior
+                    name: resTitle
+                    widget: string
+                  - label: Slogan Interior
+                    name: resLead
+                    widget: string
+                  - label: Corp Interior
+                    name: resBody
+                    widget: text
+                  - label: Buton Interior
+                    name: resCta
+                    widget: string
+                  - label: Imagine Interior
+                    name: resImg
+                    widget: image
+                  - label: Caracteristici Interior
+                    name: resFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+                  - label: Tag Exterior
+                    name: intTag
+                    widget: string
+                  - label: Titlu Exterior
+                    name: intTitle
+                    widget: string
+                  - label: Slogan Exterior
+                    name: intLead
+                    widget: string
+                  - label: Corp Exterior
+                    name: intBody
+                    widget: text
+                  - label: Buton Exterior
+                    name: intCta
+                    widget: string
+                  - label: Imagine Exterior
+                    name: intImg
+                    widget: image
+                  - label: Caracteristici Exterior
+                    name: intFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+                  - label: Tag Structuri
+                    name: floorTag
+                    widget: string
+                  - label: Titlu Structuri
+                    name: floorTitle
+                    widget: string
+                  - label: Slogan Structuri
+                    name: floorLead
+                    widget: string
+                  - label: Corp Structuri
+                    name: floorBody
+                    widget: text
+                  - label: Buton Structuri
+                    name: floorCta
+                    widget: string
+                  - label: Imagine Structuri
+                    name: floorImg
+                    widget: image
+                  - label: Caracteristici Structuri
+                    name: floorFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+              - label: Pași Proces
+                name: steps
+                widget: list
+                fields:
+                  - label: Titlu Pas
+                    name: title
+                    widget: string
+                  - label: Descriere Pas
+                    name: desc
+                    widget: text
+          - label: Pagina Portofoliu
+            name: portfolio
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Categorii
+                name: categories
+                widget: object
+                fields:
+                  - label: Termosistem
+                    name: termosistem
+                    widget: string
+                  - label: Finisaje
+                    name: finisaje
+                    widget: string
+                  - label: Ceramică
+                    name: ceramica
+                    widget: string
+                  - label: Structuri
+                    name: structuri
+                    widget: string
+          - label: Pagina Companie
+            name: company
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Carduri
+                name: cards
+                widget: object
+                fields:
+                  - label: Tradiție - Titlu
+                    name: heritageTitle
+                    widget: string
+                  - label: Tradiție - Text
+                    name: heritageDesc
+                    widget: text
+                  - label: Tradiție - Imagine
+                    name: heritageImg
+                    widget: image
+                  - label: Misiune - Titlu
+                    name: missionTitle
+                    widget: string
+                  - label: Misiune - Text
+                    name: missionDesc
+                    widget: text
+                  - label: Misiune - Imagine
+                    name: missionImg
+                    widget: image
+                  - label: Valori - Titlu
+                    name: valuesTitle
+                    widget: string
+                  - label: Valori - Text
+                    name: valuesDesc
+                    widget: text
+                  - label: Valori - Imagine
+                    name: valuesImg
+                    widget: image
+              - label: Tag De Ce Noi
+                name: whyUsTag
+                widget: string
+              - label: Titlu De Ce Noi
+                name: whyUsTitle
+                widget: string
+              - label: Valorile Noastre
+                name: values
+                widget: object
+                fields:
+                  - label: Echipe - Titlu
+                    name: teamsTitle
+                    widget: string
+                  - label: Echipe - Text
+                    name: teamsDesc
+                    widget: text
+                  - label: Garanție - Titlu
+                    name: guaranteeTitle
+                    widget: string
+                  - label: Garanție - Text
+                    name: guaranteeDesc
+                    widget: text
+                  - label: Punctualitate - Titlu
+                    name: punctualityTitle
+                    widget: string
+                  - label: Punctualitate - Text
+                    name: punctualityDesc
+                    widget: text
+                  - label: Materiale - Titlu
+                    name: materialsTitle
+                    widget: string
+                  - label: Materiale - Text
+                    name: materialsDesc
+                    widget: text
+              - label: Tag Evoluție
+                name: journeyTag
+                widget: string
+              - label: Titlu Evoluție
+                name: journeyTitle
+                widget: string
+              - label: Timeline
+                name: timeline
+                widget: list
+                fields:
+                  - label: An
+                    name: year
+                    widget: string
+                  - label: Eveniment
+                    name: event
+                    widget: text
+              - label: Statistici
+                name: stats
+                widget: object
+                fields:
+                  - label: Ani
+                    name: years
+                    widget: string
+                  - label: Proiecte
+                    name: projects
+                    widget: string
+                  - label: Calitate
+                    name: quality
+                    widget: string
+              - label: Tag Angajament
+                name: commitmentTag
+                widget: string
+              - label: Titlu Angajament
+                name: commitmentTitle
+                widget: string
+              - label: Text Angajament
+                name: commitmentDesc
+                widget: text
+              - label: Buton Contact
+                name: getInTouch
+                widget: string
+          - label: Pagina Contact
+            name: contact
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Ia Legătura
+                name: getInTouch
+                widget: string
+              - label: Adresă (etichetă)
+                name: address
+                widget: string
+              - label: Email (etichetă)
+                name: email
+                widget: string
+              - label: Telefon (etichetă)
+                name: phone
+                widget: string
+              - label: Program (etichetă)
+                name: hours
+                widget: string
+              - label: 📍 Date de Contact (Adresă, Telefon, Email)
+                name: contactInfo
+                widget: object
+                fields:
+                  - label: Stradă + Număr
+                    name: addressStreet
+                    widget: string
+                  - label: Oraș + Cod Poștal
+                    name: addressCity
+                    widget: string
+                  - label: Email
+                    name: email
+                    widget: string
+                  - label: Telefon
+                    name: phone
+                    widget: string
+                  - label: Nume Director
+                    name: directorName
+                    widget: string
+                  - label: Program (Luni-Vineri)
+                    name: hoursWeekday
+                    widget: string
+                  - label: Program (Sâmbătă)
+                    name: hoursSaturday
+                    widget: string
+              - label: Formular
+                name: form
+                widget: object
+                fields:
+                  - label: Titlu Succes
+                    name: successTitle
+                    widget: string
+                  - label: Descriere Succes
+                    name: successDesc
+                    widget: text
+                  - label: Titlu Formular
+                    name: title
+                    widget: string
+                  - label: Câmp Nume
+                    name: nameLabel
+                    widget: string
+                  - label: Câmp Email
+                    name: emailLabel
+                    widget: string
+                  - label: Câmp Telefon
+                    name: phoneLabel
+                    widget: string
+                  - label: Câmp Tip Proiect
+                    name: typeLabel
+                    widget: string
+                  - label: Câmp Mesaj
+                    name: messageLabel
+                    widget: string
+                  - label: Buton Trimite
+                    name: submitBtn
+                    widget: string
+                  - label: Mesaj Confidențialitate
+                    name: privacyMsg
+                    widget: text
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Navigare
+                name: navigation
+                widget: string
+              - label: Servicii
+                name: services
+                widget: string
+              - label: Legal
+                name: legal
+                widget: string
+              - label: Urmărește-ne
+                name: followUs
+                widget: string
+              - label: Lista Servicii Footer
+                name: servicesList
+                widget: object
+                fields:
+                  - label: Interior
+                    name: interior
+                    widget: string
+                  - label: Exterior
+                    name: exterior
+                    widget: string
+                  - label: Structuri
+                    name: structure
+                    widget: string
+                  - label: Ceramică
+                    name: ceramics
+                    widget: string
+              - label: Informații Contact (Footer & Pagini)
+                name: contactInfo
+                widget: object
+                fields:
+                  - label: Stradă + Număr
+                    name: addressStreet
+                    widget: string
+                    default: Chamerstrasse 172
+                  - label: Oraș + Cod Poștal
+                    name: addressCity
+                    widget: string
+                    default: 6300 Zug, Schweiz
+                  - label: Email
+                    name: email
+                    widget: string
+                    default: contact@arcobau.ch
+                  - label: Telefon
+                    name: phone
+                    widget: string
+                    default: 076 726 80 88
+                  - label: Nume Director
+                    name: directorName
+                    widget: string
+                    default: Nicolae Danciu
+                  - label: Program (Luni-Vineri)
+                    name: hoursWeekday
+                    widget: string
+                    default: Mo–Fr 08:00–18:00
+                  - label: Program (Sâmbătă)
+                    name: hoursSaturday
+                    widget: string
+                    default: Sa 09:00–14:00
+  - name: content_fr
+    label: 🇫🇷 Conținut Site (Franceză)
+    description: Editează textele site-ului în franceză.
+    files:
+      - name: fr
+        label: Conținut Franceză
+        file: data/content/fr.json
+        fields:
+          - label: Navigare
+            name: nav
+            widget: object
+            fields:
+              - label: Servicii
+                name: expertise
+                widget: string
+              - label: Portofoliu
+                name: portfolio
+                widget: string
+              - label: Companie
+                name: company
+                widget: string
+              - label: Contact
+                name: contact
+                widget: string
+              - label: Impressum
+                name: impressum
+                widget: string
+              - label: Datenschutz
+                name: datenschutz
+                widget: string
+          - label: Pagina Principală
+            name: home
+            widget: object
+            fields:
+              - label: Tag Hero
+                name: heroTag
+                widget: string
+              - label: Titlu Hero
+                name: heroTitle
+                widget: string
+              - label: Subtitlu Hero
+                name: heroSubtitle
+                widget: text
+              - label: Buton Portfolio
+                name: viewPortfolio
+                widget: string
+              - label: Buton Contact
+                name: contactUs
+                widget: string
+              - label: Cum Lucrăm (titlu)
+                name: howWeWork
+                widget: string
+              - label: Expertiză Personalizată
+                name: tailoredExpertise
+                widget: string
+              - label: Descriere Expertiză
+                name: tailoredExpertiseDesc
+                widget: text
+              - label: Filozofia Noastră (titlu)
+                name: ourPhilosophy
+                widget: string
+              - label: Calitate (titlu)
+                name: swissQuality
+                widget: string
+              - label: Paragraf Filozofie 1
+                name: philosophyDesc1
+                widget: text
+              - label: Paragraf Filozofie 2
+                name: philosophyDesc2
+                widget: text
+              - label: Despre Noi (link)
+                name: aboutUs
+                widget: string
+              - label: Label Portfolio
+                name: portfolioLabel
+                widget: string
+              - label: Proiecte Recente
+                name: recentProjects
+                widget: string
+              - label: Vezi Toate Proiectele
+                name: viewAllProjects
+                widget: string
+              - label: Începe Proiectul Tău
+                name: startYourProject
+                widget: string
+              - label: Titlu CTA
+                name: readyToBuild
+                widget: string
+              - label: Text CTA
+                name: contactTeam
+                widget: text
+              - label: Buton Ia Legătura
+                name: getInTouch
+                widget: string
+              - label: Statistici
+                name: stats
+                widget: object
+                fields:
+                  - label: Ani Experiență
+                    name: years
+                    widget: string
+                  - label: Proiecte
+                    name: projects
+                    widget: string
+                  - label: Satisfacție
+                    name: satisfaction
+                    widget: string
+              - label: Servicii Homepage
+                name: services
+                widget: object
+                fields:
+                  - label: Finisaje Interioare (titlu)
+                    name: privateClients
+                    widget: string
+                  - label: Finisaje Interioare (descriere)
+                    name: privateClientsDesc
+                    widget: text
+                  - label: Descoperă Serviciile
+                    name: discoverServices
+                    widget: string
+                  - label: Finisaje Exterioare (titlu)
+                    name: aptFinishing
+                    widget: string
+                  - label: Finisaje Exterioare (descriere)
+                    name: aptFinishingDesc
+                    widget: text
+                  - label: Află Mai Multe
+                    name: learnMore
+                    widget: string
+                  - label: Structuri (titlu)
+                    name: flooring
+                    widget: string
+                  - label: Structuri (descriere)
+                    name: flooringDesc
+                    widget: text
+                  - label: Vezi Serviciile
+                    name: viewServices
+                    widget: string
+          - label: Pagina Servicii
+            name: expertise
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Titlu Proces
+                name: processTitle
+                widget: string
+              - label: Tag Proces
+                name: processTag
+                widget: string
+              - label: Gata să Înceapă?
+                name: readyToStart
+                widget: string
+              - label: Text Contact Discuție
+                name: contactDiscuss
+                widget: text
+              - label: Buton Contact
+                name: contactUs
+                widget: string
+              - label: Servicii Detaliate
+                name: services
+                widget: object
+                fields:
+                  - label: Tag Interior
+                    name: resTag
+                    widget: string
+                  - label: Titlu Interior
+                    name: resTitle
+                    widget: string
+                  - label: Slogan Interior
+                    name: resLead
+                    widget: string
+                  - label: Corp Interior
+                    name: resBody
+                    widget: text
+                  - label: Buton Interior
+                    name: resCta
+                    widget: string
+                  - label: Imagine Interior
+                    name: resImg
+                    widget: image
+                  - label: Caracteristici Interior
+                    name: resFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+                  - label: Tag Exterior
+                    name: intTag
+                    widget: string
+                  - label: Titlu Exterior
+                    name: intTitle
+                    widget: string
+                  - label: Slogan Exterior
+                    name: intLead
+                    widget: string
+                  - label: Corp Exterior
+                    name: intBody
+                    widget: text
+                  - label: Buton Exterior
+                    name: intCta
+                    widget: string
+                  - label: Imagine Exterior
+                    name: intImg
+                    widget: image
+                  - label: Caracteristici Exterior
+                    name: intFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+                  - label: Tag Structuri
+                    name: floorTag
+                    widget: string
+                  - label: Titlu Structuri
+                    name: floorTitle
+                    widget: string
+                  - label: Slogan Structuri
+                    name: floorLead
+                    widget: string
+                  - label: Corp Structuri
+                    name: floorBody
+                    widget: text
+                  - label: Buton Structuri
+                    name: floorCta
+                    widget: string
+                  - label: Imagine Structuri
+                    name: floorImg
+                    widget: image
+                  - label: Caracteristici Structuri
+                    name: floorFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+              - label: Pași Proces
+                name: steps
+                widget: list
+                fields:
+                  - label: Titlu Pas
+                    name: title
+                    widget: string
+                  - label: Descriere Pas
+                    name: desc
+                    widget: text
+          - label: Pagina Portofoliu
+            name: portfolio
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Categorii
+                name: categories
+                widget: object
+                fields:
+                  - label: Termosistem
+                    name: termosistem
+                    widget: string
+                  - label: Finisaje
+                    name: finisaje
+                    widget: string
+                  - label: Ceramică
+                    name: ceramica
+                    widget: string
+                  - label: Structuri
+                    name: structuri
+                    widget: string
+          - label: Pagina Companie
+            name: company
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Carduri
+                name: cards
+                widget: object
+                fields:
+                  - label: Tradiție - Titlu
+                    name: heritageTitle
+                    widget: string
+                  - label: Tradiție - Text
+                    name: heritageDesc
+                    widget: text
+                  - label: Tradiție - Imagine
+                    name: heritageImg
+                    widget: image
+                  - label: Misiune - Titlu
+                    name: missionTitle
+                    widget: string
+                  - label: Misiune - Text
+                    name: missionDesc
+                    widget: text
+                  - label: Misiune - Imagine
+                    name: missionImg
+                    widget: image
+                  - label: Valori - Titlu
+                    name: valuesTitle
+                    widget: string
+                  - label: Valori - Text
+                    name: valuesDesc
+                    widget: text
+                  - label: Valori - Imagine
+                    name: valuesImg
+                    widget: image
+              - label: Tag De Ce Noi
+                name: whyUsTag
+                widget: string
+              - label: Titlu De Ce Noi
+                name: whyUsTitle
+                widget: string
+              - label: Valorile Noastre
+                name: values
+                widget: object
+                fields:
+                  - label: Echipe - Titlu
+                    name: teamsTitle
+                    widget: string
+                  - label: Echipe - Text
+                    name: teamsDesc
+                    widget: text
+                  - label: Garanție - Titlu
+                    name: guaranteeTitle
+                    widget: string
+                  - label: Garanție - Text
+                    name: guaranteeDesc
+                    widget: text
+                  - label: Punctualitate - Titlu
+                    name: punctualityTitle
+                    widget: string
+                  - label: Punctualitate - Text
+                    name: punctualityDesc
+                    widget: text
+                  - label: Materiale - Titlu
+                    name: materialsTitle
+                    widget: string
+                  - label: Materiale - Text
+                    name: materialsDesc
+                    widget: text
+              - label: Tag Evoluție
+                name: journeyTag
+                widget: string
+              - label: Titlu Evoluție
+                name: journeyTitle
+                widget: string
+              - label: Timeline
+                name: timeline
+                widget: list
+                fields:
+                  - label: An
+                    name: year
+                    widget: string
+                  - label: Eveniment
+                    name: event
+                    widget: text
+              - label: Statistici
+                name: stats
+                widget: object
+                fields:
+                  - label: Ani
+                    name: years
+                    widget: string
+                  - label: Proiecte
+                    name: projects
+                    widget: string
+                  - label: Calitate
+                    name: quality
+                    widget: string
+              - label: Tag Angajament
+                name: commitmentTag
+                widget: string
+              - label: Titlu Angajament
+                name: commitmentTitle
+                widget: string
+              - label: Text Angajament
+                name: commitmentDesc
+                widget: text
+              - label: Buton Contact
+                name: getInTouch
+                widget: string
+          - label: Pagina Contact
+            name: contact
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Ia Legătura
+                name: getInTouch
+                widget: string
+              - label: Adresă (etichetă)
+                name: address
+                widget: string
+              - label: Email (etichetă)
+                name: email
+                widget: string
+              - label: Telefon (etichetă)
+                name: phone
+                widget: string
+              - label: Program (etichetă)
+                name: hours
+                widget: string
+              - label: 📍 Date de Contact (Adresă, Telefon, Email)
+                name: contactInfo
+                widget: object
+                fields:
+                  - label: Stradă + Număr
+                    name: addressStreet
+                    widget: string
+                  - label: Oraș + Cod Poștal
+                    name: addressCity
+                    widget: string
+                  - label: Email
+                    name: email
+                    widget: string
+                  - label: Telefon
+                    name: phone
+                    widget: string
+                  - label: Nume Director
+                    name: directorName
+                    widget: string
+                  - label: Program (Luni-Vineri)
+                    name: hoursWeekday
+                    widget: string
+                  - label: Program (Sâmbătă)
+                    name: hoursSaturday
+                    widget: string
+              - label: Formular
+                name: form
+                widget: object
+                fields:
+                  - label: Titlu Succes
+                    name: successTitle
+                    widget: string
+                  - label: Descriere Succes
+                    name: successDesc
+                    widget: text
+                  - label: Titlu Formular
+                    name: title
+                    widget: string
+                  - label: Câmp Nume
+                    name: nameLabel
+                    widget: string
+                  - label: Câmp Email
+                    name: emailLabel
+                    widget: string
+                  - label: Câmp Telefon
+                    name: phoneLabel
+                    widget: string
+                  - label: Câmp Tip Proiect
+                    name: typeLabel
+                    widget: string
+                  - label: Câmp Mesaj
+                    name: messageLabel
+                    widget: string
+                  - label: Buton Trimite
+                    name: submitBtn
+                    widget: string
+                  - label: Mesaj Confidențialitate
+                    name: privacyMsg
+                    widget: text
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Navigare
+                name: navigation
+                widget: string
+              - label: Servicii
+                name: services
+                widget: string
+              - label: Legal
+                name: legal
+                widget: string
+              - label: Urmărește-ne
+                name: followUs
+                widget: string
+              - label: Lista Servicii Footer
+                name: servicesList
+                widget: object
+                fields:
+                  - label: Interior
+                    name: interior
+                    widget: string
+                  - label: Exterior
+                    name: exterior
+                    widget: string
+                  - label: Structuri
+                    name: structure
+                    widget: string
+                  - label: Ceramică
+                    name: ceramics
+                    widget: string
+              - label: Informații Contact (Footer & Pagini)
+                name: contactInfo
+                widget: object
+                fields:
+                  - label: Stradă + Număr
+                    name: addressStreet
+                    widget: string
+                    default: Chamerstrasse 172
+                  - label: Oraș + Cod Poștal
+                    name: addressCity
+                    widget: string
+                    default: 6300 Zug, Schweiz
+                  - label: Email
+                    name: email
+                    widget: string
+                    default: contact@arcobau.ch
+                  - label: Telefon
+                    name: phone
+                    widget: string
+                    default: 076 726 80 88
+                  - label: Nume Director
+                    name: directorName
+                    widget: string
+                    default: Nicolae Danciu
+                  - label: Program (Luni-Vineri)
+                    name: hoursWeekday
+                    widget: string
+                    default: Mo–Fr 08:00–18:00
+                  - label: Program (Sâmbătă)
+                    name: hoursSaturday
+                    widget: string
+                    default: Sa 09:00–14:00
+  - name: content_it
+    label: 🇮🇹 Conținut Site (Italiană)
+    description: Editează textele site-ului în italiană.
+    files:
+      - name: it
+        label: Conținut Italiană
+        file: data/content/it.json
+        fields:
+          - label: Navigare
+            name: nav
+            widget: object
+            fields:
+              - label: Servicii
+                name: expertise
+                widget: string
+              - label: Portofoliu
+                name: portfolio
+                widget: string
+              - label: Companie
+                name: company
+                widget: string
+              - label: Contact
+                name: contact
+                widget: string
+              - label: Impressum
+                name: impressum
+                widget: string
+              - label: Datenschutz
+                name: datenschutz
+                widget: string
+          - label: Pagina Principală
+            name: home
+            widget: object
+            fields:
+              - label: Tag Hero
+                name: heroTag
+                widget: string
+              - label: Titlu Hero
+                name: heroTitle
+                widget: string
+              - label: Subtitlu Hero
+                name: heroSubtitle
+                widget: text
+              - label: Buton Portfolio
+                name: viewPortfolio
+                widget: string
+              - label: Buton Contact
+                name: contactUs
+                widget: string
+              - label: Cum Lucrăm (titlu)
+                name: howWeWork
+                widget: string
+              - label: Expertiză Personalizată
+                name: tailoredExpertise
+                widget: string
+              - label: Descriere Expertiză
+                name: tailoredExpertiseDesc
+                widget: text
+              - label: Filozofia Noastră (titlu)
+                name: ourPhilosophy
+                widget: string
+              - label: Calitate (titlu)
+                name: swissQuality
+                widget: string
+              - label: Paragraf Filozofie 1
+                name: philosophyDesc1
+                widget: text
+              - label: Paragraf Filozofie 2
+                name: philosophyDesc2
+                widget: text
+              - label: Despre Noi (link)
+                name: aboutUs
+                widget: string
+              - label: Label Portfolio
+                name: portfolioLabel
+                widget: string
+              - label: Proiecte Recente
+                name: recentProjects
+                widget: string
+              - label: Vezi Toate Proiectele
+                name: viewAllProjects
+                widget: string
+              - label: Începe Proiectul Tău
+                name: startYourProject
+                widget: string
+              - label: Titlu CTA
+                name: readyToBuild
+                widget: string
+              - label: Text CTA
+                name: contactTeam
+                widget: text
+              - label: Buton Ia Legătura
+                name: getInTouch
+                widget: string
+              - label: Statistici
+                name: stats
+                widget: object
+                fields:
+                  - label: Ani Experiență
+                    name: years
+                    widget: string
+                  - label: Proiecte
+                    name: projects
+                    widget: string
+                  - label: Satisfacție
+                    name: satisfaction
+                    widget: string
+              - label: Servicii Homepage
+                name: services
+                widget: object
+                fields:
+                  - label: Finisaje Interioare (titlu)
+                    name: privateClients
+                    widget: string
+                  - label: Finisaje Interioare (descriere)
+                    name: privateClientsDesc
+                    widget: text
+                  - label: Descoperă Serviciile
+                    name: discoverServices
+                    widget: string
+                  - label: Finisaje Exterioare (titlu)
+                    name: aptFinishing
+                    widget: string
+                  - label: Finisaje Exterioare (descriere)
+                    name: aptFinishingDesc
+                    widget: text
+                  - label: Află Mai Multe
+                    name: learnMore
+                    widget: string
+                  - label: Structuri (titlu)
+                    name: flooring
+                    widget: string
+                  - label: Structuri (descriere)
+                    name: flooringDesc
+                    widget: text
+                  - label: Vezi Serviciile
+                    name: viewServices
+                    widget: string
+          - label: Pagina Servicii
+            name: expertise
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Titlu Proces
+                name: processTitle
+                widget: string
+              - label: Tag Proces
+                name: processTag
+                widget: string
+              - label: Gata să Înceapă?
+                name: readyToStart
+                widget: string
+              - label: Text Contact Discuție
+                name: contactDiscuss
+                widget: text
+              - label: Buton Contact
+                name: contactUs
+                widget: string
+              - label: Servicii Detaliate
+                name: services
+                widget: object
+                fields:
+                  - label: Tag Interior
+                    name: resTag
+                    widget: string
+                  - label: Titlu Interior
+                    name: resTitle
+                    widget: string
+                  - label: Slogan Interior
+                    name: resLead
+                    widget: string
+                  - label: Corp Interior
+                    name: resBody
+                    widget: text
+                  - label: Buton Interior
+                    name: resCta
+                    widget: string
+                  - label: Imagine Interior
+                    name: resImg
+                    widget: image
+                  - label: Caracteristici Interior
+                    name: resFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+                  - label: Tag Exterior
+                    name: intTag
+                    widget: string
+                  - label: Titlu Exterior
+                    name: intTitle
+                    widget: string
+                  - label: Slogan Exterior
+                    name: intLead
+                    widget: string
+                  - label: Corp Exterior
+                    name: intBody
+                    widget: text
+                  - label: Buton Exterior
+                    name: intCta
+                    widget: string
+                  - label: Imagine Exterior
+                    name: intImg
+                    widget: image
+                  - label: Caracteristici Exterior
+                    name: intFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+                  - label: Tag Structuri
+                    name: floorTag
+                    widget: string
+                  - label: Titlu Structuri
+                    name: floorTitle
+                    widget: string
+                  - label: Slogan Structuri
+                    name: floorLead
+                    widget: string
+                  - label: Corp Structuri
+                    name: floorBody
+                    widget: text
+                  - label: Buton Structuri
+                    name: floorCta
+                    widget: string
+                  - label: Imagine Structuri
+                    name: floorImg
+                    widget: image
+                  - label: Caracteristici Structuri
+                    name: floorFeatures
+                    widget: list
+                    field:
+                      name: item
+                      widget: string
+              - label: Pași Proces
+                name: steps
+                widget: list
+                fields:
+                  - label: Titlu Pas
+                    name: title
+                    widget: string
+                  - label: Descriere Pas
+                    name: desc
+                    widget: text
+          - label: Pagina Portofoliu
+            name: portfolio
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Categorii
+                name: categories
+                widget: object
+                fields:
+                  - label: Termosistem
+                    name: termosistem
+                    widget: string
+                  - label: Finisaje
+                    name: finisaje
+                    widget: string
+                  - label: Ceramică
+                    name: ceramica
+                    widget: string
+                  - label: Structuri
+                    name: structuri
+                    widget: string
+          - label: Pagina Companie
+            name: company
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Carduri
+                name: cards
+                widget: object
+                fields:
+                  - label: Tradiție - Titlu
+                    name: heritageTitle
+                    widget: string
+                  - label: Tradiție - Text
+                    name: heritageDesc
+                    widget: text
+                  - label: Tradiție - Imagine
+                    name: heritageImg
+                    widget: image
+                  - label: Misiune - Titlu
+                    name: missionTitle
+                    widget: string
+                  - label: Misiune - Text
+                    name: missionDesc
+                    widget: text
+                  - label: Misiune - Imagine
+                    name: missionImg
+                    widget: image
+                  - label: Valori - Titlu
+                    name: valuesTitle
+                    widget: string
+                  - label: Valori - Text
+                    name: valuesDesc
+                    widget: text
+                  - label: Valori - Imagine
+                    name: valuesImg
+                    widget: image
+              - label: Tag De Ce Noi
+                name: whyUsTag
+                widget: string
+              - label: Titlu De Ce Noi
+                name: whyUsTitle
+                widget: string
+              - label: Valorile Noastre
+                name: values
+                widget: object
+                fields:
+                  - label: Echipe - Titlu
+                    name: teamsTitle
+                    widget: string
+                  - label: Echipe - Text
+                    name: teamsDesc
+                    widget: text
+                  - label: Garanție - Titlu
+                    name: guaranteeTitle
+                    widget: string
+                  - label: Garanție - Text
+                    name: guaranteeDesc
+                    widget: text
+                  - label: Punctualitate - Titlu
+                    name: punctualityTitle
+                    widget: string
+                  - label: Punctualitate - Text
+                    name: punctualityDesc
+                    widget: text
+                  - label: Materiale - Titlu
+                    name: materialsTitle
+                    widget: string
+                  - label: Materiale - Text
+                    name: materialsDesc
+                    widget: text
+              - label: Tag Evoluție
+                name: journeyTag
+                widget: string
+              - label: Titlu Evoluție
+                name: journeyTitle
+                widget: string
+              - label: Timeline
+                name: timeline
+                widget: list
+                fields:
+                  - label: An
+                    name: year
+                    widget: string
+                  - label: Eveniment
+                    name: event
+                    widget: text
+              - label: Statistici
+                name: stats
+                widget: object
+                fields:
+                  - label: Ani
+                    name: years
+                    widget: string
+                  - label: Proiecte
+                    name: projects
+                    widget: string
+                  - label: Calitate
+                    name: quality
+                    widget: string
+              - label: Tag Angajament
+                name: commitmentTag
+                widget: string
+              - label: Titlu Angajament
+                name: commitmentTitle
+                widget: string
+              - label: Text Angajament
+                name: commitmentDesc
+                widget: text
+              - label: Buton Contact
+                name: getInTouch
+                widget: string
+          - label: Pagina Contact
+            name: contact
+            widget: object
+            fields:
+              - label: Tag
+                name: tag
+                widget: string
+              - label: Titlu
+                name: title
+                widget: string
+              - label: Descriere
+                name: desc
+                widget: text
+              - label: Ia Legătura
+                name: getInTouch
+                widget: string
+              - label: Adresă (etichetă)
+                name: address
+                widget: string
+              - label: Email (etichetă)
+                name: email
+                widget: string
+              - label: Telefon (etichetă)
+                name: phone
+                widget: string
+              - label: Program (etichetă)
+                name: hours
+                widget: string
+              - label: 📍 Date de Contact (Adresă, Telefon, Email)
+                name: contactInfo
+                widget: object
+                fields:
+                  - label: Stradă + Număr
+                    name: addressStreet
+                    widget: string
+                  - label: Oraș + Cod Poștal
+                    name: addressCity
+                    widget: string
+                  - label: Email
+                    name: email
+                    widget: string
+                  - label: Telefon
+                    name: phone
+                    widget: string
+                  - label: Nume Director
+                    name: directorName
+                    widget: string
+                  - label: Program (Luni-Vineri)
+                    name: hoursWeekday
+                    widget: string
+                  - label: Program (Sâmbătă)
+                    name: hoursSaturday
+                    widget: string
+              - label: Formular
+                name: form
+                widget: object
+                fields:
+                  - label: Titlu Succes
+                    name: successTitle
+                    widget: string
+                  - label: Descriere Succes
+                    name: successDesc
+                    widget: text
+                  - label: Titlu Formular
+                    name: title
+                    widget: string
+                  - label: Câmp Nume
+                    name: nameLabel
+                    widget: string
+                  - label: Câmp Email
+                    name: emailLabel
+                    widget: string
+                  - label: Câmp Telefon
+                    name: phoneLabel
+                    widget: string
+                  - label: Câmp Tip Proiect
+                    name: typeLabel
+                    widget: string
+                  - label: Câmp Mesaj
+                    name: messageLabel
+                    widget: string
+                  - label: Buton Trimite
+                    name: submitBtn
+                    widget: string
+                  - label: Mesaj Confidențialitate
+                    name: privacyMsg
+                    widget: text
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Navigare
+                name: navigation
+                widget: string
+              - label: Servicii
+                name: services
+                widget: string
+              - label: Legal
+                name: legal
+                widget: string
+              - label: Urmărește-ne
+                name: followUs
+                widget: string
+              - label: Lista Servicii Footer
+                name: servicesList
+                widget: object
+                fields:
+                  - label: Interior
+                    name: interior
+                    widget: string
+                  - label: Exterior
+                    name: exterior
+                    widget: string
+                  - label: Structuri
+                    name: structure
+                    widget: string
+                  - label: Ceramică
+                    name: ceramics
+                    widget: string
+              - label: Informații Contact (Footer & Pagini)
+                name: contactInfo
+                widget: object
+                fields:
+                  - label: Stradă + Număr
+                    name: addressStreet
+                    widget: string
+                    default: Chamerstrasse 172
+                  - label: Oraș + Cod Poștal
+                    name: addressCity
+                    widget: string
+                    default: 6300 Zug, Schweiz
+                  - label: Email
+                    name: email
+                    widget: string
+                    default: contact@arcobau.ch
+                  - label: Telefon
+                    name: phone
+                    widget: string
+                    default: 076 726 80 88
+                  - label: Nume Director
+                    name: directorName
+                    widget: string
+                    default: Nicolae Danciu
+                  - label: Program (Luni-Vineri)
+                    name: hoursWeekday
+                    widget: string
+                    default: Mo–Fr 08:00–18:00
+                  - label: Program (Sâmbătă)
+                    name: hoursSaturday
+                    widget: string
+                    default: Sa 09:00–14:00
   - name: portfolio
     label: Portofoliu - Imagini
     description: Adauga, sterge sau reordoneaza pozele din fiecare categorie.

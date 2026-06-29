@@ -85,7 +85,10 @@
         "Maçonnerie",
         "Menuiserie",
         "Structures en béton"
-      ]
+      ],
+      "resImg": "/images/ceramica/ceramica-6.jpeg",
+      "intImg": "/images/termosistem/termosistem-2.jpeg",
+      "floorImg": "/images/structuri/structuri-1.jpeg"
     },
     "steps": [
       {
@@ -131,7 +134,10 @@
       "missionTitle": "Notre raison d’être",
       "missionDesc": "Nous construisons l'avenir. Notre mission est de fournir des services de haute qualité aux clients dans toute la Suisse.",
       "valuesTitle": "Nos valeurs",
-      "valuesDesc": "La qualité, la fiabilité et la transparence constituent notre cœur de métier. Nous proposons des prix clairs et expliquons chaque étape."
+      "valuesDesc": "La qualité, la fiabilité et la transparence constituent notre cœur de métier. Nous proposons des prix clairs et expliquons chaque étape.",
+      "heritageImg": "/images/fatade-case/fatade-case-1.jpeg",
+      "missionImg": "/images/ceramica/ceramica-2.jpeg",
+      "valuesImg": "/images/ceramica/ceramica-1.jpeg"
     },
     "whyUsTag": "Pourquoi ArcoBau",
     "whyUsTitle": "Ce qui nous différencie",

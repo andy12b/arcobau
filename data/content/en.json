@@ -85,7 +85,10 @@
         "Brickwork:",
         "Carpentry",
         "Concrete structures"
-      ]
+      ],
+      "resImg": "/images/ceramica/ceramica-6.jpeg",
+      "intImg": "/images/termosistem/termosistem-2.jpeg",
+      "floorImg": "/images/structuri/structuri-1.jpeg"
     },
     "steps": [
       {
@@ -131,7 +134,10 @@
       "missionTitle": "Our Mission",
       "missionDesc": "We are building the future. Our mission is to provide high quality services to customers all over Switzerland.",
       "valuesTitle": "OUR VALUES",
-      "valuesDesc": "Quality, reliability and transparency form our core. We offer clear pricing and explain every step."
+      "valuesDesc": "Quality, reliability and transparency form our core. We offer clear pricing and explain every step.",
+      "heritageImg": "/images/fatade-case/fatade-case-1.jpeg",
+      "missionImg": "/images/ceramica/ceramica-2.jpeg",
+      "valuesImg": "/images/ceramica/ceramica-1.jpeg"
     },
     "whyUsTag": "Why ArcoBau",
     "whyUsTitle": "What Differentiates Us",
