@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { useLanguage } from "@/lib/LanguageContext";
 import { LanguageCode } from "@/lib/translations";
+import globalSettings from "@/data/settings/global.json";
 
 const flags: Record<LanguageCode, React.ReactNode> = {
   EN: <img src="https://flagcdn.com/w40/gb.png" alt="EN" className="w-5 h-auto object-cover rounded-[2px] shadow-sm" />,
@@ -75,7 +76,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo/arcobau-logo.png"
+              src={globalSettings.logoNavbar || "/images/logo/arcobau-logo.png"}
               alt="ArcoBau"
               width={180}
               height={72}

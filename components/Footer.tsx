@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
+import globalSettings from "@/data/settings/global.json";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -37,7 +38,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col items-start w-full">
             <Link href="/" className="inline-block mb-6 bg-white rounded p-1.5">
               <Image
-                src="/images/logo/arcobau-logo.png"
+                src={globalSettings.logoFooter || "/images/logo/arcobau-logo.png"}
                 alt="ArcoBau"
                 width={160}
                 height={64}

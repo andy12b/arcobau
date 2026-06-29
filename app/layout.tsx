@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -57,6 +57,10 @@ export const metadata: Metadata = {
   },
   other: {
     google: "notranslate",
+  },
+  icons: {
+    icon: require("@/data/settings/global.json").favicon || "/favicon.ico",
+    apple: require("@/data/settings/global.json").favicon || "/apple-icon.png",
   },
 };
 
